@@ -69,4 +69,3 @@ notes:
 packages harus tetap di copy diluar supaya bibliografi tidak error
 
 
-
