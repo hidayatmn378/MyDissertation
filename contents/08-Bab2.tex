@@ -3,117 +3,74 @@
 %\section[State of the Art]{State of the Art}
 \begin{spacing}{1.5}
 	
-	Bab ini menjelaskan lebih detail mengenai pustaka relevan dan tinjauan teori dalam penelitian ini. Hal ini bertujuan untuk mereview, mengupdate, mengkritik dan mensintesis literatur, melakukan meta-analisis literatur, melakukan konsepsi ulang dari topik yang direview, dan menjawab pertanyaan spesifik penelitian dari topik yang telah direview dalam literatur \shortcite{Torraco2016}. Struktur pembahasan studi relevan dan tinjauan teori selanjutnya dibagi dalam beberapa hal: pertama, akan dibahas mengenai persamaan gerak fluida dan persamaan Navier-Stokes dalam pemodelan laut, serta grid C Arakawa. Selanjutnya, akan dibahas mengenai model iklim yang digunakan sebagai verifikasi dan terakhir tentang kedalaman lapisan campuran. Meskipun demikian, karena fokus dari penelitian ini adalah observasi kedalaman lapisan campuran berdasarkan data output OGCM (\textit{Ocean General Circulation Model}) dan hubungan serta pengaruh parameter meteorologi terhadap lapisan campuran, maka persamaan Navier-Stokes tidak akan direview secara detail dan hanya akan dirujuk sebagaimana mestinya.
-	
-\end{spacing}
-\vspace{-0.1pc}
-\section[Persamaan Gerak Fluida]{Persamaan Gerak Fluida}
-\begin{spacing}{1.5}
-	
-	Persamaan matematika yang mengatur aliran viskoelastik fluida berasal dari persamaan-persamaan hukum konservasi fisika yaitu konservasi massa, momentum dan persamaan konstitutif reologi \shortcite{Alves2021}. Penjabaran dari hukum-hukum tersebut menentukan bagaimana suatu persamaan model hidrodinamika dibuat. Salah satu persamaan fluida yang paling terkenal adalah persamaan Navier-Stokes yang terdiri dari persamaan momentum, persamaan kontinuitas, dan persamaan konservasi densitas \shortcite{Haditiar2020}. Persamaan Navier-Stokes digunakan untuk menggambarkan fluida yang mengalir dan dianggap memiliki pergerakan yang kontinu. Diketahui bahwa hasil pengamatan dari sebuah partikel fluida yang mengalir memiliki sifat-sifat fluida secara umum yaitu kecepatan, temperatur, tekanan dan densitas \shortcite{Rafiq2019,Das2018,Khan2019}. Sebuah partikel fluida diilustrasikan pada Gambar \ref{fig:cube}a, dan \ref{fig:cube}b. Komponen fluida seperti tekanan $p$, kecepatan $u$, dan densitas $\rho$ terletak pada pusat partikel yang bergantung terhadap waktu $(t)$ dan ruang $(x,y,z)$. Sehingga, komponen-komponen tersebut dapat ditulis dalam fungsi $p(x,y,z,t), u(x,y,z,t)$  dan $\rho(x,y,z,t)$. 
-	
-	Asumsikan bahwa partikel fluida yang diobservasi sangat kecil sehingga sifat fluida pada permukaan kubus dapat diekspresikan secara akurat dengan menggunakan dua suku pertama dari ekspansi deret Taylor, 
-	\begin{equation*}
-		\sum_{n=0}^{\infty}\frac{f^{n}(a)}{n!}(x-a)^n = f(a)+\frac{f'(a)}{1!}(x-a)+\dots
-	\end{equation*} 
-	Sebagai contoh, tekanan pada muka $W$ dan $E$, keduanya memiliki jarak $\frac{1}{2}\delta x$ dari posisi partikel di tengah sehingga diperoleh bentuk ekspresi,
-	\begin{equation*}
-		p-\frac{\partial p}{\partial x}\frac{1}{2}\delta x \quad \text{dan} \quad
-		p+\frac{\partial p}{\partial x}\frac{1}{2}\delta x.
-	\end{equation*}
-	Hal yang sama dapat dilakukan untuk variabel yang lainnya.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=16cm]{contents/cube}
-		\caption{(a) Ilustrasi partikel sebagai sifat fisis fluida, (b) Aliran massa jenis masuk dan keluar. Gambar direproduksi dari \protect\shortcite{versteeg2007introduction}}
-		\label{fig:cube}
-		\medspace
-		\small
-		Massa jenis dari partikel $\rho(x,y,z,t)$ pada gambar bagian (a) dapat diterjemahkan sebagai aliran yang masuk dan keluar. Pada gambar bagian (b), arah aliran massa jenis pada partikel pusat merupakan jumlahan dari aliran massa jenis masuk dan keluar. Dengan cara yang sama, dapat juga dilakukan untuk tekanan dan kecepatan. 
-	\end{figure}
+	Bab ini menjelaskan lebih detail mengenai pustaka relevan dan tinjauan teori dalam penelitian ini. Hal ini bertujuan untuk mereview, mengupdate, mengkritik dan mensintesis literatur, melakukan meta-analisis literatur, melakukan konsepsi ulang dari topik yang direview, dan menjawab pertanyaan spesifik penelitian dari topik yang telah direview dalam literatur \shortcite{Torraco2016}.
 	
 \end{spacing}
 \vspace{-1pc}
 \section[Persamaan Primitif]{Persamaan Primitif}
 \begin{spacing}{1.5}
-	\par Model sirkulasi laut atau \textit{Ocean General Circulation Models} (OGCM) menggunakan persamaan Navier-Stokes untuk memodelkan fenomena fisis yang terjadi di lautan. Lautan adalah fluida yang dapat dijelaskan dengan baik dengan pendekatan persamaan-persamaan primitif, yaitu persamaan Navier-Stokes bersama dengan persamaan keadaan nonlinier yang menggabungkan dua variabel (suhu dan salinitas) dengan kecepatan fluida, ditambah dengan pertimbangan beberapa asumsi dan hipotesis \shortcite{madec_gurvan_2022_6334656}.
+	\par Model sirkulasi laut atau \textit{Ocean General Circulation Models} (OGCM) menggunakan persamaan Navier-Stokes untuk memodelkan fenomena fisis yang terjadi di lautan. Lautan adalah fluida yang dapat dijelaskan dengan baik dengan pendekatan persamaan-persamaan primitif, yaitu persamaan Navier-Stokes serta persamaan keadaan nonlinier yang menggabungkan dua variabel (temperatur dan salinitas) dengan kecepatan fluida, dan mempertimbangkan beberapa asumsi dan hipotesis \shortcite{madec_gurvan_2022_6334656}.
 	
-	Beberapa hipotesis yang digunakan adalah hipotesis Boussinesq, hipotesis hidrostatik, dan hipotesis tak termampatkan (\textit{incompressibility}). Berdasarkan hipotesis Boussinesq, variasi densitas diabaikan kecuali dalam kontribusinya terhadap gaya apung sehingga 
-	\begin{equation}
+	Beberapa asumsi yang digunakan dalam persamaan Navier-Stokes diantaranya asumsi Boussinesq, asumsi hidrostatik, dan asumsi tak termampatkan (\textit{incompressibility}). Misalkan $\rho$ sebagai densitas in situ, $T$ sebagai temperatur potensial, $S$ sebagai salinitas, $p$ sebagai tekanan, $z$ sebagai koordinat vertikal, dan $g$ sebagai percepatan gravitasi. Asumsi yang digunakan dalam persamaan Navier-Stokes dapat dituliskan sebagai berikut.\\
+	Asumsi Boussinesq
+	\begin{equation}\label{eq:P1}
 		\rho = \rho(T,S,p).
 	\end{equation}
-	Untuk hipotesis hidrostatik, persamaan momentum vertikal direduksi menjadi keseimbangan antara gradien tekanan vertikal dan gaya apung (ini menghilangkan proses konvektif dari persamaan Navier-Stokes awal dan proses konvektif harus diparameterisasi sebagai gantinya)
+	Berdasarkan asumsi Boussinesq, pengaruh variasi densitas terhadap sistem diabaikan kecuali kontribusinya terhadap gaya apung.\\
+	Asumsi hidrostatik
 	\begin{equation}
 		\frac{\partial p}{\partial z} = -\rho g.
 	\end{equation}
-	Selanjutnya untuk hipotesis tak termampatkan, persamaan 3-D divergensi untuk vektor kecepatan $U = (u,v,w)$ (dalam koordinat kartesius $(x,y,z)$) diasumsikan menjadi 0, diperoleh
+	Berdasarkan asumsi hidrostatik, persamaan momentum vertikal direduksi menjadi persamaan kesetimbangan antara variabel gradien tekanan vertikal dan gaya apung.\\
+	Asumsi tak termampatkan
 	\begin{equation}
 		\nabla \;.\; U =\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z} = 0.
 	\end{equation}	
-
-	Karena gaya gravitasi dominan dalam persamaan gerak skala besar, maka berguna untuk memilih himpunan ortogonal dari vektor satuan $(i,j,k)$ yang dihubungkan dengan Bumi sedemikian rupa sehingga $k$ adalah vektor lokal ke atas dan $(i,j)$ adalah 2 vektor ortogonal terhadap $k$ - dalam hal ini bersinggungan dengan permukaan geopotensial. Selanjutnya definisikan beberapa variabel berikut, $U$ adalah vektor kecepatan dengan $U = U_h + wk$ ($h$ adalah notasi vektor horizontal lokal di atas bidang $(i,j)$), $T$ adalah potensial temperatur, $S$ adalah salinitas, $\rho$ adalah densitas in situ. Bentuk vektor invarian dari persamaan primitif dalam sistem vektor $(i, j, k)$ diberikan oleh persamaan berikut \shortcite{madec_gurvan_2022_6334656},
+	Berdasarkan asumsi tak termampatkan, persamaan 3-D divergensi untuk vektor kecepatan $U = (u,v,w)$ (dalam koordinat kartesius $(x,y,z)$) dianggap sama dengan 0.
 	
-	- Persamaan kesetimbangan momentum
-	\begin{equation}
+	Selanjutnya misalkan $U = U_h + wk$ ($h$ adalah notasi vektor horizontal lokal di atas bidang $(i,j)$). Persamaan vektor invarian (invarian di bawah transformasi koordinat sehingga dapat diterapkan secara seragam dalam sistem koordinat lengkung ortogonal mana pun) dari persamaan primitif dalam sistem vektor $(i, j, k)$ dapat dituliskan dalam persamaan berikut \shortcite{madec_gurvan_2022_6334656}.\\
+	Persamaan kesetimbangan momentum
+	\begin{equation}\label{eq:P2}
 		\begin{aligned}
 			\frac{\partial U_h}{\partial t} = - \left[(\nabla \times U) \times U + \frac{1}{2}\nabla (U^2)\right]_h - f \; k \times U_h - \frac{1}{\rho_o}\nabla_h p + D^U + F^U.
 		\end{aligned}
 	\end{equation}
-
-	- Persamaan konservasi panas dan salinitas
-	\begin{equation}
+	Dalam Persamaan (\ref{eq:P2}) di atas, suku $(\nabla \times U) \times U + \frac{1}{2}\nabla (U^2)$ dapat ditulis sebagai $U\cdot \nabla U$ dan merupakan suku percepatan konvektif dari persamaan momentum. Suku $\nabla_h p$ merupakan gradien tekanan, $f = 2\Omega\; \cdot \;k$ merupakan percepatan Coriolis (dengan $\Omega$ adalah vector kecepatan sudut bumi), $D^U$ merupakan parameterisasi dari fisika skala kecil untuk momentum sedangkan $F^U$ merupakan suku gaya permukaan untuk momentum.\\
+	Persamaan konservasi panas dan salinitas
+	\begin{equation}\label{eq:P3}
 		\begin{aligned}
-			\frac{\partial T}{\partial t} &= - \nabla \; . \; (T\;U)  + D^U + F^U \\
-			\frac{\partial S}{\partial t} &= - \nabla \; . \; (S\;U)  + D^U + F^U
+			\frac{\partial T}{\partial t} &= - \nabla \; . \; (T\;U)  + D^T + F^T \\
+			\frac{\partial S}{\partial t} &= - \nabla \; . \; (S\;U)  + D^S + F^S,
 		\end{aligned}
 	\end{equation}
-	Dengan $\nabla$ operator vektor turunan yang diperumum dalam arah $(i,j,k)$, $t$ adalah waktu, $z$ adalah koordinat vertikal, $\rho$ adalah densitas in situ dalam persamaan keadaan hipotesis Boussinesq, $\rho_o$ adalah densitas referensi, $p$ adalah tekanan, $f = 2\Omega\; . \;k$ adalah percepatan Coriolis (dengan $\Omega$ adalah vector kecepatan sudut bumi), $g$ adalah percepatan gravitasi. $D^U, D^T$, dan $D^S$ adalah parameterisasi dari fisika skala kecil  untuk momentum, temperature, dan salinitas, dan $F^U,F^T$, dan $F^S$ adalah suku gaya permukaan.
+	dengan operator $\nabla$ sebagai vektor turunan yang diperumum dalam arah $(i,j,k)$, variabel $D^T$ dan $D^S$ merupakan parameterisasi dari fisika skala kecil untuk temperatur dan salinitas sedangkan variabel $F^T$ dan $F^S$ merupakan suku gaya permukaan untuk temperatur dan salinitas. 
 	 
 	Dalam aplikasinya, persamaan Navier-Stokes tidak hanya digunakan untuk memodelkan laut, tapi juga merambah ke bidang pemodelan cuaca \shortcite{Rohli2021}, aliran air dalam pipa \shortcite{Ouchiha2012} dan aliran udara di sekitar sayap pesawat \shortcite{Tulus2019}. Dalam bentuk persamaan lengkap dan simplifikasi, persamaan ini juga dapat digunakan untuk mendesain kereta api \shortcite{Croquer2020}, pesawat terbang \shortcite{Chau2021}, dan mobil \shortcite{Ambarita2018}. Terdapat juga studi tentang aliran darah \shortcite{Gill2021}, desain stasiun pembangkit listrik \shortcite{Yang2019}, dan analisis polusi udara \shortcite{Issakhov2022}. 
-
-\section[Arakawa C grid]{Arakawa C grid}
-	Diskritisasi grid di bidang horizontal dapat dibedakan menjadi grid persegi (\textit{rectiliniear}) Gambar \ref{fig:grid}a dan grid lengkung (\textit{curvlinear}) Gambar \ref{fig:grid}b, di bidang vertikal berupa grid level z (\textit{z-coordinates}) Gambar \ref{fig:grid}c dan grid level s (\textit{$\sigma$-coordinate}) Gambar \ref{fig:grid}d \shortcite{Delandmeter2019}.
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=7cm]{contents/grid.jpg}
-		\caption{Jenis grid dalam pemodelan laut. Di bidang horizontal: (a) grid persegi, (b) grid lengkung, di bidang vertikal: (c) grid level z, (d) grid level s \protect\shortcite{Delandmeter2019}}.
-		\label{fig:grid}
-	\end{figure}
-	
-	Dalam aplikasinya, beberapa software pemodelan laut mengimplementasikan grid bertingkat (\textit{staggered grid}) yang diperkenalkan oleh \shortciteNP{ARAKAWA1977}, yaitu grid A, B dan C. Lebih lanjut, antara grid A, dan grid C terdapat perbedaan fundamental yaitu letak penyimpanan simpul variabel (lihat Gambar \ref{fig:arakawa}), sedangkan grid B dapat dianggap sebagai peralihan dari grid A ke grid C dan perbedaan tipe model grid ini menjadi penting dikarenakan peningkatan kapasitas komputasi yang stabil di banyak pusat pemodelan iklim telah mengantarkan periode transisi untuk model laut global  \shortcite{Barham2018,Delandmeter2019}. 
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=13cm]{contents/arakawa.jpg}
-		\caption{Grid Arakawa: (a) Grid A dan (b) Grid C \protect\shortcite{Delandmeter2019}}
-		\label{fig:arakawa}
-		\medspace
-		\small
-		Grid A adalah satu-satunya \textit{unstaggered grid} dalam grid Arakawa dimana variabel-variabelnya (\textit{zonal velocity (u), meridional velocity (v), tracers (T)}) hanya terdapat pada titik sudut grid, berbeda dengan grid C yang berada di sisi dan tengah grid. $i$ dan $j$ adalah indeks yang merepresentasikan variabel kolom dan baris dimana variabel disimpan.
-	\end{figure}
 \end{spacing}
 \vspace{-0.1pc}
+
 \section[Model Iklim]{Model Iklim}
 \begin{spacing}{1.5}
-	Aplikasi deret waktu (\textit{time series}) banyak melibatkan data yang menunjukkan siklus musiman. Contoh yang paling umum digunakan adalah data cuaca. Dalam penelitian \shortciteNP{Haridhi2016}, model nonlinear regresi (Pers. \ref{eq:nrl}) digunakan untuk mengkarakterisasi hubungan antara SST (\textit{sea surface temperature}) dan ND (\textit{net deployment}) - penyebaran jaring nelayan pukat cincin tradisional. Untuk menvalidasi temuan ini, mereka menggunakan persamaan siklus musiman \citeA[p. 793]{crawley2012r} dan mencari korelasi antara data SST dan data meteorologi. Dilain hal, \shortciteNP{Ikhwan2022} dalam penelitiannya mengkaji tentang kedalaman lapisan campuran (MLD) di laut Andaman menggunakan data salinitas (SSS) dari model 3-D CMEMS (\textit{Copernicus Marine Environment Monitoring Service}). Model iklim digunakan untuk mengidentifikasi dan memvalidasi jumlah musim MLD dalam setahun. Persamaan nonregresi linear \shortcite{Haridhi2016} diformulasikan dalam bentuk,
-	\begin{equation}\label{eq:nrl}
-		y = b_1 + b_2(\sin(b_3x+b_4))
-	\end{equation}
-	dengan $b_1$ adalah konstanta pergeseran vertikal, $b_2$ adalah amplitudo gelombang sinus, $b_3$ adalah frekuensi, x adalah variabel waktu, dan $b_4$ adalah fase.
-	
-	Misalkan sebuah titik bergerak dengan kecepatan konstan pada suatu lingkaran dengan jari-jari $\rho$ dan $t$ adalah waktu yang dihitung saat jari-jari terhubung dengan titik pusat pada sudut $\theta$ dibawah sumbu horizontal. Jika titik tersebut diproyeksikan pada sumbu horizontal maka jarak proyeksi dari titik pusat adalah 
+	Aplikasi deret waktu (\textit{time series}) banyak melibatkan data yang menunjukkan siklus musiman. Contoh yang paling umum digunakan adalah data cuaca. Dalam penelitian \shortciteauthor{Haridhi2016} \citeyear{Haridhi2016}, model nonlinear regresi digunakan untuk mengkarakterisasi hubungan antara SST (\textit{sea surface temperatur}) dan ND (\textit{net deployment}) - penyebaran jaring nelayan pukat cincin tradisional. Untuk menvalidasi temuan ini, mereka menggunakan persamaan siklus musiman \citeA{crawley2012r} dan mencari korelasi antara data SST dan data meteorologi. Dilain hal, \shortciteauthor{Ikhwan2022} \citeyear{Ikhwan2022} dalam penelitiannya mengkaji tentang kedalaman lapisan campuran (MLD) di laut Andaman menggunakan data salinitas (SSS) dari model 3-D CMEMS (\textit{Copernicus Marine Environment Monitoring Service}). Model iklim digunakan untuk mengidentifikasi dan memvalidasi jumlah musim MLD dalam setahun. 
+%	Persamaan regresi non-linear \shortcite{Haridhi2016} diformulasikan sebagai
+%	\begin{equation}\label{eq:nrl}
+%		y = b_1 + b_2(\sin(b_3t+b_4)),
+%	\end{equation}
+%	dengan $b_1$ adalah konstanta pergeseran vertikal, $b_2$ adalah amplitudo gelombang sinus, $b_3$ adalah frekuensi, $t$ adalah variabel waktu, dan $b_4$ adalah fase.
+%	
+	Misalkan sebuah titik bergerak dengan kecepatan konstan pada suatu lingkaran dengan jari-jari $\rho$ dan $t$ adalah waktu yang dihitung saat jari-jari terhubung dengan titik pusat pada sudut $\theta$ dibawah sumbu horizontal. Jika titik tersebut diproyeksikan pada sumbu horizontal maka jarak proyeksi dari titik pusat dapat dituliskan sebagai
 	\begin{equation}\label{eq:MIK1}
-		x = \rho \cos(\omega t-\theta)
+		x = \rho \cos(\omega t-\theta),
 	\end{equation}
 	dengan $\rho$ adalah amplitudo, $\omega$ adalah kecepatan sudut atau frekuensi, dan $\theta$ adalah perpindahan fase. Gerakan proyeksi bolak-balik sepanjang sumbu horizontal digambarkan sebagai gerak harmonik sederhana.
 	
 	Kecepatan sudut diukur dalam radian per satuan periode, kuantitas $2\pi / \omega$ adalah periode siklus. Pergerakan fase, juga diukur dalam radian, menunjukkan sejauh mana fungsi kosinus telah berpindah oleh pergeseran sepanjang waktu. Jadi, alih-alih puncak fungsi terjadi pada waktu $t = 0$, seperti yang terjadi pada fungsi kosinus biasa, sekarang terjadi pada
-	waktu $t = \theta/\omega$. Selanjutnya perhatikan bahwa $\cos(A-B) = \cos(A)\cos(B)+\sin(A)\sin(B)$, akibatnya persamaan \ref{eq:MIK1} dapat ditulis menjadi
+	waktu $t = \theta/\omega$. Selanjutnya perhatikan bahwa $\cos(A-B) = \cos(A)\cos(B)+\sin(A)\sin(B)$, akibatnya persamaan (\ref{eq:MIK1}) dapat ditulis menjadi
 	\begin{equation}
 		\begin{aligned}
 			x &= \rho \cos(\theta)\cos(\omega t) + \rho \sin(\theta)\sin(\omega t) \\
-			&= \alpha\cos(\omega t) + \beta\sin(\omega t)
+			&= \alpha\cos(\omega t) + \beta\sin(\omega t),
 		\end{aligned}
 	\end{equation}
 	dengan 
@@ -123,32 +80,18 @@
 		\alpha^2 + \beta^2 = \rho^2.
 	\end{equation*}
 
-	Persamaan untuk siklus musiman \shortcite[p. 793]{crawley2012r} secara lengkap diberikan oleh,
-	\begin{equation}\label{eq:sm}
-		y = \alpha + \beta \sin(2\pi t)+\gamma \cos(2\pi t) + \epsilon
+	\noindent Persamaan untuk siklus musiman \shortcite{crawley2012r} dapat dituliskan sebagai
+	\begin{equation}\label{eq:sm_}
+		y = \alpha + \beta \sin(2\pi t)+\gamma \cos(2\pi t) + \epsilon,
 	\end{equation}
-	dengan $\alpha$ adalah konstanta pergesaran vertikal, $\beta$ adalah amplitude dari gelombang sinus, $\gamma$ adalah amplitude dari gelombang kosinus, $t$ adalah waktu, dan $\epsilon$ adalah elemen residual yang mungkin mewakili komponen white-noise tidak beraturan dalam proses yang mendasari data.
-\end{spacing}
-\vspace{-0.1pc}
-\section[Kedalaman Lapisan Campuran]{Kedalaman Lapisan Campuran}
-\begin{spacing}{1.5}
-	Secara umum, suhu laut berada pada kisaran $-2^\circ$C sampai $30^\circ$C. Air terhangat cenderung berada pada air permukaan di daerah lintang rendah, sedangkan air permukaan di daerah kutub jelas jauh lebih dingin. Pada garis lintang yang setara, air di sisi timur cekungan laut lebih dingin daripada air di sisi barat. Hal ini disebabkan oleh pola arus permukaan. Meskipun air permukaan bisa sangat hangat, sebagian besar air di lautan lebih dalam, airnya lebih dingin, sehingga suhu rata-rata seluruh lautan adalah sekitar $4^\circ$C.
+	dengan $\alpha$ adalah konstanta pergesaran vertikal, $\beta$ adalah amplitudo dari gelombang sinus, $\gamma$ adalah amplitudo dari gelombang kosinus, $t$ adalah waktu, dan $\epsilon$ adalah elemen residual yang mewakili komponen \textit{white-noise} tidak beraturan dalam proses pengambilan data. 
 	
-	Gambar \ref{fig:mld_theory}a menunjukkan profil suhu yang khas untuk lautan terbuka pada daerah lintang tengah. Air yang hangat berada pada permukaan dikarenakan pancaran sinar matahari dan hanya dapat menembus kedalaman $\leq 1000$m \shortcite{webb2021introduction}. Karena air permukaan lebih hangat, kepadatannya juga lebih rendah dibandingkan air yang lebih dalam, sehingga air hangat ini tetap berada di permukaan dan dapat menjadi lebih hangat karena sinar matahari. 
-	
-	Suhu yang cukup konstan pada kedalaman $100 - 200$m atas disebut sebagai $\textbf{\textit{mixed layer}}$. \textit{Mixed layer} atau lapisan campuran adalah hasil dari pengaruh angin permukaan, gelombang, dan arus yang mencampur air bagian atas dan mendistribusikan panas ke seluruh lapisan ini. Di bawah lapisan campuran terdapat penurunan suhu yang cepat sejalan dengan peningkatan kedalaman lautan. Lapisan ini disebut sebagai $\textbf{\textit{thermocline}}$. Di bawah lapisan termoklin, suhu laut dalam cukup konstan sekitar $2^\circ$C yang terus turun hingga ke dasar laut. Ada sedikit perubahan suhu di laut dalam, karena jauh dari sumber panas yang signifikan, menjadikannya salah satu daerah yang paling stabil secara termal di bumi.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=15cm]{contents/mld_theory}
-		\caption{(a) Profil suhu laut terbuka yang khas untuk wilayah lintang tengah, menunjukkan lapisan campuran, termoklin yang curam, dan suhu yang relatif stabil di kedalaman, (b) Profil suhu representatif untuk daerah tropis, lintang tengah, dan kutub, dan (c) Di daerah beriklim sedang, lapisan campuran lebih dalam dan termoklin kurang menonjol di musim dingin dibandingkan dengan musim panas  \protect\shortcite{webb2021introduction}}
-		\label{fig:mld_theory}
+		\includegraphics[width=15cm]{contents/sm_experiment}
+		\caption{Kurva persamaan siklus musiman untuk beberapa nilai $\alpha,\beta$ dan $\gamma$.}
+		\label{fig:sm}
 	\end{figure}
-	 Profil suhu bervariasi pada garis lintang yang berbeda, karena air permukaan lebih hangat di dekat khatulistiwa dan lebih dingin di kutub. Di daerah tropis lintang rendah, permukaan laut jauh lebih hangat, yang mengarah ke termoklin yang sangat menonjol (lihat gambar \ref{fig:mld_theory}b). Selain itu, tidak banyak perubahan musiman pada suhu permukaan di daerah tropis, sehingga hanya ada sedikit perubahan musiman di profil suhu. Di daerah lintang tinggi (kutub), ada sedikit perbedaan antara suhu permukaan dan suhu air dalam, dan suhu cukup konstan di semua  kedalaman. Oleh karena itu, perairan kutub tidak memiliki termoklin yang kuat, dan seperti halnya air tropis, hanya ada sedikit perubahan suhu musiman. 
-	 
-	 Daerah beriklim sedang (lintang tengah) menunjukkan fluktuasi musiman yang lebih besar pada suhu permukaan daripada kutub atau daerah tropis; perbedaan $8-15^\circ$C dari musim panas ke musim dingin di zona beriklim sedang, dibandingkan dengan hanya $\sim 2^\circ$C di daerah kutub dan tropis. Di daerah beriklim sedang, air permukaan jauh lebih hangat di musim panas dan termoklin lebih menonjol dibandingkan dengan musim dingin. Tetapi di musim dingin termoklin lebih dalam di garis lintang tengah daripada di musim panas. Ini karena badai musim dingin mengaduk-aduk air permukaan lebih banyak daripada yang terjadi di musim panas, menciptakan termoklin yang lebih dalam dan dengan demikian lebih dalam (lihat gambar \ref{fig:mld_theory}c).
+	Gambar \ref{fig:sm} menampilkan ilustrasi persamaan \ref{eq:sm_} untuk nilai $\alpha,\beta$ dan $\gamma$ yang berbeda. Nilai $\alpha$ yang berbeda mempengaruhi posisi kurva terhadap sumbu-y. Sedangkan nilai $\beta$ dan $\gamma$ yang berbeda mempengaruhi posisi kurva terhadap sumbu-x.
 \end{spacing}
-\vspace{-0.1pc}
-%\section[Parameter Meteorologi]{Parameter Meteorologi}
-%\begin{spacing}{1.5}
-%
-%\end{spacing}
+
