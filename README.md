@@ -63,7 +63,16 @@ git checkout main
 
 Push branch
 git push -u thesis apacite
+----------------------------------------------------------------------
 
+----------------------------------------------------------------------
+Cara buat SSH baru
+ssh-keygen -t ed25519 -C "muh.nurhidayat378@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+clip < ~/.ssh/id_ed25519.pub
+
+selanjutnya copas ke https://github.com/settings/keys
 ----------------------------------------------------------------------
 notes:
 packages harus tetap di copy diluar supaya bibliografi tidak error
