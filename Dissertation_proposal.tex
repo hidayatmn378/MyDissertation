@@ -1,0 +1,368 @@
+\documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[bahasa]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tocloft}
+\usepackage[left= 3.5cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{varwidth}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\usepackage{microtype}
+%\usepackage[framed]{matlab-prettifier}
+\usepackage{inputenc}
+\usepackage{tikz}
+\usepackage{xcolor,colortbl}
+\usepackage{multirow}
+\usepackage{times}
+\usepackage{float}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,
+	linkcolor=black,
+	filecolor=black,      
+	urlcolor=blue,}
+%	pdfpagemode=FullScreen,}
+\urlstyle{same}
+\usepackage{setspace}
+\usepackage{apacite}
+\usepackage{enumitem}
+\usepackage[labelsep=period]{caption}
+%\usepackage{pbsi}
+\usepackage[T1]{fontenc}
+\usepackage{esint}
+\usepackage{lipsum}
+\usepackage{multirow}
+\usepackage{ragged2e}
+\usepackage[justification=centering]{caption}
+%\include{contents/hype.indonesia}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\renewcommand{\chaptername}{BAB}
+%\usepackage{setspace}
+
+\setcounter{tocdepth}{1}
+
+\definecolor{green}{rgb}{0.1,0.1,0.1}
+\newcommand{\done}{\cellcolor{teal}done}  %{0.9}
+\newcommand{\hcyan}[1]{{\color{teal} #1}}
+
+\newtheorem{theorem}{Dalil}
+\newtheorem{corollary}{Akibat}
+\newtheorem{lemma}{Lemma}
+\newcommand\at[2]{\left.#1\right|_{#2}}
+\theoremstyle{definition}
+\newtheorem{definition}{Definisi}{}
+\newtheorem{example}{\textsf{Contoh}}
+
+\newenvironment{bukti}[1][Bukti]{\noindent{\it\textit{#1. }}}
+{\hspace{\stretch{1}}\rule{.5em}{.5em}}
+
+\DeclareMathOperator{\mo}{mod\,}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\fpb}{fpb}
+\newcommand{\defi}{\overset{\mbox{\tiny{\sf def}}}{=}}
+\newcommand{\znz}{\Bbb Z/n\Bbb Z}\newcommand{\zpz}{\Bbb Z/p\Bbb Z}
+\numberwithin{equation}{chapter}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\setlength\parindent{12.5mm}
+
+\usepackage{blindtext}
+\renewcommand\cftbeforetoctitleskip{-1cm}
+ \renewcommand\cftbeforeloftitleskip{-1cm}
+ \renewcommand\cftbeforelottitleskip{-1cm}
+\renewcommand{\cftdotsep}{1}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftsecdotsep}}
+
+\renewcommand{\contentsname}{DAFTAR ISI}
+\renewcommand{\cfttoctitlefont}{\hfil\Large\bfseries\MakeUppercase}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+\renewcommand{\cftchappresnum}{BAB }
+\renewcommand{\cftchapnumwidth}{3.7em}
+
+\renewcommand{\cftlottitlefont}{\hfil\large\bfseries\MakeUppercase}
+\renewcommand{\cfttabpresnum}{Tabel }
+\renewcommand{\cfttabnumwidth}{6em}
+
+\renewcommand{\cftloftitlefont}{\hfil\large\bfseries\MakeUppercase}
+\renewcommand{\cftfigpresnum}{Gambar }
+\renewcommand{\cftfignumwidth}{6em}
+\renewcommand{\figurename}{Gambar}
+
+\makeatletter
+\def\ps@myPS{%
+    \def\@oddfoot{\null\hfill\thepage}
+    \def\@evenfoot{\thepage}%
+    \def\@evenhead{\null\hfil\slshape\leftmark}%
+    \def\@oddhead{{\slshape\rightmark}}}%
+\makeatother
+
+\makeatletter % default is "\newcommand\@chapapp{\chaptername}"
+\renewcommand\@chapapp{\textls[40]{\MakeUppercase{\chaptername}}}
+\makeatletter
+
+\usepackage{titlesec}
+% 1. Judul bab ditengah
+\titleformat{\chapter}[display]
+ {\normalfont\large\bfseries\centering}
+ {\chaptertitlename\ \Roman{chapter}}{0pt}{\large}
+% 2. Font section 12pt dan tambah titik section, so 1.1 menjadi 1.1.
+\titlespacing{\chapter}{0pt}{50pt}{\baselineskip}
+\titleformat{\section}[block] %tambah block untuk menampilkan format angka 
+ {\normalfont\fontsize{12}{15}\bfseries}{\thesection.}{1em}{}
+% 3. Font subsection 12pt dan tambah titik subsection
+ \titleformat{\subsection}[block] %tambah block untuk menampilkan format angka 
+ {\normalfont\fontsize{12}{15}\bfseries}{\thesubsection.}{1em}{} 
+% 4. Hapus spasi setelah bab
+\makeatletter
+\def\ttl@mkchap@i#1#2#3#4#5#6#7{%
+ \ttl@assign\@tempskipa#3\relax\beforetitleunit
+ \vspace{\@tempskipa}%<<<<<< REMOVE THE * AFTER \vspace
+ \global\@afterindenttrue
+ \ifcase#5 \global\@afterindentfalse\fi
+ \ttl@assign\@tempskipb#4\relax\aftertitleunit
+ \ttl@topmode{\@tempskipb}{%
+ \ttl@select{#6}{#1}{#2}{#7}}%
+ \ttl@finmarks % Outside the box!
+ \@ifundefined{ttlp@#6}{}{\ttlp@write{#6}}}
+ 
+ \usetikzlibrary{shapes.geometric, arrows}
+%Spasi sebelum dan sesudah judul sub bab
+%\titlespacing*{\section}
+%{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+%\titlespacing*{\subsection}
+%{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+
+\newcommand{\listappendicesname}{DAFTAR LAMPIRAN}
+\newlistof{appendices}{apc}{\listappendicesname}
+\newcommand{\appendices}[1]{\addcontentsline{apc}{appendices}{#1}}
+\renewcommand\cftbeforeapctitleskip{-1cm}
+\renewcommand{\cftapctitlefont}{\hfil\large\bfseries\MakeUppercase}
+
+\newcommand{\newappendix}[1]{\section*{#1}\appendices{#1}}
+
+% Tambah kata ejaan yang salah di Latex 
+\hyphenation{
+    alphabhet A 
+    alphabhet B 
+    alphabhet C 
+    alphabhet D 
+    alphabhet E
+    alphabhet F 
+    alphabhet G 
+    alphabhet H 
+    alphabhet I
+    alphabhet J
+    alphabhet K 
+    alphabhet L
+    alphabhet M 
+    alphabhet N 
+    alphabhet O
+    alphabhet P 
+    alphabhet Q
+    alphabhet R
+    alphabhet S 
+    alphabhet T 
+    alphabhet U
+    alphabhet V
+    alphabhet W 
+    alphabhet X
+    alphabhet Y
+    alphabhet Z
+    special}
+  \makeatletter
+\renewcommand*\@pnumwidth{3em}
+\makeatother
+
+%=====================================================================
+\begin{document}
+
+\tikzstyle{rect} = [draw, rectangle, fill=white!20, text width=25em, text centered, minimum height=2em]%text width=20em/13em
+\tikzstyle{elli} = [draw, ellipse, fill=white!20, minimum height=2em]
+\tikzstyle{circ} = [draw, circle, fill=white!20, minimum height=2em, inner sep=10pt]
+\tikzstyle{diam} = [draw, diamond, fill=white!20, text width=6em, text badly centered, inner sep=0pt]
+\tikzstyle{line} = [draw, -latex']
+%=====================================================================
+\pagenumbering{roman}
+%=====================================================================
+% Halaman Judul
+%\addtocontents{toc}{~\hfill{\it Halaman}\par}
+\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+%\addcontentsline{toc}{section}{\protect\numberline{}Judul}
+\addtocontents{toc}{\endgroup}
+\input{contents/00-Cover}
+%=====================================================================
+% Halaman Pengesahan
+\pagebreak
+\chapter*{PENGESAHAN}
+\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+%\addcontentsline{toc}{section}{\protect\numberline{}Pengesahan}	
+\addtocontents{toc}{\endgroup}
+\input{contents/01-Pengesahan}
+%\input{LPS}
+%=====================================================================
+% Halaman Bebas Plagiasi
+%\pagebreak
+%\chapter*{PERNYATAAN BEBAS PLAGIASI}
+%\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+%\addcontentsline{toc}{section}{\protect\numberline{}Pernyataan Bebas Plagiasi}	
+%\addtocontents{toc}{\endgroup}
+%\input{contents/02-Plagiasi}
+%=====================================================================
+% Halaman Abstrak
+%\pagebreak
+%\chapter*{ABSTRAK}
+%\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+%%\addcontentsline{toc}{section}{\protect\numberline{}Abstrak}	
+%\addtocontents{toc}{\endgroup}
+%\input{contents/03-Abstrak}
+%=====================================================================
+% Halaman Kata Pengantar
+\pagebreak
+\chapter*{KATA PENGANTAR}	
+\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+\addcontentsline{toc}{section}{\protect\numberline{}\textbf{KATA PENGANTAR}}
+\addtocontents{toc}{\endgroup}
+\input{contents/04-Pengantar}
+%=====================================================================
+% Halaman Ringkasan
+\pagebreak
+\chapter*{RINGKASAN}
+\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+\addcontentsline{toc}{section}{\protect\numberline{}\textbf{RINGKASAN}}	
+\addtocontents{toc}{\endgroup}
+\input{contents/041-Ringkasan}
+%=====================================================================
+% Halaman Daftar Isi
+\pagebreak
+\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+\addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR ISI}}	
+\addtocontents{toc}{\endgroup}{
+\hypersetup{linkcolor=black}
+\tableofcontents}
+%=====================================================================
+% Halaman Daftar Tabel
+\pagebreak
+\renewcommand{\listtablename}{DAFTAR TABEL}
+\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+\addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR TABEL}}	
+\addtocontents{toc}{\endgroup}
+%\addtocontents{lot}{~\hfill{\it Halaman}\par}
+{\hypersetup{linkcolor=black}
+\listoftables}
+%=====================================================================
+% Halaman Daftar Gambar
+\pagebreak
+\renewcommand{\listfigurename}{DAFTAR GAMBAR}
+%\addtocontents{lof}{~\hfill{\it Halaman}\par}
+\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+\addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR GAMBAR}}	
+\addtocontents{toc}{\endgroup}
+{\hypersetup{linkcolor=black}
+\listoffigures}
+%=====================================================================
+% Halaman Daftar Simbol
+%\pagebreak
+%\chapter*{DAFTAR SIMBOL}
+%\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+%\addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR SIMBOL}}	
+%\addtocontents{toc}{\endgroup}
+%\input{contents/05-Syms}
+%=====================================================================
+% Halaman Daftar Lampiran
+%\pagebreak 
+%{\hypersetup{linkcolor=black}
+%\listofappendices}
+%%\addtocontents{apc}{~\hfill{\it Halaman}\par}
+%\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+%\addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR LAMPIRAN}}	
+%\addtocontents{toc}{\endgroup}
+%=====================================================================
+% Halaman Persembahan
+%\pagebreak
+%\chapter*{PERSEMBAHAN}
+%\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+%\addcontentsline{toc}{section}{\protect\numberline{}PERSEMBAHAN}	
+%\addtocontents{toc}{\endgroup}
+%\input{contents/06-Persembahan}
+%=====================================================================
+\newpage
+\makeatother
+\newpagestyle{chapterpage}{\setfoot{}{}{\thepage}}
+\assignpagestyle\chapter{chapterpage}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\pagestyle{myPS}
+\def\thechapter{\Roman{chapter}} 
+\def\thesection{\arabic{chapter}.\arabic{section}}
+\def\thesubsection{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+\def\theequation{\arabic{chapter}.\arabic{equation}}
+\def\thefigure{\arabic{chapter}.\arabic{figure}}
+\def\thetable{\arabic{chapter}.\arabic{table}}
+%=====================================================================% BAB I
+\chapter{PENDAHULUAN}
+\input{contents/07-Bab1}
+%=====================================================================
+% BAB II
+\chapter{TINJAUAN PUSTAKA}
+\input{contents/08-Bab2}
+%=====================================================================
+% BAB III
+\chapter{METODOLOGI PENELITIAN}
+\input{contents/09-Bab3}
+%=====================================================================
+% Halaman Output
+%\pagebreak
+%\chapter*{OUTPUT PROPOSAL TESIS}
+%\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+%\addcontentsline{toc}{section}{\protect\numberline{}\textbf{OUTPUT PROPOSAL TESIS}}	
+%\addtocontents{toc}{\endgroup}
+%\input{contents/042-Output}
+%=====================================================================
+% BAB IV
+%\chapter{HASIL DAN PEMBAHASAN}
+%\input{contents/10-Bab4}
+%=====================================================================
+% BAB V
+%\chapter{PENUTUP}
+%\input{contents/11-Bab5}
+%=====================================================================
+% Halaman Daftar Pustaka
+\pagebreak
+%\addcontentsline{toc}{chapter}{\textbf{DAFTAR PUSTAKA}}
+\renewcommand\bibname{DAFTAR PUSTAKA}	
+\bibliographystyle{packages/apacite}
+\bibliography{contents/ReferenceMendeley.bib}
+%\{DAFTAR}
+%=====================================================================
+% Halaman Lampiran
+%\newpage
+%\newappendix{Lampiran 1. Listing Program}
+%\addcontentsline{toc}{chapter}{LAMPIRAN}
+%\input{contents/12-Lampiran1}
+%\pagebreak
+%\newappendix{Lampiran 2. Diskritisasi pada C-grid Arakawa}
+%\input{contents/13-Lampiran2}
+%\pagebreak
+%\newappendix{Lampiran 3.}
+%\input{contents/14-Lampiran3}
+%=====================================================================
+% Halaman Biodata
+%\newpage
+%\chapter*{BIODATA}
+%\input{Bio}
+%=====================================================================
+\end{document}

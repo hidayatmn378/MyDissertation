@@ -1,0 +1,3 @@
+#~/bin/sh
+
+rm *.aux *.apc *.bbl *.blg *.lof *.log *.lot *.out  thesis.pdf *.synctex.gz *.toc *.xml *.bcf presentation.pdf *.snm *.nav

@@ -1,0 +1,5 @@
+#~/bin/sh
+
+bibtex -synctex=1 -interaction=nonstopmode --shell-escape thesis.tex
+latex -synctex=1 -interaction=nonstopmode --shell-escape thesis.tex
+pdflatex -synctex=1 -interaction=nonstopmode --shell-escape thesis.tex
