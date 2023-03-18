@@ -20,7 +20,7 @@
 \usepackage{enumerate}
 \usepackage{tabularx}
 \usepackage{microtype}
-%\usepackage[framed]{matlab-prettifier}
+\usepackage[framed]{matlab-prettifier}
 \usepackage{inputenc}
 \usepackage{tikz}
 \usepackage{xcolor,colortbl}
@@ -35,10 +35,9 @@
 %	pdfpagemode=FullScreen,}
 \urlstyle{same}
 \usepackage{setspace}
-\usepackage{apacite}
 \usepackage{enumitem}
 \usepackage[labelsep=period]{caption}
-%\usepackage{pbsi}
+\usepackage{pbsi}
 \usepackage[T1]{fontenc}
 \usepackage{esint}
 \usepackage{lipsum}
@@ -47,8 +46,11 @@
 \usepackage[justification=centering]{caption}
 %\include{contents/hype.indonesia}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{apacite}
+\let\cite\shortcite
+
 \renewcommand{\chaptername}{BAB}
-%\usepackage{setspace}
+\usepackage{setspace}
 
 \setcounter{tocdepth}{1}
 
@@ -260,14 +262,14 @@
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR TABEL}}	
 \addtocontents{toc}{\endgroup}
-%\addtocontents{lot}{~\hfill{\it Halaman}\par}
+\addtocontents{lot}{~\hfill{\it Halaman}\par}
 {\hypersetup{linkcolor=black}
 \listoftables}
 %=====================================================================
 % Halaman Daftar Gambar
 \pagebreak
 \renewcommand{\listfigurename}{DAFTAR GAMBAR}
-%\addtocontents{lof}{~\hfill{\it Halaman}\par}
+\addtocontents{lof}{~\hfill{\it Halaman}\par}
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR GAMBAR}}	
 \addtocontents{toc}{\endgroup}
@@ -286,7 +288,7 @@
 %\pagebreak 
 %{\hypersetup{linkcolor=black}
 %\listofappendices}
-%%\addtocontents{apc}{~\hfill{\it Halaman}\par}
+%\addtocontents{apc}{~\hfill{\it Halaman}\par}
 %\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 %\addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR LAMPIRAN}}	
 %\addtocontents{toc}{\endgroup}
