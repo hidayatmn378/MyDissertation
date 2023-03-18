@@ -25,6 +25,10 @@
 \usepackage{tikz}
 \usepackage{xcolor,colortbl}
 \usepackage{multirow}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{lscape}
+\usepackage{longtable}
 \usepackage{times}
 \usepackage{float}
 \usepackage{hyperref}
@@ -209,7 +213,7 @@
 %=====================================================================
 % Halaman Pengesahan
 \pagebreak
-\chapter*{PENGESAHAN}
+\chapter*{LEMBAR PENGESAHAN}
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 %\addcontentsline{toc}{section}{\protect\numberline{}Pengesahan}	
 \addtocontents{toc}{\endgroup}
@@ -235,6 +239,7 @@
 % Halaman Kata Pengantar
 \pagebreak
 \chapter*{KATA PENGANTAR}	
+\addtocontents{toc}{~\hfill{Halaman}\par}
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{KATA PENGANTAR}}
 \addtocontents{toc}{\endgroup}
@@ -252,9 +257,10 @@
 \pagebreak
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR ISI}}	
-\addtocontents{toc}{\endgroup}{
-\hypersetup{linkcolor=black}
+\addtocontents{toc}{\endgroup}
+{\hypersetup{linkcolor=black}
 \tableofcontents}
+
 %=====================================================================
 % Halaman Daftar Tabel
 \pagebreak
@@ -262,14 +268,14 @@
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR TABEL}}	
 \addtocontents{toc}{\endgroup}
-\addtocontents{lot}{~\hfill{\it Halaman}\par}
+\addtocontents{lot}{~\hfill{\bf Halaman}\par}
 {\hypersetup{linkcolor=black}
 \listoftables}
 %=====================================================================
 % Halaman Daftar Gambar
 \pagebreak
 \renewcommand{\listfigurename}{DAFTAR GAMBAR}
-\addtocontents{lof}{~\hfill{\it Halaman}\par}
+\addtocontents{lof}{~\hfill{\bf Halaman}\par}
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR GAMBAR}}	
 \addtocontents{toc}{\endgroup}
@@ -285,13 +291,13 @@
 %\input{contents/05-Syms}
 %=====================================================================
 % Halaman Daftar Lampiran
-%\pagebreak 
-%{\hypersetup{linkcolor=black}
-%\listofappendices}
-%\addtocontents{apc}{~\hfill{\it Halaman}\par}
-%\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
-%\addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR LAMPIRAN}}	
-%\addtocontents{toc}{\endgroup}
+\pagebreak 
+{\hypersetup{linkcolor=black}
+\listofappendices}
+\addtocontents{apc}{~\hfill{\bf Halaman}\par}
+\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
+\addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR LAMPIRAN}}	
+\addtocontents{toc}{\endgroup}
 %=====================================================================
 % Halaman Persembahan
 %\pagebreak
@@ -348,20 +354,20 @@
 %\{DAFTAR}
 %=====================================================================
 % Halaman Lampiran
-%\newpage
-%\newappendix{Lampiran 1. Listing Program}
-%\addcontentsline{toc}{chapter}{LAMPIRAN}
-%\input{contents/12-Lampiran1}
+\newpage
+\newappendix{Lampiran 1. Justifikasi Anggaran Penelitian}
+\addcontentsline{toc}{chapter}{LAMPIRAN-LAMPIRAN}
+\input{contents/12-Lampiran1}
+\pagebreak
+\newappendix{Lampiran 2. Dukungan Sarana dan Prasarana Penelitian}
+\input{contents/13-Lampiran2}
 %\pagebreak
-%\newappendix{Lampiran 2. Diskritisasi pada C-grid Arakawa}
-%\input{contents/13-Lampiran2}
-%\pagebreak
-%\newappendix{Lampiran 3.}
+%\newappendix{LAMPIRAN 3}
 %\input{contents/14-Lampiran3}
 %=====================================================================
 % Halaman Biodata
-%\newpage
-%\chapter*{BIODATA}
-%\input{Bio}
+\newpage
+\chapter*{BIODATA}
+\input{contents/Bio}
 %=====================================================================
 \end{document}
