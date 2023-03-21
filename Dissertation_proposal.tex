@@ -51,7 +51,14 @@
 %\include{contents/hype.indonesia}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{apacite}
-\let\cite\shortcite
+\let\cite\shortcite %ganti setiap shortcite menjadi cite
+
+\AtBeginDocument[apacite-localisation]{%
+	\renewcommand{\BOthers}[1]{\emph{et al.}\hbox{}}%		%ganti et al menjadi italic
+	\renewcommand{\BOthersPeriod}[1]{\emph{et al.}\hbox{}}%	%ganti et al menjadi italic
+	\renewcommand{\BBAA}{dan}	%ganti & menjadi dan
+}
+\DeclareHookRule{begindocument}{apacite-localisation}{after}{apacite}
 
 \renewcommand{\chaptername}{BAB}
 \usepackage{setspace}
