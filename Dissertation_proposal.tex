@@ -209,7 +209,7 @@
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 %\addcontentsline{toc}{section}{\protect\numberline{}Judul}
 \addtocontents{toc}{\endgroup}
-\input{contents/00-Cover}
+\input{contents/01_front_matter/Cover}
 %=====================================================================
 % Halaman Pengesahan
 \pagebreak
@@ -217,7 +217,7 @@
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 %\addcontentsline{toc}{section}{\protect\numberline{}Pengesahan}	
 \addtocontents{toc}{\endgroup}
-\input{contents/01-Pengesahan}
+\input{contents/01_front_matter/Pengesahan}
 %\input{LPS}
 %=====================================================================
 % Halaman Bebas Plagiasi
@@ -226,7 +226,7 @@
 %\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 %\addcontentsline{toc}{section}{\protect\numberline{}Pernyataan Bebas Plagiasi}	
 %\addtocontents{toc}{\endgroup}
-%\input{contents/02-Plagiasi}
+%\input{contents/01_front_matter/Plagiasi}
 %=====================================================================
 % Halaman Abstrak
 %\pagebreak
@@ -234,7 +234,7 @@
 %\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 %%\addcontentsline{toc}{section}{\protect\numberline{}Abstrak}	
 %\addtocontents{toc}{\endgroup}
-%\input{contents/03-Abstrak}
+%\input{contents/01_front_matter/Abstrak}
 %=====================================================================
 % Halaman Kata Pengantar
 \pagebreak
@@ -243,7 +243,7 @@
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{KATA PENGANTAR}}
 \addtocontents{toc}{\endgroup}
-\input{contents/04-Pengantar}
+\input{contents/01_front_matter/Pengantar}
 %=====================================================================
 % Halaman Ringkasan
 \pagebreak
@@ -251,7 +251,7 @@
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{RINGKASAN}}	
 \addtocontents{toc}{\endgroup}
-\input{contents/041-Ringkasan}
+\input{contents/01_front_matter/Ringkasan}
 %=====================================================================
 % Halaman Daftar Isi
 \pagebreak
@@ -288,7 +288,7 @@
 %\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 %\addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR SIMBOL}}	
 %\addtocontents{toc}{\endgroup}
-%\input{contents/05-Syms}
+%\input{contents/01_front_matter/Syms}
 %=====================================================================
 % Halaman Daftar Lampiran
 \pagebreak 
@@ -305,7 +305,7 @@
 %\addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 %\addcontentsline{toc}{section}{\protect\numberline{}PERSEMBAHAN}	
 %\addtocontents{toc}{\endgroup}
-%\input{contents/06-Persembahan}
+%\input{contents/01_front_matter/Persembahan}
 %=====================================================================
 \newpage
 \makeatother
@@ -322,28 +322,28 @@
 \def\thetable{\arabic{chapter}.\arabic{table}}
 %=====================================================================% BAB I
 \chapter{PENDAHULUAN}
-\input{contents/07-Bab1}
+\input{contents/02_body/Bab1}
 %=====================================================================
 % BAB II
 \chapter{TINJAUAN PUSTAKA}
-\input{contents/08-Bab2}
+\input{contents/02_body/Bab2}
 %=====================================================================
 % BAB III
 \chapter{METODOLOGI PENELITIAN}
-\input{contents/09-Bab3}
+\input{contents/02_body/Bab3}
 %=====================================================================
 % Halaman Output
 \pagebreak
 \chapter{BIAYA DAN JADWAL PENELITIAN}
-\input{contents/10-Output}
+\input{contents/02_body/Output}
 %=====================================================================
 % BAB IV
 %\chapter{HASIL DAN PEMBAHASAN}
-%\input{contents/10-Bab4}
+%\input{contents/02_body/Bab4}
 %=====================================================================
 % BAB V
 %\chapter{PENUTUP}
-%\input{contents/11-Bab5}
+%\input{contents/02_body/Bab5}
 %=====================================================================
 % Halaman Daftar Pustaka
 \pagebreak
@@ -357,17 +357,20 @@
 \newpage
 \newappendix{Lampiran 1. Justifikasi Anggaran Penelitian}
 \addcontentsline{toc}{chapter}{LAMPIRAN-LAMPIRAN}
-\input{contents/12-Lampiran1}
+\input{contents/03_back_matter/Lampiran1}
 \pagebreak
 \newappendix{Lampiran 2. Dukungan Sarana dan Prasarana Penelitian}
-\input{contents/13-Lampiran2}
+\input{contents/03_back_matter/Lampiran2}
+\pagebreak
+\newappendix{Lampiran 3. Surat Pernyataan Mahasiswa}
+\input{contents/03_back_matter/Lampiran3}
 %\pagebreak
-%\newappendix{LAMPIRAN 3}
-%\input{contents/14-Lampiran3}
+%\newappendix{Lampiran 4. Surat Pernyataan Kesediaan Membimbing dari Promotor}
+%\input{contents/03_back_matter/Lampiran4}
 %=====================================================================
 % Halaman Biodata
-\newpage
-\chapter*{BIODATA}
-\input{contents/Bio}
+%\newpage
+%\chapter*{BIODATA}
+%\input{contents/03_back_matter/Bio}
 %=====================================================================
 \end{document}
