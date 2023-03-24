@@ -168,35 +168,10 @@
 \newcommand{\newappendix}[1]{\section*{#1}\appendices{#1}}
 
 % Tambah kata ejaan yang salah di Latex 
-\hyphenation{
-    alphabhet A 
-    alphabhet B 
-    alphabhet C 
-    alphabhet D 
-    alphabhet E
-    alphabhet F 
-    alphabhet G 
-    alphabhet H 
-    alphabhet I
-    alphabhet J
-    alphabhet K 
-    alphabhet L
-    alphabhet M 
-    alphabhet N 
-    alphabhet O
-    alphabhet P 
-    alphabhet Q
-    alphabhet R
-    alphabhet S 
-    alphabhet T 
-    alphabhet U
-    alphabhet V
-    alphabhet W 
-    alphabhet X
-    alphabhet Y
-    alphabhet Z
-    special}
-  \makeatletter
+%=====================================================================
+% Hyphenation
+\input{contents/01_front_matter/Hyphenation}
+\makeatletter
 \renewcommand*\@pnumwidth{3em}
 \makeatother
 
