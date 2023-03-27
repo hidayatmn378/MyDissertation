@@ -27,7 +27,7 @@
 		\end{tabular}
 	\end{table}
 	\subsection[Pengumpulan Data]{Pengumpulan Data}
-	Data dalam Tabel \ref{tab:data} merupakan data yang tersedia secara gratis dan bersifat terbuka. Data ini dapat diunduh secara langsung pada website penyedia data ataupun menggunakan koding. Koding dengan bahasa \textit{Shell script} (terminal Linux) disajikan dalam Lampiran 1.
+	Data dalam Tabel \ref{tab:data} merupakan data yang tersedia secara gratis dan bersifat terbuka. Data ini dapat diunduh secara langsung pada website penyedia data ataupun menggunakan kode skrip. Kode skrip yang digunakan untuk mengunduh data dengan bahasa \textit{Shell script} (terminal Linux) dan Python disajikan dalam Lampiran 1.
 	
 	\begin{figure}[H]
 		\centering
@@ -40,6 +40,8 @@
 \section[Analisis Data]{Analisis Data}
 \begin{spacing}{1.5}
 	\subsection[Model Musiman]{Model Musiman}
+	Aplikasi deret waktu (\textit{time series}) banyak melibatkan data yang menunjukkan siklus musiman. Contoh yang paling umum digunakan adalah data cuaca. Dalam penelitian \shortciteauthor{Haridhi2016} \citeyear{Haridhi2016}, model nonlinear regresi digunakan untuk mengkarakterisasi hubungan antara SST (\textit{sea surface temperatur}) dan ND (\textit{net deployment}) - penyebaran jaring nelayan pukat cincin tradisional. Untuk menvalidasi temuan ini, mereka menggunakan persamaan siklus musiman \citeA{crawley2012r} dan mencari korelasi antara data SST dan data meteorologi. Dilain hal, \shortciteauthor{Ikhwan2022} \citeyear{Ikhwan2022} dalam penelitiannya mengkaji tentang kedalaman lapisan campuran (MLD) di laut Andaman menggunakan data salinitas (SSS) dari model 3-D CMEMS (\textit{Copernicus Marine Environment Monitoring Service}). Model iklim digunakan untuk mengidentifikasi dan memvalidasi jumlah musim MLD dalam setahun. 
+	
 	 Persamaan siklus musiman \cite{crawley2012r} dapat dituliskan sebagai
 	\begin{equation}\label{eq:sm_}
 		y = \alpha + \beta \sin(2\pi t)+\gamma \cos(2\pi t) + \epsilon,
@@ -76,19 +78,21 @@
 \end{spacing}
 \vspace{-0.5pc}
 \section[Prosedur Penelitian]{Prosedur Penelitian}
-\subsection[Penentuan Kedalaman Lapisan Campuran]{Penentuan Kedalaman Lapisan Campuran}
 \begin{spacing}{1.5}
-	MLD ditentukan dengan menggunakan data temperatur HYCOM dari hasil penggambaran \textit{cross-section} pada bagian selatan BoB, di latitude 9$^\circ$C, dan bagian utara BoB, di latitude 19$^\circ$C. \textit{Cross-section} temperatur menggunakan kriteria beda hingga, khususnya kriteria nilai \textit{threshold} temperatur, $\Delta t=0.1^\circ$C dengan referensi dari permukaan laut \shortcite{Sprintall1999}. Cara yang digunakan untuk mengestimasi ketebalan MLD adalah dengan cara melihat perubahan temperatur pada setiap kedalaman. Gambar \textit{cross-section} temperatur diplot terlebih dahulu tanpa kontur menggunakan kriteria \textit{threshold} 0.1$^\circ$C untuk menghasilkan gambar dengan warna biru, hijau, dan kuning yang berbeda yang merupakan representasi dari perubahan temperatur. Gambar kontur kemudian ditambahkan untuk melihat secara jelas nilai temperatur berdasarkan interval 1$^\circ$C. Indikator nilai ketebalan MLD berdasarkan perubahan warna dan temperatur yang terjadi pertama kali dari permukaan laut pada gambar.
-	
-	
-	\subsection[Alur Penelitian]{Alur Penelitian}
 	Prosedur penelitian mengikuti diagram alir pada Gambar \ref{fig:flowchart} dan dapat dijelaskan sebagai berikut. 
 	\begin{itemize}
 		\item \textbf{\textit{Start}}. \textit{Software} yang digunakan dalam penelitian ini adalah Matlab dan \textit{R}.
-		\item \textbf{\textit{Input}}. Data-data terkait penelitian yang akan digunakan sebagai \textit{input} di\textit{download} terlebih dahulu.
-		\item \textbf{\textit{Process}}. Setelah data tersedia, data kemudian diinterpolasi untuk memenuhi data yang kosong serta untuk memperoleh resolusi spasial yang lebih tinggi. Selanjutnya data hasil interpolasi kemudian dibaca dan di konversi ke dalam data matriks pada Matlab. 
-		\item \textbf{\textit{Output}}. Hasilnya adalah peta arus, elevasi, temperatur, dan data meteorologi. 
-		\item \textbf{\textit{Process}}. Peta temperatur kemudian diobservasi untuk menentukan kedalaman lapisan campuran selama 12 bulan. Selanjutnya, dilakukan analisis model iklim terhadap data meteorologi (\textit{2m air temperature, 2m specific humidity, convective precipitation rate, sea level pressure, wind stress U}, dan \textit{wind stress V}) selama 22 tahun dari tahun 2002 sampai 2021. 
-		\item \textbf{\textit{Output}}. Terakhir, diperoleh hasil analisis hubungan MLD dan model iklim.
+		\item \textbf{\textit{Input}}. Data-data terkait penelitian yang akan digunakan sebagai \textit{input} diunduh terlebih dahulu.
+		\item \textbf{\textit{Process}}. Setelah data tersedia, kemudian data diolah dengan cara melakukan pemetaan dan penggambaran data.
+		\item \textbf{\textit{Output}}. Hasilnya adalah peta IOD, oseanografi, dan meteorologi secara jangka panjang. 
+		\item \textbf{\textit{Process}}. Tahapan selanjutnya adalah analisis data. Dalam tahap ini dilakukan analisis model musiman (\textit{seasonal model}) untuk mengidentifikasi pola musiman dan memprediksi variabel berdasarkan keteraturannya. Dilakukan juga analisis statistik, dalam hal ini analisis korelasi untuk melihat hubungan IOD, variabel oseanografi dan meteorologi.
+		\item \textbf{\textit{Output}}. Terakhir, diperoleh kesimpulan berdasarkan analisis yang telah dilakukan.
+		\item \textbf{\textit{End}}. Penelitian selesai.
 	\end{itemize}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=10cm]{contents/Figures/Flowchart_Diagram.png}
+		\caption{Diagram alir penelitian}
+		\label{fig:flowchart}
+	\end{figure}
 \end{spacing}

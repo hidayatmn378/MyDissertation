@@ -53,12 +53,45 @@
 \usepackage{apacite}
 \let\cite\shortcite %ganti setiap shortcite menjadi cite
 
+%Modifikasi apacite package
 \AtBeginDocument[apacite-localisation]{%
 	\renewcommand{\BOthers}[1]{\emph{et al.}\hbox{}}%		%ganti et al menjadi italic
 	\renewcommand{\BOthersPeriod}[1]{\emph{et al.}\hbox{}}%	%ganti et al menjadi italic
 	\renewcommand{\BBAA}{dan}	%ganti & menjadi dan
 }
 \DeclareHookRule{begindocument}{apacite-localisation}{after}{apacite}
+
+%code
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+%
 
 \renewcommand{\chaptername}{BAB}
 \usepackage{setspace}
@@ -250,14 +283,14 @@
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR TABEL}}	
 \addtocontents{toc}{\endgroup}
-\addtocontents{lot}{~\hfill{\bf Halaman}\par}
+\addtocontents{lot}{~\hfill{Halaman}\par}
 {\hypersetup{linkcolor=black}
 \listoftables}
 %=====================================================================
 % Halaman Daftar Gambar
 \pagebreak
 \renewcommand{\listfigurename}{DAFTAR GAMBAR}
-\addtocontents{lof}{~\hfill{\bf Halaman}\par}
+\addtocontents{lof}{~\hfill{Halaman}\par}
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR GAMBAR}}	
 \addtocontents{toc}{\endgroup}
@@ -276,7 +309,7 @@
 \pagebreak 
 {\hypersetup{linkcolor=black}
 \listofappendices}
-\addtocontents{apc}{~\hfill{\bf Halaman}\par}
+\addtocontents{apc}{~\hfill{Halaman}\par}
 \addtocontents{toc}{\begingroup\protect\setlength{\protect\cftsecindent}{-\leftmargin}}
 \addcontentsline{toc}{section}{\protect\numberline{}\textbf{DAFTAR LAMPIRAN}}	
 \addtocontents{toc}{\endgroup}
@@ -317,7 +350,7 @@
 % Halaman Output
 \pagebreak
 \chapter{BIAYA DAN JADWAL PENELITIAN}
-\input{contents/02_body/Output}
+\input{contents/02_body/BiayaJadwal}
 %=====================================================================
 % BAB IV
 %\chapter{HASIL DAN PEMBAHASAN}
@@ -337,17 +370,20 @@
 %=====================================================================
 % Halaman Lampiran
 \newpage
-\newappendix{Lampiran 1. Justifikasi Anggaran Penelitian}
+\newappendix{Lampiran 1. Kode Skrip untuk Mengunduh Data}
 \addcontentsline{toc}{chapter}{LAMPIRAN-LAMPIRAN}
 \input{contents/03_back_matter/Lampiran1}
 \pagebreak
-\newappendix{Lampiran 2. Dukungan Sarana dan Prasarana Penelitian}
+\newappendix{Lampiran 2. Justifikasi Anggaran Penelitian}
 \input{contents/03_back_matter/Lampiran2}
 \pagebreak
-\newappendix{Lampiran 3. Surat Pernyataan Mahasiswa}
+\newappendix{Lampiran 3. Dukungan Sarana dan Prasarana Penelitian}
 \input{contents/03_back_matter/Lampiran3}
+\pagebreak
+\newappendix{Lampiran 4. Surat Pernyataan Mahasiswa}
+\input{contents/03_back_matter/Lampiran4}
 %\pagebreak
-%\newappendix{Lampiran 4. Surat Pernyataan Kesediaan Membimbing dari Promotor}
+%\newappendix{Lampiran 5. Surat Pernyataan Kesediaan Membimbing dari Promotor}
 %\input{contents/03_back_matter/Lampiran4}
 %=====================================================================
 % Halaman Biodata
