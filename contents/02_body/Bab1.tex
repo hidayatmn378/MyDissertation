@@ -2,44 +2,69 @@
 \vspace{1.5pc}
 \section[Latar Belakang]{Latar Belakang}
 \begin{spacing}{1.5}
-	Samudera Hindia adalah samudera terbesar ketiga di dunia, meliputi sekitar 19.8\% dari total volume lautan \cite{Eakins2010} dan merupakan lautan yang sangat berpengaruh bagi ekosistem di Bumi. Cakupan wilayah dari Samudera Hindia termasuk di dalamnya Teluk Benggala (\textit{Bay of Bengal} (BoB)), Laut Andaman, Selat Malaka, dan Perairan Aceh. Dengan cakupan wilayah yang begitu luas, Samudera Hindia merupakan penyumbang besar bagi sistem iklim dunia dan oleh karena itu sangat penting untuk dapat diprediksi. Pengembangan model kelautan berusaha untuk menggambarkan iklim global dengan cukup baik disertai dengan pengamatan. Namun, variabilitas spasial dan temporal perlu dipahami untuk prediksi yang lebih baik. Pemanasan matahari dan kekuatan angin bervariasi dalam ruang dan waktu yang akan tercermin dalam variabilitas lapisan campuran laut dan suhu permukaan. Oleh karena itu, fokus utama dari tesis ini adalah peran gaya atmosfer lokal pada variabilitas lapisan campuran dan akibatnya pada suhu permukaan laut.
+	Samudra Hindia merupakan salah satu dari tiga Samudra terbesar di dunia, dengan volume lautan mencapai sekitar 19.8\% dari total volume lautan di seluruh dunia \cite{Eakins2010}. Karena wilayahnya yang sangat luas, Samudra Hindia memiliki peran penting dalam sistem iklim global dan oleh karena itu sangat penting untuk dapat memprediksi perubahan yang terjadi di dalamnya.
 	
-	Beberapa studi observasional dan pemodelan telah dilakukan untuk mempelajari pengaruh interaksi atmosfer-laut terhadap variabilitas suhu permukaan laut (SST), salinitas permukaan laut (SSS), klorofil-a (chl-a), kedalaman lapisan campuran (MLD) dan sirkulasi pada wilayah perairan Samudera Hindia, diantaranya adalah, \cite{Kantha2019} yang meneliti tentang pencampuran turbulen di lapisan atas BoB utara dipengaruhi oleh lapisan dangkal yang menutupi perairan asin teluk, yang dihasilkan dari arus besar air tawar dari sungai-sungai besar yang mengalir dari anak benua Asia dan dari curah hujan di atas teluk selama musim panas. Karena BoB juga berbatasan dengan laut Arab, perbedaan sering terjadi pada musim dingin, yaitu upwelling dan konveksi musim dingin, yang meningkatkan biomassa fitoplankton di Laut Arab, tetapi sangat lemah atau bahkan tidak ada di BoB. 
+	\textit{Indian Ocean Dipole} (IOD) merupakan interaksi anomali antara laut dan atmosfer, yang melibatkan osilasi yang tidak teratur dari suhu permukaan laut (\textit{sea surface temperature} (SST)) di Samudra Hindia tropis. IOD adalah perbedaan SST antara Samudra Hindia bagian barat tropis ($50^\circ$ E-$70^\circ$ E, $10^\circ$ S-$10^\circ$ N) dan Samudra Hindia bagian timur tropis ($90^\circ$ E-$110^\circ$ E, $10^\circ$ S-$0^\circ$ N) \cite{Shunmugapandi2022,Thushara2020,Sattar2019}. Kekuatan IOD diukur berdasarkan \textit{Dipole Mode Index} (DMI), untuk menghitung perbedaan anomali suhu permukaan laut antara Samudra Hindia bagian barat tropis dan Samudra Hindia bagian timur tropis \cite{Saji1999}. Kekuatan dan frekuensi kejadian IOD telah terbukti memiliki dampak signifikan pada iklim musim hujan \cite{Qiu2014}, pertanian \cite{Zhang2016}, dan perikanan \cite{Lan2013} di wilayah tersebut. Dengan peningkatan emisi gas rumah kaca antropogenik, kekhawatiran tentang dampak potensial perubahan iklim pada IOD dan pola iklim yang terkait semakin meningkat.
 	
-	Demikian pula, masukan nutrisi melalui aliran sungai ke BoB tidak cukup untuk meningkatkan stok fitoplankton di luar perairan \cite{Jyothibabu2021}. BoB memiki keunikan akibat instrusi air tawar dari curah hujan yang tinggi selama musim panas sebagai hasil penetrasi insolasi matahari di kolom air \cite{Kantha2019}. \cite{Srivastava2018} mensimulasikan model tanpa gaya angin dekat permukaan, hasilnya adalah SST (\textit{Sea Surface Temperature}) wilayah tersebut sangat meningkat di semua musim, sedangkan, tanpa adanya gaya radiasi gelombang pendek yang masuk, mereka mendapatkan hasil yang benar-benar berlawanan. Ditemukan bahwa pengaruh pemaksaan fluks air tawar pada SST wilayah tersebut sangat kecil. Ditemukan juga bahwa SSS (\textit{Sea Surface Salinity}) laut Arab dan BoB menurun tanpa adanya gaya angin dekat permukaan dan radiasi gelombang pendek yang masuk, sedangkan di BoB utara meningkat tanpa adanya gaya fluks air tawar \cite{Srivastava2018}.
+	Untuk lebih memahami hubungan antara IOD dan perubahan iklim, sangat penting untuk memodelkan parameter oseanografi dan meteorologi yang menggerakkan IOD. Penelitian ini akan menggunakan aplikasi pemodelan laut untuk mempelajari keterkaitan antara IOD, parameter oseanografi seperti suhu, salinitas, dan arus, dan parameter meteorologi seperti tekanan angin dan laju presipitasi. Dengan menganalisis interaksi antara parameter-parameter ini, penelitian ini bertujuan untuk memberikan wawasan tentang mekanisme yang mendorong IOD dan potensi responsnya terhadap perubahan iklim.
+	
+	Penggunaan aplikasi pemodelan laut semakin penting dalam studi perubahan iklim, karena memungkinkan para peneliti untuk mensimulasikan dan memprediksi perilaku parameter oseanografi dan meteorologi dari waktu ke waktu. Studi tentang pemodelan laut berkaitan dengan pembentukan model dan sifat-sifat sistem di dalamnya. Dalam praktiknya, pembentukan model ini memanfaatkan model numerik dan program komputasi dengan tujuan untuk mengatasi keterbatasan data observasi (\textit{in situ}), juga untuk alasan efektifitas serta efisiensi biaya dan waktu yang digunakan. Penelitian sebelumnya mengembangkan model numerik dengan menggunakan persamaan Navier-Stokes untuk memodelkan sirkulasi arus laut dan menganalisis variabel hidrodinamika laut lainnya. Sebagai contoh, simulasi arus laut di perairan Indonesia akibat gaya pembangkit angin menggunakan model persamaan Navier-Stokes 2 dimensi \cite{Rizal2018,Ikhwan2019,Haditiar2019}. Model Navier-Stokes yang dibangun dalam penelitian ini menggunakan pendekatan hidrostatik dan nonhidrostatik. Dalam penelitian lain, model persamaan Navier-Stokes 3 dimensi digunakan untuk mengkaji sirkulasi arus pasang surut baroklinik M2 dan hidrodinamika laut yang berasal dari fenomena El Nino \cite{Rizal2010,Haditiar2020,Ikhwan2021}.
+	
+	Model-model ini dapat digunakan untuk mempelajari dampak perubahan iklim pada laut dan ekosistem yang terkait, serta untuk mengembangkan strategi mitigasi dan adaptasi terhadap perubahan tersebut. Dalam penelitian ini, model laut akan digunakan secara jangka panjang untuk mempelajari IOD, yang diharapkan dapat berkontribusi pada pemahaman kita tentang interaksi kompleks antara laut dan atmosfer di wilayah Samudra Hindia. 
+%	Selain itu, penelitian ini akan mengeksplorasi dampak potensial dari perubahan iklim pada IOD dan pola iklim yang terkait. Dengan menganalisis data iklim historis dan proyeksi, studi ini akan mengevaluasi potensi perubahan frekuensi dan intensitas kejadian IOD dalam berbagai skenario perubahan iklim. Penelitian ini juga akan mengevaluasi dampak potensial dari perubahan ini pada iklim musim hujan dan sektor perikanan di wilayah tersebut.
 	
 	\section[Rumusan Masalah]{Rumusan Masalah}
-	Pada latar belakang, telah diuraikan penelitian-penelitian terkait MLD dan mengapa MLD penting untuk menggambarkan iklim global. Telah dijelaskan pula secara ringkas mengenai hal-hal apa saja yang akan dilakukan dalam penelitian ini. Fokus dari penelitian tesis ini adalah menjawab masalah utama, yaitu
-	
-	Bagaimana pengaruh parameter meteorologi terhadap kedalaman lapisan campuran (\textit{Mixed Layer Depth}) di Perairan Aceh?
-	
-	Subpertanyaan berikut akan berkontribusi pada perumusan jawaban atas masalah utama.
-	\begin{itemize}
-		\item Bagaimana analisis kedalaman lapisan campuran (MLD) di wilayah perairan Aceh dalam 12 bulan pada tahun 2021? 
-		\item Bagaimana analisis model iklim untuk parameter-parameter meteorologi \textit{2m air temperature, 2m specific humidity, convective precipitation rate, sea level pressure, wind stress U}, dan \textit{wind stress V} selama 22 tahun, tahun 2000 - 2021?
-		\item Bagaimana hubungan parameter meteorologi terhadap analisis kedalaman lapisan campuran (MLD) di wilayah perairan Aceh?
-	\end{itemize}
+	Secara keseluruhan, masalah utama dari penelitian ini adalah menyelidiki hubungan antara IOD, parameter oseanografi, dan meteorologi seperti arus, suhu, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan angin dengan menggunakan aplikasi pemodelan laut, serta mengevaluasi dampak potensial perubahan pada IOD dan pola iklim yang terkait. Dengan memahami mekanisme yang mendorong IOD dan dampaknya terhadap perubahan iklim, penelitian ini diharapkan akan memberikan kontribusi pada ilmu pengetahuan, yaitu pemahaman tentang interaksi kompleks antara laut dan atmosfer serta memberikan strategi untuk mitigasi dan adaptasi terhadap dampak perubahan iklim di wilayah Samudra Hindia.
+
 	\section[Tujuan Penelitian]{Tujuan Penelitian}
 	
-	Tujuan dari penelitian tesis ini adalah mencari tahu pengaruh parameter meteorologi terhadap kedalaman lapisan campuran (\textit{Mixed Layer Depth}) di Perairan Aceh dengan cara menjawab beberapa masalah terkait,
+	Tujuan umum dari penelitian ini adalah menyelidiki hubungan antara IOD dengan parameter oseanografi dan meteorologi seperti arus, suhu, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan angin, serta dampaknya terhadap ekosistem laut dengan cara menjawab beberapa tujuan khusus berikut.
 	
 	\begin{itemize}
-		\item Analisis kedalaman lapisan campuran (MLD) di wilayah perairan Aceh dalam 12 bulan pada tahun 2021.
-		\item Analisis model iklim untuk parameter-parameter meteorologi \textit{2m air temperature, 2m specific humidity, convective precipitation rate, sea level pressure, wind stress U}, dan \textit{wind stress V} selama 22 tahun, tahun 2000 - 2021.
-		\item Hubungan parameter meteorologi terhadap analisis kedalaman lapisan campuran (MLD) di wilayah perairan Aceh.
+		\item Menggambarkan peta IOD, arus, suhu, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan angin di Samudra Hindia.
+		\item Menggambarkan dan menganalisis model musiman untuk parameter-parameter oseanografi dan meteorologi, seperti arus, suhu, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan angin di Samudra Hindia.
+		\item Melakukan analisis korelasi untuk mengukur kekuatan dan arah dari hubungan antara IOD dengan parameter-parameter oseanografi dan meteorologi.
 	\end{itemize}
+	\section[Urgensi Penelitian]{Urgensi Penelitian}
+
+	Samudra Hindia merupakan rumah bagi populasi biota laut yang besar dan semakin bertumbuh, di mana banyak dari mereka bergantung pada sumber daya maritimnya. IOD telah terbukti memiliki dampak signifikan pada keanekaragaman hayati laut, perikanan, dan masyarakat pesisir, terutama selama peristiwa ekstrem seperti kekeringan \cite{Pan2018} dan siklon \cite{Wahiduzzaman2022}. Frekuensi dan intensitas peristiwa ini semakin meningkat dari hari ke hari karena pengaruh perubahan iklim. Oleh karena itu, penting untuk memahami mekanisme yang mendorong variasi IOD agar dapat mengembangkan strategi adaptasi dan mitigasi yang efektif.
 	
-	\section[Urgensi dan Kebaruan Penelitian]{Urgensi dan Kebaruan Penelitian}
-
-	Sejauh pengamatan kami, studi secara detail terkait 6 parameter meteorologi dan dampaknya terhadap lapisan vertikal di wilayah perairan Aceh belum pernah dilakukan sebelumnya. Oleh karena itu, dirasa penting untuk melakukan penelitian ini guna mengetahui pengaruh paramater meteorologi terhadap kedalaman lapisan campuran (MLD).
-
+	Selain itu, Samudra Hindia adalah pemain utama dalam sistem iklim global, dengan keterkaitan yang kuat dengan Samudra Pasifik dan Samudra Atlantik. Perubahan di Samudra Hindia dapat memiliki dampak signifikan pada pola iklim global, terutama melalui pengaruhnya pada sistem musim hujan yang menyediakan air dan makanan bagi miliaran orang di Asia dan Afrika. Oleh karena itu, memahami interaksi kompleks antara IOD dan parameter-parameter oseanografi dan meteorologi lainnya sangat penting untuk proyeksi dan pengembangan model iklim.
+	
+	Wilayah Samudra Hindia saat ini mengalami perubahan lingkungan yang cepat akibat aktivitas manusia dan perubahan iklim. Perubahan ini mempengaruhi sifat fisik dan kimia laut, seperti suhu, salinitas, dan ketersediaan nutrisi, yang pada gilirannya mempengaruhi siklus biogeokimia dan ekosistem. IOD adalah salah satu penggerak utama dari perubahan ini, dan memahami korelasinya dengan parameter lain sangat penting untuk memprediksi dan mengurangi dampaknya pada wilayah Samudra Hindia.
+	
+	Secara keseluruhan, penelitian tentang korelasi antara IOD dan berbagai parameter oseanografi dan meteorologi sangat mendesak untuk dilakukan karena dampak signifikan dari parameter-parameter ini pada wilayah Samudra Hindia, pola iklim global, dan kesejahteraan jutaan orang. Karena perubahan iklim terus mengubah sifat fisik dan kimia laut, memahami korelasi ini kritis untuk mengembangkan strategi adaptasi dan mitigasi yang efektif.
 	\section[Manfaat Penelitian]{Manfaat Penelitian}
 	
-	Penelitian ini diharapkan mampu memberikan kontribusi ilmiah dan memperkaya pengetahuan tentang kedalaman lapisan campuran atau MLD. Hal ini karena MLD berperan penting secara iklim fisik dalam hal menentukan interval kisaran temperatur di wilayah laut dan pesisir. Sebagai tambahan, panas yang tersimpan dalam lapisan campuran menyediakan sumber panas yang mendorong variabilitas global seperti El Ni$\tilde{n}$o. MLD juga berperan dalam menentukan tingkatan rata-rata cahaya yang dapat dilihat oleh organisme laut seperti fitoplankton. Selain itu, dari periodesitas model iklim yang diperoleh akan bermanfaat untuk tujuan fishing ground, mitigasi perubahan iklim dan bencana hidro-oseanografi, tata ruang dan konservasi
-	laut, dan sumber energi terbarukan. 
-
-	\section[Sistematika Penulisan]{Sistematika Penulisan}
-
-	Tesis ini tersusun atas 5 bab. Bab pertama menjelaskan pendahuluan tentang latar belakang mengapa penelitian ini dilakukan, background masalah yang mendasari, tujuan penelitian, manfaat penelitian, serta kebaruan dari penelitian. Bab kedua berisikan tinjauan pustaka menyangkut ulasan singkat materi penelitian. Bab ketiga membahas tentang metode penelitian yang dilakukan, data yang yang digunakan, serta diagram alir (\textit{flowchart}) dari penelitian. Bab keempat membahas hasil dan pembahasan penelitian. Terakhir, bab kelima membahas tentang kesimpulan dari penelitian.
+	Manfaat dan kebaruan penelitian tentang IOD terletak pada potensi untuk lebih memahami interaksi kompleks antara berbagai parameter oseanografi dan meteorologi serta dampaknya terhadap wilayah Samudra Hindia. Meskipun beberapa penelitian telah meneliti korelasi antara IOD dengan berbagai parameter oseanografi dan meteorologi, masih banyak yang harus dipelajari tentang mekanisme yang mendorong hubungan ini.
+	Selain itu, karena perubahan iklim terus mengubah sifat fisik dan kimia Samudra Hindia, semakin penting untuk memahami bagaimana perubahan ini akan memengaruhi IOD dan sistem ekologi, sosial, dan ekonomi yang terkait. 
+	
+	Secara khusus, manfaat dari penelitian ini adalah
+	\begin{itemize}
+		\item Memperoleh peta IOD, arus, suhu, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan angin di Samudra Hindia.
+		\item Peta dan hasil analisis model musiman untuk parameter-parameter oseanografi dan meteorologi, seperti arus, suhu, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan angin di Samudra Hindia.
+		\item Hasil analisis korelasi untuk mengukur kekuatan dan arah dari hubungan antara IOD dengan parameter-parameter oseanografi dan meteorologi.
+	\end{itemize}
+	
+	Adapun target jenis luaran dari penelitian ini dapat dilihat dalam Tabel \ref{tab:luaran}
+	% Please add the following required packages to your document preamble:
+	% \usepackage{multirow}
+	\begin{table}[htp]
+		\centering
+		\caption{Jenis luaran dan indikator capaian tiap tahun}
+		\label{tab:luaran}
+		\begin{tabular}{|l|l|lll|}
+			\hline
+			\multirow{2}{*}{No} & \multirow{2}{*}{Jenis Luaran}                                                                                       & \multicolumn{3}{l|}{Indikator Capaian}                                                                                                                                        \\ \cline{3-5} 
+			&                                                                                                                     & \multicolumn{1}{l|}{TS1} & \multicolumn{1}{l|}{TS+1}                                                         & TS+2                                                           \\ \hline
+			1                   & \begin{tabular}[c]{@{}l@{}}Artikel ilmiah dimuat di \\ jurnal indeks bereputasi (JIB) \\ internasional\end{tabular} & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}2 draft/\\ submitted\end{tabular}} & \begin{tabular}[c]{@{}l@{}}2 reviewed/\\ accepted\end{tabular} \\ \hline
+			2                   & \begin{tabular}[c]{@{}l@{}}Artikel ilmiah dimuat di \\ prosiding internasional\end{tabular}                         & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}1 draft/\\ submitted\end{tabular}} & \begin{tabular}[c]{@{}l@{}}1 reviewed/\\ accepted\end{tabular} \\ \hline
+			3                   & Disertasi                                                                                                           & \multicolumn{1}{l|}{}    & \multicolumn{1}{l|}{}                                                             & 1                                                              \\ \hline
+		\end{tabular}
+	\end{table}
+%	\section[Sistematika Disertasi]{Sistematika Disertasi}
+%
+%	Penelitian disertasi ini menggunakan gaya penulisan \textit{working chapter}. Setiap publikasi yang dihasilkan disajikan dalam bentuk bab. Terdapat em
+%	Tesis ini tersusun atas 5 bab. Bab pertama menjelaskan pendahuluan tentang latar belakang mengapa penelitian ini dilakukan, background masalah yang mendasari, tujuan penelitian, manfaat penelitian, serta kebaruan dari penelitian. Bab kedua berisikan tinjauan pustaka menyangkut ulasan singkat materi penelitian. Bab ketiga membahas tentang metode penelitian yang dilakukan, data yang yang digunakan, serta diagram alir (\textit{flowchart}) dari penelitian. Bab keempat membahas hasil dan pembahasan penelitian. Terakhir, bab kelima membahas tentang kesimpulan dari penelitian.
 	
 \end{spacing}

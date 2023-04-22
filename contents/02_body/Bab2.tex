@@ -9,12 +9,14 @@
 \vspace{-1pc}
 \section[Penelitian Terkait dan Tahapan Penelitian IOD]{Penelitian Terkait dan Tahapan Penelitian IOD}
 \begin{spacing}{1.5}
-	\textit{Indian Ocean Dipole} (IOD) adalah6
+	\textit{Indian Ocean Dipole} (IOD) adalah
 \end{spacing}
 \vspace{-1pc}
-\section[Persamaan Model Numerik]{Persamaan Model Numerik}
+\section[Model Numerik dan Parameter]{Model Numerik dan Parameter}
 \begin{spacing}{1.5}
-	\par Model sirkulasi laut atau \textit{Ocean General Circulation Models} (OGCM) menggunakan persamaan Navier-Stokes untuk memodelkan fenomena fisis yang terjadi di lautan. Lautan adalah fluida yang dapat dijelaskan dengan baik dengan pendekatan persamaan-persamaan primitif, yaitu persamaan Navier-Stokes serta persamaan keadaan nonlinier yang menggabungkan dua variabel (temperatur dan salinitas) dengan kecepatan fluida, dan mempertimbangkan beberapa asumsi dan hipotesis \shortcite{madec_gurvan_2022_6334656}.
+	\par Dalam subbab ini, akan dibahas mengenai persamaan untuk parameter dan deskripsi tentang model numerik serta data yang digunakan dalam penelitian ini.
+	
+	Model sirkulasi laut atau \textit{Ocean General Circulation Models} (OGCM) menggunakan persamaan Navier-Stokes untuk memodelkan fenomena fisis yang terjadi di lautan. Lautan adalah fluida yang dapat dijelaskan dengan baik dengan pendekatan persamaan-persamaan primitif, yaitu persamaan Navier-Stokes serta persamaan keadaan nonlinier yang menggabungkan dua parameter (temperatur dan salinitas) dengan kecepatan fluida, dan mempertimbangkan beberapa asumsi dan hipotesis \shortcite{madec_gurvan_2022_6334656}.
 	
 	Beberapa asumsi yang digunakan dalam persamaan Navier-Stokes diantaranya asumsi Boussinesq, asumsi hidrostatik, dan asumsi tak termampatkan (\textit{incompressibility}). Misalkan $\rho$ sebagai densitas in situ, $T$ sebagai temperatur potensial, $S$ sebagai salinitas, $p$ sebagai tekanan, $z$ sebagai koordinat vertikal, dan $g$ sebagai percepatan gravitasi. Asumsi yang digunakan dalam persamaan Navier-Stokes dapat dituliskan sebagai berikut.\\
 	Asumsi Boussinesq
@@ -26,7 +28,7 @@
 	\begin{equation}
 		\frac{\partial p}{\partial z} = -\rho g.
 	\end{equation}
-	Berdasarkan asumsi hidrostatik, persamaan momentum vertikal direduksi menjadi persamaan kesetimbangan antara variabel gradien tekanan vertikal dan gaya apung.\\
+	Berdasarkan asumsi hidrostatik, persamaan momentum vertikal direduksi menjadi persamaan kesetimbangan antara parameter gradien tekanan vertikal dan gaya apung.\\
 	Asumsi tak termampatkan
 	\begin{equation}
 		\nabla \;.\; U =\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z} = 0.
@@ -48,13 +50,22 @@
 			\frac{\partial S}{\partial t} &= - \nabla \; . \; (S\;U)  + D^S + F^S,
 		\end{aligned}
 	\end{equation}
-	dengan operator $\nabla$ sebagai vektor turunan yang diperumum dalam arah $(i,j,k)$, variabel $D^T$ dan $D^S$ merupakan parameterisasi dari fisika skala kecil untuk temperatur dan salinitas sedangkan variabel $F^T$ dan $F^S$ merupakan suku gaya permukaan untuk temperatur dan salinitas. 
-	 
-	Dalam aplikasinya, persamaan Navier-Stokes tidak hanya digunakan untuk memodelkan laut, tapi juga merambah ke bidang pemodelan cuaca \shortcite{Rohli2021}, aliran air dalam pipa \shortcite{Ouchiha2012} dan aliran udara di sekitar sayap pesawat \shortcite{Tulus2019}. Dalam bentuk persamaan lengkap dan simplifikasi, persamaan ini juga dapat digunakan untuk mendesain kereta api \shortcite{Croquer2020}, pesawat terbang \shortcite{Chau2021}, dan mobil \shortcite{Ambarita2018}. Terdapat juga studi tentang aliran darah \shortcite{Gill2021}, desain stasiun pembangkit listrik \shortcite{Yang2019}, dan analisis polusi udara \shortcite{Issakhov2022}. 
-	\subsection[CMEMS]{CMEMS}
-	\subsection[HYCOM]{HYCOM}
-	\subsection[J-OFURO3]{J-OFURO3}
-	\subsection[NCEP/NCAR]{NCEP/NCAR}
+	dengan operator $\nabla$ sebagai vektor turunan yang diperumum dalam arah $(i,j,k)$, parameter $D^T$ dan $D^S$ merupakan parameterisasi dari fisika skala kecil untuk temperatur dan salinitas sedangkan parameter $F^T$ dan $F^S$ merupakan suku gaya permukaan untuk temperatur dan salinitas. 
+	
+	Untuk parameter lainnya seperti kedalaman lapisan campuran atau \textit{mixed layer depth} (MLD), \textit{chlorophyll-a} (Chl-a), laju presipitasi, fluks air tawar, fluks panas bersih, dan tekanan angin dapat dituliskan sebagai berikut.
+	
+%	Dalam aplikasinya, persamaan Navier-Stokes tidak hanya digunakan untuk memodelkan laut, tapi juga merambah ke bidang pemodelan cuaca \shortcite{Rohli2021}, aliran air dalam pipa \shortcite{Ouchiha2012} dan aliran udara di sekitar sayap pesawat \shortcite{Tulus2019}. Dalam bentuk persamaan lengkap dan simplifikasi, persamaan ini juga dapat digunakan untuk mendesain kereta api \shortcite{Croquer2020}, pesawat terbang \shortcite{Chau2021}, dan mobil \shortcite{Ambarita2018}. Terdapat juga studi tentang aliran darah \shortcite{Gill2021}, desain stasiun pembangkit listrik \shortcite{Yang2019}, dan analisis polusi udara \shortcite{Issakhov2022}. 
 	
 \end{spacing}
-\vspace{-0.1pc}
+\vspace{-1pc}
+\section[\textit{Road Map }Penelitian]{\textit{Road Map} Penelitian}
+\begin{spacing}{1.5}
+	\textit{Road Map} penelitian ini dapat dilihat dalam Gambar \ref{fig:RM}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=12cm]{contents/Figures/Road_Map}
+		\caption{Road Map Penelitian}
+		\label{fig:RM}
+	\end{figure}
+	
+\end{spacing}
