@@ -52,12 +52,19 @@
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{apacite}
 \let\cite\shortcite %ganti setiap shortcite menjadi cite
+\usepackage{regexpatch}
 
 %Modifikasi apacite package
+\makeatletter
+\xpatchcmd{\@@cite}{\def\BCA##1##2{{\@BAstyle ##1}}}{\def\BCA##1##2{{\@BAstyle ##2}}}{}{}
+\makeatother
+
 \AtBeginDocument[apacite-localisation]{%
 	\renewcommand{\BOthers}[1]{\emph{et al.}\hbox{}}%		%ganti et al menjadi italic
 	\renewcommand{\BOthersPeriod}[1]{\emph{et al.}\hbox{}}%	%ganti et al menjadi italic
 	\renewcommand{\BBAA}{dan}	%ganti & menjadi dan
+	\renewcommand{\BBAB}{dan} % between authors in in-text citation
+	\renewcommand{\BAnd}{dan}  % for ``Ed. \& Trans.'' in ref. list
 }
 \DeclareHookRule{begindocument}{apacite-localisation}{after}{apacite}
 
