@@ -74,7 +74,7 @@
 	\subsection[Model Musiman]{Model Musiman}
 	Data jangka panjang dapat dianalisis dengan menggunakan analisis deret waktu, seperti contohnya adalah analisis model musiman, yang bertujuan untuk menganalisis kemungkinan adanya pola musiman yang berulang dalam periode tertentu pada data tersebut. Monsoon merupakan penyebab utama perubahan IOD, parameter oseanografi seperti arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, dan fluks panas bersih, serta parameter meteorologi seperti laju presipitasi dan angin. Penelitian ini akan menganalisis parameter-parameter tersebut dengan menggunakan model musiman yang didasarkan pada pola kejadian monsun. Model musiman ini digunakan untuk mengamati pola periodik dan memprediksi parameter-parameter berdasarkan keteraturan mereka. Dengan cara ini, akan diketahui apakah parameter yang diteliti mengikuti pola monsun yang terjadi, apakah terjadi pergeseran bulanan pada masing-masing parameter dalam model musiman yang dibangun, serta apakah parameter-parameter tersebut mengikuti pola monsun yang sama.
 	
-	Beberapa penelitian yang menggunakan model musiman adalah \shortciteauthor{Haridhi2016} \citeyear{Haridhi2016} yang meneliti tentang hubungan antara \textit{sea surface temperatur} (SST) dan \textit{net deployment} (ND) - penyebaran jaring nelayan pukat cincin tradisional. \shortciteauthor{Ikhwan2022} \citeyear{Ikhwan2022} dalam penelitiannya mengkaji tentang kedalaman lapisan campuran (MLD) di laut Andaman menggunakan data \textit{sea surface salinity} (SSS) dari model 3-D \textit{Copernicus Marine Environment Monitoring Service} (CMEMS). \shortciteauthor{hidayat2023relationship} \citeyear{hidayat2023relationship}, mengkaji tentang hubungan antara SST, SSS, dan Chl-a di \textit{Northern Bay of Bengal} (NBoB). 
+	Beberapa penelitian yang menggunakan model musiman adalah \shortciteauthor{Haridhi2016} \citeyear{Haridhi2016} yang meneliti tentang hubungan antara SST dan \textit{net deployment} (ND) - penyebaran jaring nelayan pukat cincin tradisional. \shortciteauthor{Ikhwan2022} \citeyear{Ikhwan2022} dalam penelitiannya mengkaji tentang MLD di Laut Andaman (AS) menggunakan data SSS dari model 3-D \textit{Copernicus Marine Environment Monitoring Service} (CMEMS). \shortciteauthor{hidayat2023relationship} \citeyear{hidayat2023relationship}, mengkaji tentang hubungan antara SST, SSS, dan Chl-a di BoB utara (NBoB). 
 	
 	Persamaan siklus musiman \cite{crawley2012r} dapat dituliskan sebagai
 	\begin{equation}\label{eq:sm_}
@@ -110,13 +110,14 @@
 			\end{aligned}
 		\end{equation}
 		dengan $\alpha$ adalah konstanta titik potong sumbu-$y$, $r$ adalah kemiringan dari garis regresi (koefisien regresi), $x_i, y_i$ adalah variable yang digunakan untuk menghitung koefisien korelasi dengan $i$ adalah indeks data. Sedangkan $\bar{x}$ dan $\bar{y}$ adalah rata-rata. 
-%		Persamaan untuk t-statistik dapat dituliskan sebagai
-%		\begin{equation}
-%			\begin{aligned}
-%				t=\frac{r_{xy}\sqrt{n-2}}{1-r^2_{xy}}.
-%			\end{aligned}
-%		\end{equation}
-%		Jika $\|t\|\geq t_{\text{tabel}}$ dengan ($\alpha=5\%$) maka terdapat korelasi antara $x$ dan $y$.
+		
+		Persamaan untuk t-statistik dapat dituliskan sebagai
+		\begin{equation}
+			\begin{aligned}
+				t=\frac{r_{xy}\sqrt{n-2}}{1-r^2_{xy}}.
+			\end{aligned}
+		\end{equation}
+		Jika $\|t\|\geq t_{\text{tabel}}$ dengan ($\alpha=5\%$ atau $\alpha=1\%$) maka terdapat korelasi antara $x$ dan $y$.
 \end{spacing}
 \vspace{-0.5pc}
 \section[Prosedur Penelitian]{Prosedur Penelitian}
