@@ -1,0 +1,83 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Dissertation_proposal.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+The style file: packages/apacite.bst
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: contents/ReferenceMendeley.bib
+Repeated entry---line 2279 of file contents/ReferenceMendeley.bib
+ : @article{Haditiar2020
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2347 of file contents/ReferenceMendeley.bib
+ : @article{Saji1999
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2811 of file contents/ReferenceMendeley.bib
+ : @article{Zhang2016
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2887 of file contents/ReferenceMendeley.bib
+ : @article{Sadhukhan2021
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2925 of file contents/ReferenceMendeley.bib
+ : @article{Sun2019
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3499 of file contents/ReferenceMendeley.bib
+ : @article{Tomita2019
+ :                    ,
+I'm skipping whatever remains of this entry
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 59 entries,
+            6951 wiz_defined-function locations,
+            1799 strings with 32586 characters,
+and the built_in function-call counts, 149254 in all, are:
+= -- 17234
+> -- 1330
+< -- 8536
++ -- 9034
+- -- 122
+* -- 10846
+:= -- 29537
+add.period$ -- 230
+call.type$ -- 59
+change.case$ -- 1093
+chr.to.int$ -- 0
+cite$ -- 118
+duplicate$ -- 4273
+empty$ -- 5230
+format.name$ -- 2504
+if$ -- 26092
+int.to.chr$ -- 0
+int.to.str$ -- 177
+missing$ -- 0
+newline$ -- 1834
+num.names$ -- 472
+pop$ -- 1829
+preamble$ -- 1
+purify$ -- 326
+quote$ -- 0
+skip$ -- 8121
+stack$ -- 0
+substring$ -- 9553
+swap$ -- 2432
+text.length$ -- 210
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 4720
+warning$ -- 0
+while$ -- 924
+width$ -- 0
+write$ -- 2416
+(There were 6 error messages)

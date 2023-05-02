@@ -22,7 +22,8 @@
 %	\subsection[HYCOM]{HYCOM}
 %	\par Model HYCOM (\textit{HYbrid Coordinate Ocean Model}) (\href{https://www.hycom.org}{https://www.hycom.org}) adalah salah satu model sirkulasi laut (OGCM) yang menggunakan model numerik tiga dimensi Navier-Stokes dengan input data batimetri dari GEBCO (\textit{General Bathymetric Chart of the Oceans}), data asimilasi hidrografi laut dari NCODA (\textit{Navy Coupled Ocean Data Assimilation}) dan komponen meteorologi dari NCEP (\textit{National Centers for Environmental Prediction}) ataupun NAVGEM (\textit{The NAVy Global Environmental Model}) berupa tekanan angin, kecepatan, fluks panas, tekanan permukaan laut, presipitasi, temperatur laut, dan kelembapan \shortcite{JosephMetzger2013}. 
 %	
-%	Koordinat vertikal dalam HYCOM adalah isopiknal di lautan terbuka yang terstratifikasi dan memiliki transisi yang mulus dan dinamis serta bergantung terhadap waktu pada medan daerah pesisir yang dangkal dan pada tingkat tekanan tetap di lapisan campuran permukaan atau lautan yang tidak terstratifikasi \shortcite{chassignet2017,Park2013}. Data HYCOM yang digunakan adalah data analisis global arus laut dan temperatur tiga dimensi dengan resolusi spasial 5 menit untuk longitude dan 2.5 menit untuk latitude selama 12 bulan (Januari - Desember) tahun 2021 dan dengan ketebalan bervariasi pada bidang vertikal, yaitu 40-lapisan $(k \in [1,40])$:
+
+%	Koordinat vertikal dalam HYCOM adalah isopiknal di lautan terbuka yang terstratifikasi dan memiliki transisi yang mulus dan dinamis serta bergantung terhadap waktu pada medan daerah pesisir yang dangkal dan pada tingkat tekanan tetap di lapisan campuran permukaan atau lautan yang tidak terstratifikasi \shortcite{chassignet2017,Park2013}. Data HYCOM yang digunakan adalah data analisis global arus dan temperatur laut tiga dimensi dengan resolusi spasial 5 menit untuk longitude dan 2.5 menit untuk latitude selama 12 bulan (Januari - Desember) tahun 2021 dan dengan ketebalan bervariasi pada bidang vertikal, yaitu 40-lapisan $(k \in [1,40])$:
 %	\begin{equation*}
 %		\begin{aligned}
 %			z_k = \{0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, \\
@@ -72,9 +73,10 @@
 \section[Analisis Data]{Analisis Data}
 \begin{spacing}{1.5}
 	\subsection[Model Musiman]{Model Musiman}
+
 	Data jangka panjang dapat dianalisis dengan menggunakan analisis deret waktu, sebagai contoh analisis model musiman, yang bertujuan untuk menganalisis kemungkinan adanya pola musiman yang berulang dalam periode tertentu pada data tersebut. Monsun merupakan penyebab utama perubahan IOD, parameter oseanografi seperti arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, dan fluks panas bersih, serta parameter meteorologi seperti laju presipitasi dan angin. Penelitian ini akan menganalisis parameter-parameter tersebut dengan menggunakan model musiman yang didasarkan pada pola kejadian monsun. Model musiman ini digunakan untuk mengamati pola periodik dan memprediksi parameter-parameter berdasarkan keteraturan mereka. Dengan cara ini, akan diketahui apakah parameter yang diteliti mengikuti pola monsun yang terjadi, apakah terjadi pergeseran bulanan pada masing-masing parameter dalam model musiman yang dibangun, serta apakah parameter-parameter tersebut mengikuti pola monsun yang sama.
-	
-	Beberapa penelitian yang menggunakan model musiman adalah \shortciteauthor{Haridhi2016} \citeyear{Haridhi2016} yang meneliti tentang hubungan antara \textit{sea surface temperatur} (SST) dan \textit{net deployment} (ND) - penyebaran jaring nelayan pukat cincin tradisional. \shortciteauthor{Ikhwan2022} \citeyear{Ikhwan2022} dalam penelitiannya mengkaji tentang kedalaman lapisan campuran (MLD) di laut Andaman menggunakan data \textit{sea surface salinity} (SSS) dari model 3-D \textit{Copernicus Marine Environment Monitoring Service} (CMEMS). \shortciteauthor{hidayat2023relationship} \citeyear{hidayat2023relationship}, mengkaji tentang hubungan antara SST, SSS, dan Chl-a di \textit{Northern Bay of Bengal} (NBoB). 
+
+	Beberapa penelitian yang menggunakan model musiman adalah \shortciteauthor{Haridhi2016} \citeyear{Haridhi2016} yang meneliti tentang hubungan antara SST dan \textit{net deployment} (ND) - penyebaran jaring nelayan pukat cincin tradisional. \shortciteauthor{Ikhwan2022} \citeyear{Ikhwan2022} dalam penelitiannya mengkaji tentang MLD di Laut Andaman (AS) menggunakan data SSS dari model 3-D \textit{Copernicus Marine Environment Monitoring Service} (CMEMS). \shortciteauthor{hidayat2023relationship} \citeyear{hidayat2023relationship}, mengkaji tentang hubungan antara SST, SSS, dan Chl-a di BoB utara (NBoB). 
 	
 	Persamaan siklus musiman \cite{crawley2012r} dapat dituliskan sebagai
 	\begin{equation}\label{eq:sm_}
@@ -117,6 +119,7 @@
 				t=\frac{r_{xy}\sqrt{n-2}}{1-r^2_{xy}}.
 			\end{aligned}
 		\end{equation}
+
 		Jika $\|t\|\geq t_{\text{tabel}}$ dengan ($\alpha=1\%$ atau $\alpha=5\%$) maka terdapat korelasi antara $x$ dan $y$.
 \end{spacing}
 \vspace{-0.5pc}
