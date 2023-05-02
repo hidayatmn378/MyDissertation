@@ -31,7 +31,7 @@
 \section[Model Numerik dan Parameter]{Model Numerik dan Parameter}
 \begin{spacing}{1.5}
 	\par Dalam subbab ini, akan dibahas mengenai persamaan untuk parameter dan deskripsi tentang model numerik yang digunakan dalam penelitian ini.
-	\subsection[Arus, Temperatur, dan Salinitas Laut]{Arus, Temperatur, dan Salinitas Laut}
+	\subsection[Arus Laut, Temperatur Laut, dan Salinitas]{Arus Laut, Temperatur Laut, dan Salinitas}
 	
 	Model sirkulasi laut atau \textit{Ocean General Circulation Models} (OGCM) menggunakan persamaan Navier-Stokes untuk memodelkan fenomena fisis yang terjadi di lautan. Lautan adalah fluida yang dapat dijelaskan dengan baik dengan pendekatan persamaan-persamaan primitif, yaitu persamaan Navier-Stokes serta persamaan keadaan nonlinier yang menggabungkan dua parameter (temperatur dan salinitas) dengan kecepatan fluida, dan mempertimbangkan beberapa asumsi dan hipotesis \shortcite{madec_gurvan_2022_6334656}.
 	
@@ -76,12 +76,12 @@
 	\begin{equation}\label{eq:chl1}
 		\begin{aligned}
 			\frac{\partial I^{chl}}{\partial t} &= (1-\delta ^I)(12\theta^{chl}_{min}+(\theta^{chl,I}_{max}-\theta^{chl,I}_{min})\rho^{I^{chl}})\mu^I I-m^I \frac{I}{K_m +I}I^chl \\
-			&- sh \times w^I II^{chl}-\theta^{chl,I}g^Z(I)Z-\theta^{chl,I}g^M(I)M.
+			&- sh \times w^I II^{chl}-\theta^{chl,I}g^Z(I)Z-\theta^{chl,I}g^M(I)M,
 		\end{aligned}
 	\end{equation}
 	dengan $I$ adalah kelompok fitoplankton dan $\theta^{chl,I}$ adalah rasio klorofil-ke-karbon dari kelas fitoplankton yang dipertimbangkan, 12 mewakili massa molar karbon, $\rho^{I^Chl}$ adalah rasio energi yang terasimilasi terhadap energi yang diserap.
 	
-	Kedalaman lapisan campuran atau MLD dapat dihitung dengan menggunakan temperatur, salinitas, atau densitas. MLD yang dihitung dengan temperatur dapat ditemukan pada kedalaman laut dengan temperatur yang relatif konstan. Lapisan campuran terbentuk karena adanya pengaruh angin permukaan, gelombang, dan arus yang menyebabkan pencampuran air pada lapisan atas dan membagikan panas ke seluruh lapisan ini. Di bawah lapisan campuran terdapat perubahan temperatur yang cepat seiring dengan peningkatan kedalaman laut, lapisan ini dikenal sebagai termoklin. MLD dapat diestimasi dari kombinasi variabel ambang batas dari profil densitas dan profil temperatur laut 0.2$^o$ (Pers. \ref{eq:chl2}) \cite{Boyer2004}. 
+	Kedalaman lapisan campuran atau MLD dapat dihitung dengan menggunakan temperatur laut, salinitas, atau densitas laut. MLD yang dihitung dengan temperatur dapat ditemukan pada kedalaman laut dengan temperatur yang relatif konstan. Lapisan campuran terbentuk karena adanya pengaruh angin permukaan, gelombang, dan arus yang menyebabkan pencampuran air pada lapisan atas dan membagikan panas ke seluruh lapisan ini. Di bawah lapisan campuran terdapat perubahan temperatur yang cepat seiring dengan peningkatan kedalaman laut, lapisan ini dikenal sebagai termoklin. MLD dapat diestimasi dari kombinasi variabel ambang batas dari profil densitas dan profil temperatur laut 0.2$^o$ (Pers. \ref{eq:chl2}) \cite{Boyer2004}. 
 	Kriteria variabel dalam densitas sesuai dengan variasi temperatur lokal sebesar 0.2$^o$C dari temperatur pada kedalaman 10 meter (Pers. \ref{eq:chl3}). Hasil MLD akhir adalah nilai minimum dari MLD yang dihitung dari kriteria kepadatan dan MLD dari kriteria temperatur. Untuk kedua kriteria, kepadatan dan temperatur, hasil MLD menghasilkan interpolasi linear ke kedalaman di mana ambang batas tercapai.
 	\begin{equation}\label{eq:chl2}
 		\begin{aligned}
@@ -90,7 +90,7 @@
 	\end{equation}
 	\begin{equation}\label{eq:chl3}
 		\begin{aligned}
-			MLD= \text{Kedalaman dimana }(T=T_{10m}+\Delta \pm 0.2^oC).
+			MLD= \text{Kedalaman dimana }(T=T_{10m}+\Delta \pm 0.2^oC),
 		\end{aligned}
 	\end{equation}
 	dengan $\Delta \sigma_0=\sigma_0(\theta_{10m}-0.2^oC,S_{10m},P_0)-\sigma_0(\theta_{10m},S_{10m},P_0)$.
@@ -98,7 +98,7 @@
 	
 	Fluks panas bersih atau \textit{net heat flux} (NHF) adalah jumlah panas yang masuk atau keluar dari permukaan laut, yang disebabkan oleh perbedaan antara temperatur air laut dan temperatur udara di atasnya. Jika temperatur udara lebih tinggi dari temperatur air laut, maka NHF akan masuk ke laut. Sebaliknya, jika temperatur udara lebih rendah dari temperatur air laut, maka NHF akan keluar dari laut. NHF dapat dihitung sebagai jumlah dari komponen-komponen berikut \cite{Tomita2021}: 
 	\begin{equation}\label{eq:NHF}
-		NHF = SWR + LWR + LHF + SHF.
+		NHF = SWR + LWR + LHF + SHF,
 	\end{equation} 
 	dengan SWR=\textit{net shortwave radiation}, LWR=\textit{net long wave radiation}, LHF=\textit{surface latent heat flux}, dan SHF=\textit{sensible heat flux}. Dalam penelitian ini, semua aliran panas diasumsikan positif ketika mereka mengarah ke atas, menjauhi permukaan laut ke atmosfer.
 	
@@ -111,7 +111,7 @@
 	\end{equation} 
 	dengan $EVAP$=evaporasi dan $RAIN$=curah hujan atau presipitasi di atas laut. Sedangkan $\rho$ adalah densitas air laut dan $L_e$ adalah  vaporisasi panas laten dalam air yang didefinisikan sebagai fungsi dari SST.
 	\subsection[Laju Presipitasi dan Tekanan Angin]{Laju Presipitasi dan Tekanan Angin}
-	Laju presipitasi merupakan tingkat curah hujan yang jatuh ke permukaan laut pada suatu wilayah tertentu. Hal ini dipengaruhi oleh faktor-faktor seperti SST, kelembaban udara, dan angin. Laju presipitasi di laut dapat berpengaruh pada ketersediaan air tawar, salinitas, serta pola sirkulasi dan transportasi massa air di dalam laut. 
+	Laju presipitasi merupakan tingkat curah hujan yang jatuh ke permukaan laut pada suatu wilayah tertentu. Hal ini dipengaruhi oleh faktor-faktor seperti SST, kelembaban udara, dan angin. Laju presipitasi di laut dapat berpengaruh pada ketersediaan air tawar, salinitas, serta pola sirkulasi dan transportasi massa air di dalam laut. Perhitungan laju presipitasi mengikuti Pers. \ref{eq:FWF}. 
 	
 	Angin memainkan peran penting dalam mendorong arus permukaan dan juga dalam proses interaksi udara-laut. Sebagian besar proses interaksi udara-laut ditentukan dengan menggunakan tekanan angin (\textit{wind stress}), suatu ukuran transfer momentum yang disebabkan oleh gerakan relatif antara laut dan atmosfer \shortcite{Chacko2022}. Tekanan angin berdasarkan aerodinamis massal (\textit{bulk-aerodynamic}) dirumuskan sebagai,
 	\begin{equation}
