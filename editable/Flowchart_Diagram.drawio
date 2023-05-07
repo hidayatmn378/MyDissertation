@@ -1,1 +1,60 @@
-<mxfile host="Electron" modified="2023-03-24T09:23:14.904Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.6.2 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" etag="8n_oIUVO6gzUfF18Vqwb" version="20.6.2" type="device"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">5VpdV6MwEP01fdRTPguPWrtVV9d6XFf3MS0pxAJhQ/rB/voNJZQGEGi3rbW+WDKZTJKZuZdJsKV0vUWfgMC5xxZ0W3LbWrSUq5YsG5rM/saCKBFokpoIbIKsRCRlgif0F3Jhm0unyIKhoEgxdikKROEI+z4cUUEGCMFzUW2MXXHWANiwIHgaAbcofUEWdfi25E4mv4bIdtKZJd1MejyQKvOdhA6w8HxNpPRaSpdgTJMnb9GFbuy71C8vN9GLezfR+7eP4R/wfPn9549fZ4mxb5sMWW2BQJ9ubTr6a3oavb4fjR+B8fZs9u+urDMe3Blwp9xffK80Sh0ILeZP3sSEOtjGPnB7mfSS4KlvwXiaNmtlOncYB0woMeEbpDTiyQGmFDORQz2X9zbcH/dDiKdkBCs2xeNFAbEhrdDj9uINruUK914fYg9SEjEFAl1A0UxMKMDz0l7pZb5nD9z9G4SiXQjFE9sBLcQj83bsurmDKHwKwNIhc4Zg0bNj7NM0eE3TiOvNIKFwUemYtFfha+cUIbd5e54BTkpR5KyBTW/vyZfqKaZ1yp51aa0cVVpLJaHQXbb+SwvN2KNNl55KRMNUcOMHU/Z7kXawqYd5ZSYrMbEmunlg03XjdxeggP3gEAIf2wSM0VLot+Kk5DOTjc1zq8xNEBPsYhu9NzSXeuxFEsSPLDOA60I3XpLHFANIUGyN5PsGWUct4NECpm/hzXOwOeZlU6vHfOeQmNdPEfNKQ8xrR4V5ZSvMDwgewTD8X9QPINsEWII7gXgAfdsG3pAhyl+RQSOg1mBtb9gyctgy9CK2zBJsGfvClnGK2NIaYqtzVNgyv5Dn0zPk7lzPhw4wYhtZAU7tiAWsauaAlKyUj8oFcLWM7WOqvcuXK/p7mNL6iqhYxAi8uCxXVkWRUA11U7bUgReznD8Mg01IVyyCGtk4xaJIF4lbMYtFkayUEHdnX8QtSQVHfz666BTponv7/BYs9O4Yyf1uby4vXsfg7EBsoRgiW+hyM7a4IAREa2pBrBC+P4+cn6edu+CpW5eozx6SFeyUujr11NWsrqvkrguWfShE4dqBDaV9jMbCODsreAflTdfyWWEWL7kXLTVZOm39gfJIik1JzBqt7CCnHrLYlJSP4CzmVhK9xuPPtbT5m5tbNq4WQivirR1znVRyefkVyE411OMnuzQ4h2O7kLLghRRNEnvbFWcgszfBcT6EaGuWEnH2QZylSmKyHJSzStEolyTGZ6q7qiimloo+7DtK1ao3vHxqdL5qcPfkA4Imy3umCQyRF0zd5anqy5yADOW8Ix6CdLUEnKZ8rhXhuYu74aoMreLtnm+Vh36zMk38OrcvN2tyu97HO/rixprZN+7kTZr9o4DS+wc=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-05-07T16:36:36.986Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0" etag="MZDJp8i9We1JDJa7OQcj" version="21.2.9" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1004" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="yz9m5tHMcfQa8jU9GLDd-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yz9m5tHMcfQa8jU9GLDd-0" target="yz9m5tHMcfQa8jU9GLDd-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yz9m5tHMcfQa8jU9GLDd-0" value="Start" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="80" y="55" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yz9m5tHMcfQa8jU9GLDd-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yz9m5tHMcfQa8jU9GLDd-1" target="yz9m5tHMcfQa8jU9GLDd-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yz9m5tHMcfQa8jU9GLDd-1" value="&lt;div&gt;&lt;b&gt;Input:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;DMI, arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan tekanan angin&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="234.36" y="40" width="311.25" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yz9m5tHMcfQa8jU9GLDd-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yz9m5tHMcfQa8jU9GLDd-3" target="yz9m5tHMcfQa8jU9GLDd-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FtJw2GN65vWLXZhQzVCh-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yz9m5tHMcfQa8jU9GLDd-3" target="yz9m5tHMcfQa8jU9GLDd-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yz9m5tHMcfQa8jU9GLDd-3" value="&lt;div&gt;&lt;b&gt;Process:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Pemetaan dan penggambaran data &lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="296.87" y="170" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FtJw2GN65vWLXZhQzVCh-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yz9m5tHMcfQa8jU9GLDd-5" target="FtJw2GN65vWLXZhQzVCh-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yz9m5tHMcfQa8jU9GLDd-5" value="&lt;b&gt;Output:&lt;/b&gt;&lt;br&gt;&lt;div&gt;Peta IOD, oseanografi, dan&amp;nbsp;&lt;/div&gt;&lt;div&gt;meteorologi&amp;nbsp;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="531.25" y="165" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FtJw2GN65vWLXZhQzVCh-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="yz9m5tHMcfQa8jU9GLDd-10" target="CJUjpx6Cfi2GCEw2xXfa-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yz9m5tHMcfQa8jU9GLDd-10" value="&lt;b&gt;Process:&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;div align=&quot;left&quot;&gt;Analisis korelasi&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;Analisis &lt;i&gt;seasonal model&lt;/i&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="296.87" y="285" width="186.24" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="FtJw2GN65vWLXZhQzVCh-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CJUjpx6Cfi2GCEw2xXfa-0" target="FtJw2GN65vWLXZhQzVCh-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CJUjpx6Cfi2GCEw2xXfa-0" value="&lt;div&gt;&lt;b&gt;Output:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Peta &lt;i&gt;seasonal model,&lt;/i&gt; peta korelasi, dan tabulasi hasil&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="266.55" y="400" width="246.88" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CJUjpx6Cfi2GCEw2xXfa-1" value="&lt;b&gt;End&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="780" y="292.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FtJw2GN65vWLXZhQzVCh-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="FtJw2GN65vWLXZhQzVCh-8" target="CJUjpx6Cfi2GCEw2xXfa-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="515" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FtJw2GN65vWLXZhQzVCh-8" value="&lt;div&gt;&lt;b&gt;Process:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Interpretasi dan pelaporan&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="567.5" y="285" width="157.5" height="75" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
