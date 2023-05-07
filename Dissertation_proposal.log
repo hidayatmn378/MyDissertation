@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  3 MAY 2023 20:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  3 MAY 2023 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1388,31 +1388,31 @@ Package pdftex.def Info: contents/Figures/Road_Map.png  used on input line 131.
 (contents/02_body/Bab3.tex [16
 
 ]
-<contents/Figures/Batimetri_edit_compress.png, id=531, 5272.69875pt x 3959.7937
+<contents/Figures/Batimetri_edit_compress.png, id=535, 5272.69875pt x 3959.7937
 5pt>
 File: contents/Figures/Batimetri_edit_compress.png Graphic file (type png)
 <use contents/Figures/Batimetri_edit_compress.png>
 Package pdftex.def Info: contents/Figures/Batimetri_edit_compress.png  used on 
-input line 67.
+input line 66.
 (pdftex.def)             Requested size: 341.43306pt x 256.36847pt.
  [17 <./contents/Figures/Batimetri_edit_compress.png>]
-<contents/Figures/sm_experiment.png, id=555, 3680.75125pt x 1897.0875pt>
+<contents/Figures/sm_experiment.png, id=556, 3680.75125pt x 1897.0875pt>
 File: contents/Figures/sm_experiment.png Graphic file (type png)
 <use contents/Figures/sm_experiment.png>
 Package pdftex.def Info: contents/Figures/sm_experiment.png  used on input line
- 90.
+ 89.
 (pdftex.def)             Requested size: 426.79134pt x 219.96967pt.
 
-Overfull \hbox (14.22636pt too wide) in paragraph at lines 90--91
+Overfull \hbox (14.22636pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
 [18] [19 <./contents/Figures/sm_experiment.png>]
-<contents/Figures/Flowchart_Diagram.png, id=576, 369.2997pt x 362.0727pt>
+<contents/Figures/Flowchart_Diagram.png, id=577, 369.2997pt x 362.0727pt>
 File: contents/Figures/Flowchart_Diagram.png Graphic file (type png)
 <use contents/Figures/Flowchart_Diagram.png>
 Package pdftex.def Info: contents/Figures/Flowchart_Diagram.png  used on input 
-line 140.
+line 139.
 (pdftex.def)             Requested size: 284.52756pt x 278.9681pt.
  [20]) [21 <./contents/Figures/Flowchart_Diagram.png>]
 \textls [40]{\MakeUppercase    []{Bab}} IV.
@@ -1884,12 +1884,12 @@ Package rerunfilecheck Info: File `Dissertation_proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 2A46CC24E376E6AA09A0B4EF9BA1D194;5234.
  ) 
 Here is how much of TeX's memory you used:
- 33507 strings out of 476331
- 618765 string characters out of 5787765
+ 33505 strings out of 476331
+ 618746 string characters out of 5787765
  2296660 words of memory out of 5000000
  52707 multiletter control sequences out of 15000+600000
- 587194 words of font info for 295 fonts, out of 8000000 for 9000
- 1173 hyphenation exceptions out of 8191
+ 586969 words of font info for 293 fonts, out of 8000000 for 9000
+ 1174 hyphenation exceptions out of 8191
  84i,17n,80p,1681b,2260s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pf
 b><C:/Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pf
@@ -1905,9 +1905,9 @@ Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/
 Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:
 /Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
 /Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Dissertation_proposal.pdf (44 pages, 2089013 bytes).
+Output written on Dissertation_proposal.pdf (44 pages, 2089237 bytes).
 PDF statistics:
- 936 PDF objects out of 1000 (max. 8388607)
+ 937 PDF objects out of 1000 (max. 8388607)
  194 named destinations out of 1000 (max. 500000)
  53046 words of extra memory for PDF output out of 61914 (max. 10000000)
 
