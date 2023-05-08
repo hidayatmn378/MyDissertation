@@ -45,8 +45,8 @@
 \contentsline {subsection}{\numberline {3.2.1}Model Musiman}{18}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Analisis Korelasi}{19}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Prosedur Penelitian}{20}{section.3.3}%
-\contentsline {chapter}{\numberline {IV}BIAYA DAN JADWAL PENELITIAN}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Biaya Penelitian}{22}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Jadwal Penelitian}{23}{section.4.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{24}{chapter*.13}%
-\contentsline {chapter}{LAMPIRAN-LAMPIRAN}{32}{chapter*.13}%
+\contentsline {chapter}{\numberline {IV}BIAYA DAN JADWAL PENELITIAN}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Biaya Penelitian}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Jadwal Penelitian}{24}{section.4.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{25}{chapter*.13}%
+\contentsline {chapter}{LAMPIRAN-LAMPIRAN}{33}{chapter*.13}%

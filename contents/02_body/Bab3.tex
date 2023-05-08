@@ -101,7 +101,7 @@
 %	\end{itemize}
 
 	\subsection[Analisis Korelasi]{Analisis Korelasi}
-		 Analisis korelasi berfungsi sebagai alat eksplorasi data dan pembuatan hipotesis dalam menentukan hubungan antara parameter yang diteliti. Dalam penelitian ini, analisis korelasi digunakan untuk mengukur kekuatan (nilai koefisien korelasi) dan arah (positif/negatif) hubungan antara indeks IOD dengan parameter lainnya, serta untuk menentukan signifikansi koefisien korelasi tersebut.
+		Analisis korelasi berfungsi sebagai alat eksplorasi data dan pembuatan hipotesis dalam menentukan hubungan antara parameter yang diteliti. Dalam penelitian ini, analisis korelasi digunakan untuk mengukur kekuatan (nilai koefisien korelasi) dan arah (positif/negatif) hubungan antara indeks IOD dengan parameter lainnya, serta untuk menentukan signifikansi koefisien korelasi tersebut.
 		
 		Penelitian ini menganalisis hubungan antara IOD, parameter oseanografi (arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih) dan meteorologi (laju presipitasi dan tekanan angin). Persamaan korelasi dan koefisien korelasi yang digunakan dapat dituliskan sebagai \cite{hidayat2023relationship,Haditiar2020}
 		\begin{equation}
@@ -127,18 +127,36 @@
 	Prosedur penelitian mengikuti diagram alir pada Gambar \ref{fig:flowchart} dan dapat dijelaskan sebagai berikut. 
 	\begin{itemize}
 		\item \textbf{\textit{Start}}. \textit{Software} yang digunakan dalam penelitian ini adalah Matlab dan \textit{R}.
-		\item \textbf{\textit{Input}}. Data-data terkait penelitian diunduh terlebih dahulu. Adapun data yang digunakan adalah data DMI, data oseanografi: arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, dan fluks panas bersih, dan data meteorologi: laju presipitasi dan tekanan angin.
-		\item \textbf{\textit{Process}}. Setelah data tersedia, kemudian data diolah dengan cara melakukan pemetaan dan penggambaran data. Pada tahap ini akan dilakukan beberapa tahapan berikut.
+		\item \textbf{\textit{Input}}. Data penelitian diunduh terlebih dahulu. Adapun data yang digunakan adalah data DMI, arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan tekanan angin.
+		\item \textbf{\textit{Process}}. Data kemudian diolah dengan cara melakukan pemetaan dan penggambaran data. Pada tahap ini akan dilakukan beberapa hal berikut.
 		\begin{itemize}
 			\item Prapemrosesan data, yaitu mempersiapkan data sebelum dipetakan dan digambar.
-			\item Pemetaan data, yaitu proses pemetaan data yang telah disiapkan sebelumnya. 
-			\item Pembersihan data, yaitu
-			\item Penggambaran Data, yaitu
+			\item Pemetaan data, yaitu proses memetakan atau menetapkan data dari satu format ke format lain atau dari satu lokasi ke lokasi lain dengan tujuan untuk memudahkan pengolahan data, sehingga dapat digunakan untuk tujuan analisis atau pelaporan.
+			\item Pembersihan data, yaitu proses mengidentifikasi, mengubah, atau menghapus data yang tidak akurat, tidak lengkap, atau tidak relevan dalam kumpulan data. 
+			\item Penggambaran data, yaitu proses menyajikan data dalam bentuk visual, seperti grafik, diagram, atau peta dengan tujuan untuk memudahkan pemahaman dan analisis terhadap data yang kompleks dan memudahkan untuk melihat pola dan tren dari data yang disajikan.
 		\end{itemize}
 		
 		\item \textbf{\textit{Output}}. Penggambaran data pada tahap sebelumnya menghasilkan peta IOD, oseanografi, dan meteorologi secara jangka panjang. 
-		\item \textbf{\textit{Process}}. Tahapan selanjutnya adalah analisis data. Dalam tahap ini dilakukan analisis model musiman (\textit{seasonal model}) untuk mengidentifikasi pola musiman dan memprediksi parameter berdasarkan keteraturannya. Dilakukan juga analisis statistik, dalam hal ini analisis korelasi untuk melihat hubungan IOD, parameter oseanografi dan meteorologi.
-		\item \textbf{\textit{Output}}. Terakhir, diperoleh kesimpulan berdasarkan analisis yang telah dilakukan.
+		\item \textbf{\textit{Process}}. Dalam tahap ini akan dilakukan beberapa analisis data, diantaranya model musiman (\textit{seasonal model}) untuk mengidentifikasi pola musiman dan memprediksi parameter berdasarkan keteraturannya dan analisis korelasi untuk mengukur kekuatan dan arah hubungan antara IOD dengan parameter oseanografi dan meteorologi, serta untuk menentukan signifikansi koefisien korelasi tersebut.
+		
+		Tahapan yang dilakukan dalam analisis \textit{seasonal model} dapat dijelaskan sebagai berikut.
+		\begin{itemize}
+			\item Input: data DMI, arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan tekanan angin.
+			\item Pemodelan komponen musiman: Pada tahap ini, nilai $\alpha, \beta$, dan $\gamma$ pada Pers. \ref{eq:sm_} akan ditentukan dengan menggunakan fungsi model linear (lm()) dalam R. Nilai ini kemudian digunakan untuk memodelkan komponen musiman.
+			\item \textit{Plotting Model}: Setelah komponen musiman dimodelkan, langkah selanjutnya adalah melakukan \textit{plotting model} untuk memvisualisasikan hasil analisis.
+		\end{itemize}
+		
+		Tahapan yang dilakukan dalam analisis korelasi dapat dijelaskan sebagai berikut.
+		\begin{itemize}
+			\item Tentukan hipotesis nol dan hipotesis alternatif.
+			\item Tentukan tingkat signifikansi alpha (alpha 1\% atau 5\%).
+			\item Hitung koefisien korelasi antara dua variabel.
+			\item Hitung nilai p (nilai probabilitas) dari koefisien korelasi untuk menentukan signifikansi statistik.
+			\item Bandingkan nilai p dengan tingkat signifikansi $\alpha$. Jika p < $\alpha$, maka korelasi signifikan secara statistik dan hipotesis nol dapat ditolak. Sedangkan jika p > $\alpha$, maka tidak ada bukti yang cukup untuk menolak hipotesis nol dan korelasi dianggap tidak signifikan.
+			\item Plot hasil uji korelasi.
+		\end{itemize}
+		\item \textbf{\textit{Output}}. Dari proses analisis data diperoleh peta seasonal model, peta korelasi, dan tabulasi hasil.
+		\item \textbf{\textit{Process}}. Hasil output dari peta-peta IOD, oseanografi, meteorologi, model musiman, korelasi, dan tabulasi kemudian diinterpretasikan dan dituliskan dalam laporan.
 		\item \textbf{\textit{End}}. Penelitian selesai.
 	\end{itemize}
 	\begin{figure}[H]
