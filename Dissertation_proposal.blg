@@ -39,45 +39,45 @@ Repeated entry---line 3499 of file contents/ReferenceMendeley.bib
  :                    ,
 I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 59 entries,
+You've used 57 entries,
             6951 wiz_defined-function locations,
-            1799 strings with 32586 characters,
-and the built_in function-call counts, 149254 in all, are:
-= -- 17234
-> -- 1330
-< -- 8536
-+ -- 9034
-- -- 122
-* -- 10846
-:= -- 29537
-add.period$ -- 230
-call.type$ -- 59
-change.case$ -- 1093
+            1780 strings with 31980 characters,
+and the built_in function-call counts, 144813 in all, are:
+= -- 16721
+> -- 1297
+< -- 8278
++ -- 8781
+- -- 118
+* -- 10523
+:= -- 28636
+add.period$ -- 222
+call.type$ -- 57
+change.case$ -- 1055
 chr.to.int$ -- 0
-cite$ -- 118
-duplicate$ -- 4273
-empty$ -- 5230
-format.name$ -- 2504
-if$ -- 26092
+cite$ -- 114
+duplicate$ -- 4165
+empty$ -- 5066
+format.name$ -- 2449
+if$ -- 25309
 int.to.chr$ -- 0
-int.to.str$ -- 177
+int.to.str$ -- 171
 missing$ -- 0
-newline$ -- 1834
-num.names$ -- 472
-pop$ -- 1829
+newline$ -- 1776
+num.names$ -- 456
+pop$ -- 1780
 preamble$ -- 1
-purify$ -- 326
+purify$ -- 314
 quote$ -- 0
-skip$ -- 8121
+skip$ -- 7860
 stack$ -- 0
-substring$ -- 9553
-swap$ -- 2432
-text.length$ -- 210
+substring$ -- 9288
+swap$ -- 2367
+text.length$ -- 202
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 4720
+type$ -- 4560
 warning$ -- 0
-while$ -- 924
+while$ -- 901
 width$ -- 0
-write$ -- 2416
+write$ -- 2345
 (There were 6 error messages)

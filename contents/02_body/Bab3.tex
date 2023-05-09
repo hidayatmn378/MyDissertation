@@ -139,22 +139,22 @@
 		\item \textbf{\textit{Output}}. Penggambaran data pada tahap sebelumnya menghasilkan peta IOD, oseanografi, dan meteorologi secara jangka panjang. 
 		\item \textbf{\textit{Process}}. Dalam tahap ini akan dilakukan beberapa analisis data, diantaranya model musiman (\textit{seasonal model}) untuk mengidentifikasi pola musiman dan memprediksi parameter berdasarkan keteraturannya dan analisis korelasi untuk mengukur kekuatan dan arah hubungan antara IOD dengan parameter oseanografi dan meteorologi, serta untuk menentukan signifikansi koefisien korelasi tersebut.
 		
-		Tahapan yang dilakukan dalam analisis \textit{seasonal model} dapat dijelaskan sebagai berikut.
-		\begin{itemize}
-			\item Input: data DMI, arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan tekanan angin.
-			\item Pemodelan komponen musiman: Pada tahap ini, nilai $\alpha, \beta$, dan $\gamma$ pada Pers. \ref{eq:sm_} akan ditentukan dengan menggunakan fungsi model linear (lm()) dalam R. Nilai ini kemudian digunakan untuk memodelkan komponen musiman.
-			\item \textit{Plotting Model}: Setelah komponen musiman dimodelkan, langkah selanjutnya adalah melakukan \textit{plotting model} untuk memvisualisasikan hasil analisis.
-		\end{itemize}
+%		Tahapan yang dilakukan dalam analisis \textit{seasonal model} dapat dijelaskan sebagai berikut.
+%		\begin{itemize}
+%			\item Input: data DMI, arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih, laju presipitasi, dan tekanan angin.
+%			\item Pemodelan komponen musiman: Pada tahap ini, nilai $\alpha, \beta$, dan $\gamma$ pada Pers. \ref{eq:sm_} akan ditentukan dengan menggunakan fungsi model linear (lm()) dalam R. Nilai ini kemudian digunakan untuk memodelkan komponen musiman.
+%			\item \textit{Plotting Model}: Setelah komponen musiman dimodelkan, langkah selanjutnya adalah melakukan \textit{plotting model} untuk memvisualisasikan hasil analisis.
+%		\end{itemize}
 		
-		Tahapan yang dilakukan dalam analisis korelasi dapat dijelaskan sebagai berikut.
-		\begin{itemize}
-			\item Tentukan hipotesis nol dan hipotesis alternatif.
-			\item Tentukan tingkat signifikansi alpha (alpha 1\% atau 5\%).
-			\item Hitung koefisien korelasi antara dua variabel.
-			\item Hitung nilai p (nilai probabilitas) dari koefisien korelasi untuk menentukan signifikansi statistik.
-			\item Bandingkan nilai p dengan tingkat signifikansi $\alpha$. Jika p < $\alpha$, maka korelasi signifikan secara statistik dan hipotesis nol dapat ditolak. Sedangkan jika p > $\alpha$, maka tidak ada bukti yang cukup untuk menolak hipotesis nol dan korelasi dianggap tidak signifikan.
-			\item Plot hasil uji korelasi.
-		\end{itemize}
+%		Tahapan yang dilakukan dalam analisis korelasi dapat dijelaskan sebagai berikut.
+%		\begin{itemize}
+%			\item Tentukan hipotesis nol dan hipotesis alternatif.
+%			\item Tentukan tingkat signifikansi alpha (alpha 1\% atau 5\%).
+%			\item Hitung koefisien korelasi antara dua variabel.
+%			\item Hitung nilai p (nilai probabilitas) dari koefisien korelasi untuk menentukan signifikansi statistik.
+%			\item Bandingkan nilai p dengan tingkat signifikansi $\alpha$. Jika p < $\alpha$, maka korelasi signifikan secara statistik dan hipotesis nol dapat ditolak. Sedangkan jika p > $\alpha$, maka tidak ada bukti yang cukup untuk menolak hipotesis nol dan korelasi dianggap tidak signifikan.
+%			\item Plot hasil uji korelasi.
+%		\end{itemize}
 		\item \textbf{\textit{Output}}. Dari proses analisis data diperoleh peta seasonal model, peta korelasi, dan tabulasi hasil.
 		\item \textbf{\textit{Process}}. Hasil output dari peta-peta IOD, oseanografi, meteorologi, model musiman, korelasi, dan tabulasi kemudian diinterpretasikan dan dituliskan dalam laporan.
 		\item \textbf{\textit{End}}. Penelitian selesai.

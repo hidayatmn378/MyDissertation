@@ -426,37 +426,6 @@ Devi, K\BPBI N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Dwivedi%
-}{%
-Dwivedi%
-}{%
-{\protect \APACyear {2012}}%
-}]{%
-Dwivedi2012}
-\APACinsertmetastar {%
-Dwivedi2012}%
-\begin{APACrefauthors}%
-Dwivedi, S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2012}{dec}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Forecasting the peak anomalies of dominant intrinsic
-  modes of Indian Ocean Dipole}} {{Forecasting the peak anomalies of dominant
-  intrinsic modes of Indian Ocean Dipole}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Deep Sea Research Part I: Oceanographic Research
-  Papers}{70}{}{73--82}.
-\newblock
-\begin{APACrefURL}
-  \url{https://linkinghub.elsevier.com/retrieve/pii/S0967063712002026}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.dsr.2012.10.005} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Eakins%
 \ \BBA {} Sharman%
 }{%
@@ -843,43 +812,6 @@ Ikhwan, M.%
 \newblock
 \begin{APACrefDOI} \doi{https://doi.org/10.22034/GJESM.2021.04.04}
   \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Jiang%
-, Rashid%
-, Johnson%
-\BCBL {}\ \BBA {} Sharma%
-}{%
-Jiang%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-Jiang2021}
-\APACinsertmetastar {%
-Jiang2021}%
-\begin{APACrefauthors}%
-Jiang, Z.%
-, Rashid, M\BPBI M.%
-, Johnson, F.%
-\BCBL {}\ \BBA {} Sharma, A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{jan}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{A wavelet-based tool to modulate variance in
-  predictors: An application to predicting drought anomalies}} {{A
-  wavelet-based tool to modulate variance in predictors: An application to
-  predicting drought anomalies}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Environmental Modelling \& Software}{135}{}{104907}.
-\newblock
-\begin{APACrefURL}
-  \url{https://linkinghub.elsevier.com/retrieve/pii/S1364815220309646}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.envsoft.2020.104907} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
