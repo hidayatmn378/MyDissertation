@@ -27,7 +27,7 @@
 \contentsline {section}{\numberline {1.2}Rumusan Masalah}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Tujuan Penelitian}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Urgensi Penelitian}{3}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Manfaat Penelitian}{4}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Manfaat Penelitian}{5}{section.1.5}%
 \contentsline {chapter}{\numberline {II}TINJAUAN PUSTAKA}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Penelitian Terkait IOD}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Model Numerik dan Parameter}{10}{section.2.2}%
@@ -44,9 +44,10 @@
 \contentsline {section}{\numberline {3.2}Analisis Data}{18}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Model Musiman}{18}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Analisis Korelasi}{19}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Prosedur Penelitian}{20}{section.3.3}%
-\contentsline {chapter}{\numberline {IV}BIAYA DAN JADWAL PENELITIAN}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Biaya Penelitian}{22}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Jadwal Penelitian}{23}{section.4.2}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{24}{chapter*.13}%
-\contentsline {chapter}{LAMPIRAN-LAMPIRAN}{31}{chapter*.13}%
+\contentsline {subsection}{\numberline {3.2.3}Analisis Regresi}{21}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Prosedur Penelitian}{22}{section.3.3}%
+\contentsline {chapter}{\numberline {IV}BIAYA DAN JADWAL PENELITIAN}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Biaya Penelitian}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Jadwal Penelitian}{25}{section.4.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{26}{chapter*.13}%
+\contentsline {chapter}{LAMPIRAN-LAMPIRAN}{34}{chapter*.13}%

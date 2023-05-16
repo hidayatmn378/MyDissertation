@@ -113,6 +113,40 @@ Alsayed, A\BPBI Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Angelini%
+}{%
+Angelini%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+ANGELINI2019722}
+\APACinsertmetastar {%
+ANGELINI2019722}%
+\begin{APACrefauthors}%
+Angelini, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Regression Analysis} {Regression analysis}.{\BBCQ}
+\newblock
+\BIn{} S.~Ranganathan, M.~Gribskov, K.~Nakai\BCBL {}\ \BBA {} C.~Schönbach\
+  (\BEDS), \APACrefbtitle {Encyclopedia of Bioinformatics and Computational
+  Biology} {Encyclopedia of bioinformatics and computational biology}\
+  (\BPG~722-730).
+\newblock
+\APACaddressPublisher{Oxford}{Academic Press}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/pii/B9780128096338203609}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/B978-0-12-809633-8.20360-9}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Aumont%
 , Eth\'e%
 , Tagliabue%
@@ -527,6 +561,36 @@ Genda, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Goela%
+\ \protect \BOthers {.}}{%
+Goela%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+goela2016time}
+\APACinsertmetastar {%
+goela2016time}%
+\begin{APACrefauthors}%
+Goela, P\BPBI C.%
+, Cordeiro, C.%
+, Danchenko, S.%
+, Icely, J.%
+, Cristina, S.%
+\BCBL {}\ \BBA {} Newton, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Time series analysis of data for sea surface temperature
+  and upwelling components from the southwest coast of Portugal} {Time series
+  analysis of data for sea surface temperature and upwelling components from
+  the southwest coast of portugal}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Marine Systems}{163}{}{12--22}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Gurvan%
 \ \protect \BOthers {.}}{%
 Gurvan%
@@ -704,6 +768,32 @@ Hidayat, M.%
 \newblock
 \APACjournalVolNumPages{Global Journal of Environmental Science and
   Management}{9}{3}{389--402}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hyndman%
+\ \BBA {} Athanasopoulos%
+}{%
+Hyndman%
+\ \BBA {} Athanasopoulos%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+hyndman2018forecasting}
+\APACinsertmetastar {%
+hyndman2018forecasting}%
+\begin{APACrefauthors}%
+Hyndman, R\BPBI J.%
+\BCBT {}\ \BBA {} Athanasopoulos, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2018}.
+\newblock
+\APACrefbtitle {Forecasting: principles and practice} {Forecasting: principles
+  and practice}.
+\newblock
+\APACaddressPublisher{}{OTexts}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1499,6 +1589,34 @@ Sattar, A\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Schober%
+, Boer%
+\BCBL {}\ \BBA {} Schwarte%
+}{%
+Schober%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+schober2018correlation}
+\APACinsertmetastar {%
+schober2018correlation}%
+\begin{APACrefauthors}%
+Schober, P.%
+, Boer, C.%
+\BCBL {}\ \BBA {} Schwarte, L\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Correlation coefficients: appropriate use and
+  interpretation} {Correlation coefficients: appropriate use and
+  interpretation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Anesthesia \& analgesia}{126}{5}{1763--1768}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Setiawan%
 , Wirasatriya%
 , Hernawan%
@@ -2037,6 +2155,41 @@ Zhang, Z.%
   https://onlinelibrary.wiley.com/doi/10.1029/2021JC018229} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2021JC018229} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhao%
+\ \protect \BOthers {.}}{%
+Zhao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+zhao2022spearman}
+\APACinsertmetastar {%
+zhao2022spearman}%
+\begin{APACrefauthors}%
+Zhao, G.%
+, Ding, W.%
+, Tian, J.%
+, Liu, J.%
+, Gu, Y.%
+, Shi, S.%
+\BDBL {}Sun, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Spearman rank correlations analysis of the elemental,
+  mineral concentrations, and mechanical parameters of the Lower Cambrian
+  Niutitang shale: A case study in the Fenggang block, Northeast Guizhou
+  Province, South China} {Spearman rank correlations analysis of the elemental,
+  mineral concentrations, and mechanical parameters of the lower cambrian
+  niutitang shale: A case study in the fenggang block, northeast guizhou
+  province, south china}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Petroleum Science and
+  Engineering}{208}{}{109550}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
