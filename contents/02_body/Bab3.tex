@@ -108,7 +108,6 @@
 	\subsection[Analisis Korelasi]{Analisis Korelasi}
 		Analisis korelasi berfungsi sebagai alat eksplorasi data dan pembuatan hipotesis dalam menentukan hubungan antara parameter yang diteliti. Dalam penelitian ini, analisis korelasi digunakan untuk mengukur kekuatan (nilai koefisien korelasi) dan arah (positif/negatif) hubungan antara indeks IOD dengan parameter lainnya, serta untuk menentukan signifikansi koefisien korelasi tersebut.
 		
-<<<<<<< HEAD
 		Analisis korelasi mempelajari hubungan linier antara variabel/parameter yang diteliti. Jika terdapat hubungan antara dua karakteristik, langkah selanjutnya adalah mengevaluasi apakah variabel pertama dapat digunakan untuk memprediksi variabel kedua melalui analisis regresi. Kekuatan dari korelasi ditentukan berdasarkan koefisien korelasi ($R$), yang bervariasi antara -1 dan +1. Berdasarkan \citeA{schober2018correlation}, jika $R\in[0.00,0.10]$ maka korelasi diabaikan. Jika $R\in[0.10,0.39]$ maka korelasi lemah. Jika $R\in[0.40,0.69]$ maka korelasi kuat. Jika $R\in[0.90,1.00]$ maka korelasi sangat kuat. Sementara itu, arah dari korelasi dapat berupa korelasi positif atau korelasi negatif. Korelasi positif terjadi jika nilai variabel pertama berbanding lurus dengan variabel kedua. Sedangkan korelasi negatif terjadi jika nilai variabel pertama berbanding terbalik dengan variabel kedua. Persamaan koefisien korelasi dapat dituliskan sebagai berikut  \cite{hidayat2023relationship,Haditiar2020,zhao2022spearman}.
 		\begin{itemize}
 			\item Korelasi Pearson
@@ -129,16 +128,6 @@
 		\end{itemize}
 	
 		Untuk menggunakan korelasi Pearson, variabel harus terdistribusi secara normal dan harus terdapat hubungan linear antara variabel-variabel tersebut. Distribusi normal dapat diuji baik secara analitis maupun grafis dengan menggunakan plot QQ (\textit{Quantile-Quantile plot}) sedangkan korelasi linear dapat diperiksa dengan menggunakan scatter plot. Jika kondisi-kondisi ini tidak terpenuhi, maka digunakan korelasi Spearman.
-=======
-		Penelitian ini menganalisis hubungan antara IOD, parameter oseanografi (arus laut, temperatur laut, salinitas, MLD, Chl-a, fluks air tawar, fluks panas bersih) dan meteorologi (laju presipitasi dan tekanan angin). Persamaan korelasi dan koefisien korelasi yang digunakan dapat dituliskan sebagai \cite{Haditiar2020}
-		\begin{equation}
-			\begin{aligned}
-				y &= a+rx\\
-				r &= \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i-\bar{x})^2\sum (y_i-\bar{y})^2}},
-			\end{aligned}
-		\end{equation}
-		dengan $\alpha$ adalah konstanta titik potong sumbu-$y$, $r$ adalah kemiringan dari garis regresi (koefisien regresi), $x_i, y_i$ adalah variable yang digunakan untuk menghitung koefisien korelasi dengan $i$ adalah indeks data. Sedangkan $\bar{x}$ dan $\bar{y}$ adalah rata-rata. 
->>>>>>> 78c771c8721f1c7bc670f04aed28e27a85f35326
 		
 		Signifikansi dari koefisien korelasi diuji dengan uji t dengan cara menguji apakah koefisien korelasi secara signifikan berbeda dari nol (uji bebas linier). Dalam hal ini, hipotesis nol menyatakan tidak ada korelasi antara variabel yang dipertimbangkan, sementara hipotesis alternatif mengasumsikan adanya korelasi. Dengan tingkat signifikansi $(\alpha)$ pada 1\% atau 5\%, jika nilai p < 5\%, hipotesis nol ditolak dan hipotesis alternatif diterima yang berarti bahwa terdapat hubungan antara variabel dalam populasi. Persamaan untuk t-statistik dapat dituliskan sebagai
 		\begin{equation}
@@ -164,8 +153,33 @@
 				\end{aligned}
 			\end{equation}
 			dengan $y$ dan $x_1,x_2,\dots,x_k$ adalah variabel dependen dan independen, $b$ adalah konstanta titik potong sumbu-$y$, dan $a_1,a_2,\dots,a_k$ adalah koefisien regresi yang mengukur pengaruh variabel independen $(x_1,x_2,\dots,x_k)$ terhadap variabel dependen $(y)$.
+			\item Regresi Polinomial
+			\begin{equation}
+				\begin{aligned}
+					y &= a_0+a_1 \cdot x+a_2 \cdot x^2+\dots+a_k \cdot x^k,
+				\end{aligned}
+			\end{equation}
+			dengan $y$ dan $x$ adalah variabel dependen dan independen, $k$ adalah derajat polinomial, dan $a_1,a_2,\dots,a_k$ adalah koefisien regresi yang mengukur pengaruh variabel independen $(x)$ terhadap variabel dependen $(y)$.
 		\end{itemize}
-
+	
+		Untuk mengevaluasi kualitas prediksi atau penjelasan model regresi terhadap variabel dependen, digunakan dua ukuran utama, yaitu koefisien determinasi $R^2$ dan kesalahan estimasi standar (\textit{standard estimation error}). Koefisien determinasi $R^2$ menggambarkan proporsi varian yang dapat dijelaskan oleh variabel independen. Semakin tinggi nilai $R^2$, semakin baik kualitas model regresi. Perhitungan $R^2$ melibatkan perbandingan antara variansi nilai perkiraan ($S_{\hat{y}}$) dan variansi nilai yang diamati $(S_y)$,
+		\begin{equation}
+			\begin{aligned}
+				R^2 &= \frac{S_{\hat{y}}}{S_y}.
+			\end{aligned}
+		\end{equation}
+	
+		Koefisien determinasi $R^2$  dipengaruhi oleh jumlah variabel independen yang digunakan. Semakin banyak variabel independen yang termasuk dalam model regresi, semakin besar resolusi variansi $R^2$. Untuk memperhitungkan hal ini, digunakan $R^2$ yang disesuaikan (\textit{adjusted }$R^2$).
+		\begin{equation}
+			\begin{aligned}
+				R^2_{adj} &= 1-(1-R^2)\cdot\frac{n-1}{n-k-1}.
+			\end{aligned}
+		\end{equation}
+		dengan $n$ adalah jumlah sampel dan $k$ adalah jumlah variabel independen dalam model regresi. Kesalahan estimasi standar adalah simpangan baku dari kesalahan estimasi. Hal ini memberikan gambaran sejauh mana prediksi berbeda dari nilai yang sebenarnya. Secara grafis, kesalahan estimasi standar adalah penyebaran nilai yang diamati di sekitar garis regresi.
+		\begin{equation}
+				SE = \sqrt{\frac{\sum (y_i-\hat{y_i})^2}{n-k-1}},				
+		\end{equation}
+		dengan $y_i$ adalah nilai yang diamati, $\hat{y_i}$ adalah nilai yang diprediksi dari model regresi, $n$ adalah jumlah sampel, dan $k$ adalah jumlah variabel independen.
 \end{spacing}
 \vspace{-0.5pc}
 \section[Prosedur Penelitian]{Prosedur Penelitian}
