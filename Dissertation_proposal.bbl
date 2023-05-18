@@ -949,7 +949,37 @@ Lan%
 Lan%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2013}}%
-}]{%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+lan2013effects}
+\APACinsertmetastar {%
+lan2013effects}%
+\begin{APACrefauthors}%
+Lan, K\BHBI W.%
+, Evans, K.%
+\BCBL {}\ \BBA {} Lee, M\BHBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013{\protect \BCnt {1}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Effects of climate variability on the distribution and
+  fishing conditions of yellowfin tuna (Thunnus albacares) in the western
+  Indian Ocean} {Effects of climate variability on the distribution and fishing
+  conditions of yellowfin tuna (thunnus albacares) in the western indian
+  ocean}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Climatic Change}{119}{}{63--77}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lan%
+, Evans%
+\BCBL {}\ \BBA {} Lee%
+}{%
+Lan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
 Lan2013}
 \APACinsertmetastar {%
 Lan2013}%
@@ -960,7 +990,7 @@ Lan, K\BHBI W.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2013}{jul}{}.
+\APACrefYearMonthDay{2013{\protect \BCnt {2}}}{jul}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Effects of climate variability on the distribution and
   fishing conditions of yellowfin tuna (Thunnus albacares) in the western
@@ -1156,6 +1186,32 @@ Mandal, S.%
   https://www.mdpi.com/2072-4292/14/7/1745} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.3390/rs14071745} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Padman%
+\ \BBA {} Erofeeva%
+}{%
+Padman%
+\ \BBA {} Erofeeva%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+padman2005tide}
+\APACinsertmetastar {%
+padman2005tide}%
+\begin{APACrefauthors}%
+Padman, L.%
+\BCBT {}\ \BBA {} Erofeeva, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Tide model driver (TMD) manual} {Tide model driver (tmd)
+  manual}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth and Space research}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

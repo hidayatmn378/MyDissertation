@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.23)  17 MAY 2023 10:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.23)  18 MAY 2023 12:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1360,7 +1360,7 @@ Package titlesec Warning: You are using an old interface for page styles
 
 ] [2]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-5.
+4.
 
 (C:\Users\ocean\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1378,35 +1378,35 @@ Package pdftex.def Info: contents/Figures/Road_Map.png  used on input line 131.
 (pdftex.def)             Requested size: 341.43306pt x 285.95868pt.
 ) [15 <./contents/Figures/Road_Map.png>]
 \textls [40]{\MakeUppercase    []{Bab}} III.
-(contents/02_body/Bab3.tex [16
-
-]
-<contents/Figures/Batimetri_edit_compress.png, id=540, 5272.69875pt x 3959.7937
+(contents/02_body/Bab3.tex
+<contents/Figures/Batimetri_edit_compress.png, id=546, 5272.69875pt x 3959.7937
 5pt>
 File: contents/Figures/Batimetri_edit_compress.png Graphic file (type png)
 <use contents/Figures/Batimetri_edit_compress.png>
 Package pdftex.def Info: contents/Figures/Batimetri_edit_compress.png  used on 
-input line 66.
+input line 75.
 (pdftex.def)             Requested size: 341.43306pt x 256.36847pt.
- [17 <./contents/Figures/Batimetri_edit_compress.png>] [18]
-<contents/Figures/sm_experiment.png, id=575, 3680.75125pt x 1897.0875pt>
+ [16
+
+] [17 <./contents/Figures/Batimetri_edit_compress.png>] [18]
+<contents/Figures/sm_experiment.png, id=590, 3680.75125pt x 1897.0875pt>
 File: contents/Figures/sm_experiment.png Graphic file (type png)
 <use contents/Figures/sm_experiment.png>
 Package pdftex.def Info: contents/Figures/sm_experiment.png  used on input line
- 94.
+ 106.
 (pdftex.def)             Requested size: 426.79134pt x 219.96967pt.
 
-Overfull \hbox (14.22636pt too wide) in paragraph at lines 94--95
+Overfull \hbox (14.22636pt too wide) in paragraph at lines 106--107
  [][] 
  []
 
 [19 <./contents/Figures/sm_experiment.png>] [20] [21] [22] [23]
-<contents/Figures/Flowchart_Diagram.png, id=626, 593.3367pt x 304.2567pt>
+<contents/Figures/Flowchart_Diagram.png, id=644, 578.8827pt x 297.0297pt>
 File: contents/Figures/Flowchart_Diagram.png Graphic file (type png)
 <use contents/Figures/Flowchart_Diagram.png>
 Package pdftex.def Info: contents/Figures/Flowchart_Diagram.png  used on input 
-line 224.
-(pdftex.def)             Requested size: 398.33858pt x 204.26875pt.
+line 230.
+(pdftex.def)             Requested size: 398.33858pt x 204.3887pt.
 ) [24 <./contents/Figures/Flowchart_Diagram.png>]
 \textls [40]{\MakeUppercase    []{Bab}} IV.
 (contents/02_body/BiayaJadwal.tex [25
@@ -1528,295 +1528,295 @@ Underfull \hbox (badness 10000) in paragraph at lines 536--562
  []
 
 [28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1129--1155
 \T1/pcr/m/n/12 s10872 [] -021 [] -00625 [] -2https :// link [] .springer [] .co
 m / 10 [] .1007 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1139--1160
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1190
 \T1/pcr/m/n/12 www [] .mdpi [] .com / 1574444https :// www [] .mdpi [] .com / 2
 072 [] -4292 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1139--1160
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1190
 \T1/pcr/m/n/12 14 / 7 / 1745 / pdfhttps :// www [] .mdpi [] .com / 2072 [] -429
 2 / 14 / 7 / 1745$[][]
  []
 
 [30]
-Underfull \hbox (badness 1087) in paragraph at lines 1280--1303
+Underfull \hbox (badness 1087) in paragraph at lines 1336--1359
 \T1/ptm/m/n/12 (+20) M.  (2020, aug).  Near-Surface Sa-li-ni-ty Re-ve-als the O
 ce-a-nic So-ur-ces
  []
 
 
-Underfull \hbox (badness 3503) in paragraph at lines 1280--1303
+Underfull \hbox (badness 3503) in paragraph at lines 1336--1359
 \T1/ptm/m/n/12 (+20) of Mo-is-tu-re for Aus-tra-li-an Pre-ci-pi-ta-tion thro-u-
 gh Atmos-phe-ric Mo-is-tu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1280--1303
+Underfull \hbox (badness 10000) in paragraph at lines 1336--1359
 [][]$\T1/pcr/m/n/12 https :// journals [] .ametsoc [] .org / view / journals / 
 clim / 33 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1280--1303
+Underfull \hbox (badness 10000) in paragraph at lines 1336--1359
 \T1/pcr/m/n/12 15 / jcliD190579 [] .xmlhttp :// journals [] .ametsoc [] .org / 
 doi /
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 1319--1342
+Underfull \hbox (badness 1314) in paragraph at lines 1375--1398
 []\T1/ptm/m/n/12 (+20) Reynolds, R. W., Ra-yner, N. A., Smi-th, T. M., Sto-kes,
  D. C., dan Wang,
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 1319--1342
+Underfull \hbox (badness 1810) in paragraph at lines 1375--1398
 \T1/ptm/m/n/12 (+20) W.  (2002).  An imp-ro-ved in si-tu and sa-te-lli-te sst a
 na-lysis for cli-
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 1319--1342
+Underfull \hbox (badness 2608) in paragraph at lines 1375--1398
 \T1/ptm/m/n/12 (+20) ma-te.  \T1/ptm/m/it/12 (+20) Jo-ur-nal of Cli-ma-te\T1/pt
 m/m/n/12 (+20) , \T1/ptm/m/it/12 (+20) 15\T1/ptm/m/n/12 (+20) (13), 1609 - 1625
 .  Re-tri-e-ved from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1319--1342
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1398
 [][]$\T1/pcr/m/n/12 https :// journals [] .ametsoc [] .org / view / journals / 
 clim / 15 /
  []
 
 
-Underfull \hbox (badness 4556) in paragraph at lines 1319--1342
+Underfull \hbox (badness 4556) in paragraph at lines 1375--1398
 \T1/pcr/m/n/12 13 / 1520 [] -0442 [] []2002 [] []015 [] []1609 [] []aiisas [] [
 ]2 [] .0 [] .co [] []2 [] .xml$[][]   \T1/ptm/m/n/12 (+20) doi:
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 1495--1516
+Underfull \hbox (badness 3568) in paragraph at lines 1551--1572
 \T1/ptm/m/n/12 (+20) va-ri-a-bi-li-ty du-ring In-di-an Oce-an Di-po-le mo-de ev
 en-ts: CO-A-DS ob-se-
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 1495--1516
+Underfull \hbox (badness 2495) in paragraph at lines 1551--1572
 \T1/ptm/m/n/12 (+20) rva-tions.  \T1/ptm/m/it/12 (+20) Jo-ur-nal of Cli-ma-te\T
 1/ptm/m/n/12 (+20) , \T1/ptm/m/it/12 (+20) 16\T1/ptm/m/n/12 (+20) (16), 2735--2
 751.  Re-tri-e-ved from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1495--1516
+Underfull \hbox (badness 10000) in paragraph at lines 1551--1572
 [][]$\T1/pcr/m/n/12 https :// journals [] .ametsoc [] .org / view / journals / 
 clim / 16 /
  []
 
 
-Underfull \hbox (badness 4556) in paragraph at lines 1495--1516
+Underfull \hbox (badness 4556) in paragraph at lines 1551--1572
 \T1/pcr/m/n/12 16 / 1520 [] -0442 [] []2003 [] []016 [] []2735 [] []sosasw [] [
 ]2 [] .0 [] .co [] []2 [] .xml$[][]   \T1/ptm/m/n/12 (+20) doi:
  []
 
-
-Underfull \hbox (badness 6910) in paragraph at lines 1528--1555
+[31]
+Underfull \hbox (badness 6910) in paragraph at lines 1584--1611
 \T1/ptm/m/n/12 (+20) e-ved from [][]$\T1/pcr/m/n/12 https :// www [] .tandfonli
 ne [] .com / doi / abs / 10 [] .1080 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1528--1555
+Underfull \hbox (badness 10000) in paragraph at lines 1584--1611
 \T1/pcr/m/n/12 01431161 [] .2019 [] .1637962https :// www [] .tandfonline [] .c
 om /
  []
 
 
-Underfull \hbox (badness 3449) in paragraph at lines 1528--1555
+Underfull \hbox (badness 3449) in paragraph at lines 1584--1611
 \T1/pcr/m/n/12 doi / full / 10 [] .1080 / 01431161 [] .2019 [] .1637962$[][]   
 \T1/ptm/m/n/12 (+20) doi: $10 [] .1080 /
  []
 
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 1569--1590
+
+Underfull \hbox (badness 10000) in paragraph at lines 1625--1646
 [][]$\T1/pcr/m/n/12 https :// onlinelibrary [] .wiley [] .com / doi / full / 10
  [] .1002 / joc []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1569--1590
+Underfull \hbox (badness 10000) in paragraph at lines 1625--1646
 \T1/pcr/m/n/12 .6167https :// onlinelibrary [] .wiley [] .com / doi / abs / 10 
 [] .1002 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1569--1590
+Underfull \hbox (badness 10000) in paragraph at lines 1625--1646
 \T1/pcr/m/n/12 joc [] .6167https :// rmets [] .onlinelibrary [] .wiley [] .com 
 / doi /
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 1634--1659
+Underfull \hbox (badness 1454) in paragraph at lines 1690--1715
 \T1/ptm/m/n/12 (+20) Hal-ma-he-ra Sea and its re-la-tion to EN-SO and the In-di
 -an Oce-an Di-po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1634--1659
+Underfull \hbox (badness 10000) in paragraph at lines 1690--1715
 \T1/ptm/m/n/12 (+20) ved from [][]$\T1/pcr/m/n/12 https :// www [] .tandfonline
  [] .com / doi / abs / 10 [] .1080 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1634--1659
+Underfull \hbox (badness 10000) in paragraph at lines 1690--1715
 \T1/pcr/m/n/12 01431161 [] .2019 [] .1641244https :// www [] .tandfonline [] .c
 om /
  []
 
 
-Underfull \hbox (badness 3449) in paragraph at lines 1634--1659
+Underfull \hbox (badness 3449) in paragraph at lines 1690--1715
 \T1/pcr/m/n/12 doi / full / 10 [] .1080 / 01431161 [] .2019 [] .1641244$[][]   
 \T1/ptm/m/n/12 (+20) doi: $10 [] .1080 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1706--1729
+Underfull \hbox (badness 10000) in paragraph at lines 1762--1785
 \T1/pcr/m/n/12 www [] .mdpi [] .com / 1569066https :// www [] .mdpi [] .com / 2
 072 [] -4292 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1706--1729
+Underfull \hbox (badness 10000) in paragraph at lines 1762--1785
 \T1/pcr/m/n/12 14 / 7 / 1682 / pdfhttps :// www [] .mdpi [] .com / 2072 [] -429
 2 / 14 / 7 / 1682$[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1741--1770
+Underfull \hbox (badness 10000) in paragraph at lines 1797--1826
 \T1/pcr/m/n/12 abs / 10 [] .1029 / 2018JC014580https :// agupubs [] .onlinelibr
 ary []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1741--1770
+Underfull \hbox (badness 10000) in paragraph at lines 1797--1826
 \T1/pcr/m/n/12 .wiley [] .com / doi / pdfdirect / 10 [] .1029 / 2018JC014580htt
 ps ://
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1741--1770
+Underfull \hbox (badness 10000) in paragraph at lines 1797--1826
 \T1/pcr/m/n/12 onlinelibrary [] .wiley [] .com / doi / abs / 10 [] .1029 / 2018
 JC014580$[][]
  []
 
-
-Underfull \hbox (badness 2065) in paragraph at lines 1785--1808
+[32]
+Underfull \hbox (badness 2065) in paragraph at lines 1841--1864
 []\T1/ptm/m/n/12 (+20) Sun, Q., Zhang, Y., Du, Y., dan Ji-ang, X.  (2022, nov).
   Asym-me-tric
  []
 
 
-Underfull \hbox (badness 3769) in paragraph at lines 1785--1808
+Underfull \hbox (badness 3769) in paragraph at lines 1841--1864
 \T1/ptm/m/n/12 (+20) Res-pon-se of Sea Sur-fa-ce Sa-li-ni-ty to Extre-me Po-si-
 ti-ve and Ne-ga-ti-ve
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 1785--1808
+Underfull \hbox (badness 4132) in paragraph at lines 1841--1864
 \T1/ptm/m/n/12 (+20) In-di-an Oce-an Di-po-le in the So-u-thern Tro-pi-cal In-d
 i-an Oce-an.  \T1/ptm/m/it/12 (+20) Jo-
  []
 
 
-Underfull \hbox (badness 3302) in paragraph at lines 1785--1808
+Underfull \hbox (badness 3302) in paragraph at lines 1841--1864
 \T1/ptm/m/it/12 (+20) ur-nal of Ge-o-physi-cal Re-se-ar-ch: Oce-ans\T1/ptm/m/n/
 12 (+20) , \T1/ptm/m/it/12 (+20) 127\T1/ptm/m/n/12 (+20) (11).  Re-tri-e-ved fr
 om
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1785--1808
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1864
 [][]$\T1/pcr/m/n/12 https :// agupubs [] .onlinelibrary [] .wiley [] .com / doi
  / abs /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1785--1808
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1864
 \T1/pcr/m/n/12 10 [] .1029 / 2022JC018986https :// www [] .researchgate [] .net
  /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1785--1808
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1864
 \T1/pcr/m/n/12 profile / Qiwei [] -Sun [] -3 / publication / 364727966 [] []Asy
 mmetric []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1785--1808
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1864
 []\T1/pcr/m/n/12 response [] []of [] []sea [] []surface [] []salinity [] []to [
 ] []extreme [] []positive []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1785--1808
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1864
 []\T1/pcr/m/n/12 and [] []negative [] []Indian [] []Ocean [] []Dipole [] []in [
 ] []the [] []southern [] []tr$[][]
  []
 
-[32]
-Underfull \hbox (badness 1348) in paragraph at lines 1931--1950
+
+Underfull \hbox (badness 1348) in paragraph at lines 1987--2006
 \T1/ptm/m/it/12 (+20) ans\T1/ptm/m/n/12 (+20) , \T1/ptm/m/it/12 (+20) 125\T1/pt
 m/m/n/12 (+20) (11).  Re-tri-e-ved from [][]$\T1/pcr/m/n/12 https :// agupubs [
 ] .onlinelibrary []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1931--1950
+Underfull \hbox (badness 10000) in paragraph at lines 1987--2006
 \T1/pcr/m/n/12 .wiley [] .com / doi / abs / 10 [] .1029 / 2020JC016485https ://
 
  []
 
-
-Underfull \hbox (badness 1715) in paragraph at lines 2101--2125
+[33]
+Underfull \hbox (badness 1715) in paragraph at lines 2157--2181
 \T1/ptm/m/n/12 (+20) sep).  In-di-an Oce-an tri-po-le mo-de and its as-so-ci-a-
 ted atmos-phe-ric and
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 2101--2125
+Underfull \hbox (badness 2065) in paragraph at lines 2157--2181
 \T1/ptm/m/n/12 (+20) oce-a-nic pro-ces-ses.  \T1/ptm/m/it/12 (+20) Cli-ma-te Dy
 na-mi-cs\T1/ptm/m/n/12 (+20) , \T1/ptm/m/it/12 (+20) 55\T1/ptm/m/n/12 (+20) (5-
 6), 1367--1383.  Re-tri-e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2101--2125
+Underfull \hbox (badness 10000) in paragraph at lines 2157--2181
 \T1/ptm/m/n/12 (+20) ved from [][]$\T1/pcr/m/n/12 https :// link [] .springer [
 ] .com / article / 10 [] .1007 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2101--2125
+Underfull \hbox (badness 10000) in paragraph at lines 2157--2181
 \T1/pcr/m/n/12 s00382 [] -020 [] -05331 [] -1https :// link [] .springer [] .co
 m / 10 [] .1007 /
  []
 
-[33]
-Underfull \hbox (badness 2368) in paragraph at lines 2139--2159
+
+Underfull \hbox (badness 2368) in paragraph at lines 2195--2215
 \T1/ptm/m/it/12 (+20) ans\T1/ptm/m/n/12 (+20) , \T1/ptm/m/it/12 (+20) 127\T1/pt
 m/m/n/12 (+20) (6).  Re-tri-e-ved from [][]$\T1/pcr/m/n/12 https :// agupubs []
  .onlinelibrary []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2139--2159
+Underfull \hbox (badness 10000) in paragraph at lines 2195--2215
 \T1/pcr/m/n/12 .wiley [] .com / doi / abs / 10 [] .1029 / 2021JC018229https ://
 
  []
@@ -1877,11 +1877,11 @@ Package rerunfilecheck Info: File `Dissertation_proposal.out' has not changed.
 (rerunfilecheck)             Checksum: D1ED33E4B809C1C379CD3A2AC48351B8;5379.
  ) 
 Here is how much of TeX's memory you used:
- 33347 strings out of 476374
- 618844 string characters out of 5788854
- 2295340 words of memory out of 5000000
- 52502 multiletter control sequences out of 15000+600000
- 585216 words of font info for 285 fonts, out of 8000000 for 9000
+ 33364 strings out of 476374
+ 619068 string characters out of 5788854
+ 2296340 words of memory out of 5000000
+ 52508 multiletter control sequences out of 15000+600000
+ 585858 words of font info for 291 fonts, out of 8000000 for 9000
  1175 hyphenation exceptions out of 8191
  84i,17n,80p,1681b,2262s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/ocean/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:
@@ -1903,9 +1903,9 @@ an/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/oce
 an/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/oc
 ean/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/oc
 ean/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Dissertation_proposal.pdf (47 pages, 2102807 bytes).
+Output written on Dissertation_proposal.pdf (47 pages, 2141818 bytes).
 PDF statistics:
- 974 PDF objects out of 1000 (max. 8388607)
- 209 named destinations out of 1000 (max. 500000)
+ 999 PDF objects out of 1000 (max. 8388607)
+ 211 named destinations out of 1000 (max. 500000)
  51006 words of extra memory for PDF output out of 51595 (max. 10000000)
 

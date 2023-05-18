@@ -40,10 +40,10 @@
 \contentsline {section}{\numberline {3.1}Domain dan Data Penelitian}{16}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Domain Penelitian}{16}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Data Penelitian}{16}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Pengumpulan Data}{17}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.3}Pengumpulan Data}{18}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}Analisis Data}{18}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Model Musiman}{18}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Analisis Korelasi}{19}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Analisis Korelasi}{20}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Analisis Regresi}{21}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Prosedur Penelitian}{23}{section.3.3}%
 \contentsline {chapter}{\numberline {IV}BIAYA DAN JADWAL PENELITIAN}{25}{chapter.4}%
