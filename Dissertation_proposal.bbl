@@ -214,6 +214,68 @@ Becker, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bernal%
+, Brill%
+, Dickson%
+\BCBL {}\ \BBA {} Shiels%
+}{%
+Bernal%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+bernal2017sharing}
+\APACinsertmetastar {%
+bernal2017sharing}%
+\begin{APACrefauthors}%
+Bernal, D.%
+, Brill, R\BPBI W.%
+, Dickson, K\BPBI A.%
+\BCBL {}\ \BBA {} Shiels, H\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sharing the water column: physiological mechanisms
+  underlying species-specific habitat use in tunas} {Sharing the water column:
+  physiological mechanisms underlying species-specific habitat use in
+  tunas}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Reviews in Fish Biology and Fisheries}{27}{}{843--880}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Brewin%
+\ \protect \BOthers {.}}{%
+Brewin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+brewin2012influence}
+\APACinsertmetastar {%
+brewin2012influence}%
+\begin{APACrefauthors}%
+Brewin, R\BPBI J.%
+, Hirata, T.%
+, Hardman-Mountford, N\BPBI J.%
+, Lavender, S\BPBI J.%
+, Sathyendranath, S.%
+\BCBL {}\ \BBA {} Barlow, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The influence of the Indian Ocean Dipole on interannual
+  variations in phytoplankton size structure as revealed by Earth Observation}
+  {The influence of the indian ocean dipole on interannual variations in
+  phytoplankton size structure as revealed by earth observation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Deep Sea Research Part II: Topical Studies in
+  Oceanography}{77}{}{117--127}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Chacko%
 , Ali%
 \BCBL {}\ \BBA {} Bourassa%
@@ -771,6 +833,36 @@ Hidayat, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Huot%
+\ \protect \BOthers {.}}{%
+Huot%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+huot2007does}
+\APACinsertmetastar {%
+huot2007does}%
+\begin{APACrefauthors}%
+Huot, Y.%
+, Babin, M.%
+, Bruyant, F.%
+, Grob, C.%
+, Twardowski, M.%
+\BCBL {}\ \BBA {} Claustre, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Does chlorophyll a provide the best index of
+  phytoplankton biomass for primary productivity studies?} {Does chlorophyll a
+  provide the best index of phytoplankton biomass for primary productivity
+  studies?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biogeosciences discussions}{4}{2}{707--745}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hyndman%
 \ \BBA {} Athanasopoulos%
 }{%
@@ -949,37 +1041,7 @@ Lan%
 Lan%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2013}}%
-{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
-lan2013effects}
-\APACinsertmetastar {%
-lan2013effects}%
-\begin{APACrefauthors}%
-Lan, K\BHBI W.%
-, Evans, K.%
-\BCBL {}\ \BBA {} Lee, M\BHBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2013{\protect \BCnt {1}}}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Effects of climate variability on the distribution and
-  fishing conditions of yellowfin tuna (Thunnus albacares) in the western
-  Indian Ocean} {Effects of climate variability on the distribution and fishing
-  conditions of yellowfin tuna (thunnus albacares) in the western indian
-  ocean}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Climatic Change}{119}{}{63--77}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Lan%
-, Evans%
-\BCBL {}\ \BBA {} Lee%
-}{%
-Lan%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2013}}%
-{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+}]{%
 Lan2013}
 \APACinsertmetastar {%
 Lan2013}%
@@ -990,7 +1052,7 @@ Lan, K\BHBI W.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2013{\protect \BCnt {2}}}{jul}{}.
+\APACrefYearMonthDay{2013}{jul}{}.
 \newblock
 {\BBOQ}\APACrefatitle {{Effects of climate variability on the distribution and
   fishing conditions of yellowfin tuna (Thunnus albacares) in the western
@@ -2037,6 +2099,37 @@ Wahiduzzaman, M.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/s00382-021-05960-0} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wahyudi%
+\ \protect \BOthers {.}}{%
+Wahyudi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+wahyudi2019numerical}
+\APACinsertmetastar {%
+wahyudi2019numerical}%
+\begin{APACrefauthors}%
+Wahyudi, H.%
+, Haditiar, Y.%
+, Ikhwan, M.%
+, Wafdan, R.%
+, Setiawan, I.%
+, Muhammad, M.%
+\BDBL {}Rizal, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Numerical study of tides in the Bay of Sabang}
+  {Numerical study of tides in the bay of sabang}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {IOP Conference Series: Earth and Environmental Science}
+  {Iop conference series: Earth and environmental science}\ (\BVOL~348,
+  \BPG~012096).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
