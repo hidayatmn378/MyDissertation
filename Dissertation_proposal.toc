@@ -24,7 +24,7 @@
 \endgroup 
 \contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Rumusan Masalah}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Rumusan Masalah}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Tujuan Penelitian}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Urgensi Penelitian}{4}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Manfaat Penelitian}{5}{section.1.5}%
