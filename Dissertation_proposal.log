@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  6 JUN 2023 23:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.26)  7 JUN 2023 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1885,12 +1885,12 @@ Package rerunfilecheck Info: File `Dissertation_proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 06820248F456C3E797411A9E2DEF6FF7;5620.
  ) 
 Here is how much of TeX's memory you used:
- 33569 strings out of 476331
- 619823 string characters out of 5787765
+ 33567 strings out of 476331
+ 619805 string characters out of 5787765
  2295660 words of memory out of 5000000
  52738 multiletter control sequences out of 15000+600000
- 586435 words of font info for 297 fonts, out of 8000000 for 9000
- 1178 hyphenation exceptions out of 8191
+ 586210 words of font info for 295 fonts, out of 8000000 for 9000
+ 1179 hyphenation exceptions out of 8191
  84i,17n,80p,1681b,2260s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pf
 b><C:/Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pf
@@ -1906,7 +1906,7 @@ Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/
 Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:
 /Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
 /Users/muhnu/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Dissertation_proposal.pdf (49 pages, 2150694 bytes).
+Output written on Dissertation_proposal.pdf (49 pages, 2150648 bytes).
 PDF statistics:
  1024 PDF objects out of 1200 (max. 8388607)
  218 named destinations out of 1000 (max. 500000)
