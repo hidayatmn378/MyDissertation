@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Klorofil-a dan Kedalaman Lapisan Campuran}{13}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Fluks Panas Bersih dan Fluks Air Tawar}{14}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Ketinggian Permukaan Laut dan Arus Pasang Surut}{15}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Parameter Meteorologi}{16}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.5}Parameter Meteorologi}{15}{subsection.2.2.5}%
 \contentsline {section}{\numberline {2.3}Peta Jalan Penelitian}{16}{section.2.3}%
 \contentsline {chapter}{\numberline {III}METODOLOGI PENELITIAN}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Domain dan Data Penelitian}{18}{section.3.1}%
