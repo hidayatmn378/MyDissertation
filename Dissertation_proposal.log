@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.23)  13 JUN 2023 02:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.23)  13 JUN 2023 08:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1375,16 +1375,16 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (contents/02_body/Bab2.tex [7
 
 ] [8] [9] [10] [11] [12] [13] [14] [15]
-<contents/Figures/Road_Map.png, id=499, 426.8748pt x 357.4956pt>
+<contents/Figures/Road_Map.png, id=495, 426.8748pt x 357.4956pt>
 File: contents/Figures/Road_Map.png Graphic file (type png)
 <use contents/Figures/Road_Map.png>
-Package pdftex.def Info: contents/Figures/Road_Map.png  used on input line 144.
+Package pdftex.def Info: contents/Figures/Road_Map.png  used on input line 142.
 
 (pdftex.def)             Requested size: 284.52756pt x 238.29889pt.
 ) [16 <./contents/Figures/Road_Map.png>]
 \textls [40]{\MakeUppercase    []{Bab}} III.
 (contents/02_body/Bab3.tex
-<contents/Figures/Batimetri_edit_compress.png, id=564, 5272.69875pt x 3959.7937
+<contents/Figures/Batimetri_edit_compress.png, id=558, 5272.69875pt x 3959.7937
 5pt>
 File: contents/Figures/Batimetri_edit_compress.png Graphic file (type png)
 <use contents/Figures/Batimetri_edit_compress.png>
@@ -1394,7 +1394,7 @@ input line 77.
  [17
 
 ] [18 <./contents/Figures/Batimetri_edit_compress.png>] [19]
-<contents/Figures/sm_experiment.png, id=607, 3680.75125pt x 1897.0875pt>
+<contents/Figures/sm_experiment.png, id=601, 3680.75125pt x 1897.0875pt>
 File: contents/Figures/sm_experiment.png Graphic file (type png)
 <use contents/Figures/sm_experiment.png>
 Package pdftex.def Info: contents/Figures/sm_experiment.png  used on input line
@@ -1406,7 +1406,7 @@ Overfull \hbox (14.22636pt too wide) in paragraph at lines 108--109
  []
 
 [20 <./contents/Figures/sm_experiment.png>] [21] [22] [23] [24]
-<contents/Figures/Flowchart_Diagram.png, id=661, 578.8827pt x 297.0297pt>
+<contents/Figures/Flowchart_Diagram.png, id=655, 578.8827pt x 297.0297pt>
 File: contents/Figures/Flowchart_Diagram.png Graphic file (type png)
 <use contents/Figures/Flowchart_Diagram.png>
 Package pdftex.def Info: contents/Figures/Flowchart_Diagram.png  used on input 
@@ -1882,10 +1882,10 @@ Package rerunfilecheck Info: File `Dissertation_proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 06820248F456C3E797411A9E2DEF6FF7;5620.
  ) 
 Here is how much of TeX's memory you used:
- 33401 strings out of 476374
- 619579 string characters out of 5788854
+ 33399 strings out of 476374
+ 619550 string characters out of 5788854
  2295340 words of memory out of 5000000
- 52517 multiletter control sequences out of 15000+600000
+ 52515 multiletter control sequences out of 15000+600000
  587110 words of font info for 303 fonts, out of 8000000 for 9000
  1179 hyphenation exceptions out of 8191
  84i,17n,80p,1495b,2262s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1908,9 +1908,9 @@ an/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/oce
 an/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/oc
 ean/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/oc
 ean/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Dissertation_proposal.pdf (48 pages, 2148742 bytes).
+Output written on Dissertation_proposal.pdf (48 pages, 2147210 bytes).
 PDF statistics:
- 1016 PDF objects out of 1200 (max. 8388607)
+ 1012 PDF objects out of 1200 (max. 8388607)
  217 named destinations out of 1000 (max. 500000)
  51014 words of extra memory for PDF output out of 51595 (max. 10000000)
 
