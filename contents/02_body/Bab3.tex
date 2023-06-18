@@ -2,8 +2,19 @@
 \section[Domain dan Data Penelitian]{Domain dan Data Penelitian}
 \begin{spacing}{1.5}
 	\subsection[Domain Penelitian]{Domain Penelitian}
-	Penelitian ini dilakukan di Samudera Hindia dengan koordinat ($0^\circ-24.6^\circ$ N) dan ($78.2^\circ-105^\circ$ E) (lihat Gambar \ref{fig:domain}).
-
+	Penelitian ini dilakukan di Samudera Hindia. Berdasarkan tujuan penelitian, domain penelitian direncanakan sebagai berikut.
+	\begin{itemize}
+		\item Tujuan penelitian 1, 3, dan 4 sesuai dengan Gambar \ref{fig:domain}(a).
+		\item Tujuan penelitian 2 sesuai dengan Gambar \ref{fig:domain}(b).
+		\item Tujuan penelitian 5 sesuai dengan Gambar \ref{fig:domain}(d).
+		\item Tujuan penelitian 6 sesuai dengan Gambar \ref{fig:domain}(c).
+	\end{itemize}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=12cm]{contents/Figures/Batimetri_edit_compress}
+		\caption{Peta batimetri Samudera Hindia, diperoleh dari SRTM30+ \protect\cite{becker2009global}.}
+		\label{fig:domain}
+	\end{figure}
 	\subsection[Data Penelitian]{Data Penelitian}
 %	\vspace{-1pc}
 %		\subsection[NEMO/CMEMS]{NEMO/CMEMS}
@@ -36,6 +47,9 @@
 	Tabel \ref*{tab:data} adalah rangkuman data yang digunakan dalam penelitian ini. Data DMI diperoleh dari \textit{National Oceanic and Atmospheric Administration/Physical Sciences Laboratory} (NOAA/PSL) \cite{Saji2003} sedangkan data arus laut, temperatur laut, salinitas, MLD, dan Chl-a dapat diperoleh dari website penyedia data \textit{Copernicus Marine Environment Monitoring Service} (CMEMS)\cite{Lellouche2018} dan \textit{HYbrid Coordinate Ocean Model} (HYCOM)\cite{Chassignet2007}. Data lainnya adalah fluks air tawar, fluks panas bersih, laju presipitasi, tekanan angin, laju konvektif presipitasi, temperatur udara, dan kelembaban spesifik yang bersumber dari \textit{National Centers for Environmental Prediction and the National Center for Atmospheric Research reanalysis 1} (NCEP/NCAR) \cite{Kalnay1996} dan J-OFURO3 yang merupakan generasi ketiga dari \textit{Japanese ocean flux data set} yang menggunakan pengamatan penginderaan jarak jauh \cite{Tomita2019}. 
 	
 	Ketinggian permukaan laut (\textit{sea level}) dan arus pasang surut bersumber dari \textit{Tidal Model Driver }(TMD). TMD adalah paket MATLAB untuk mengakses konstituen harmonik, dan untuk membuat prediksi pasang surut. TMD memiliki resolusi $1/4^\circ \times 1/4^\circ$ dengan delapan konstituen pasang surut \cite{padman2005tide}. Data produktivitas primer bersih (NPP) bulanan dengan resolusi 9km diperoleh dari situs web Produktivitas Laut Oregon State University (www.science.oregonstate.edu/ocean.produc tivity/) dan data tangkapan perikanan rawai (\textit{longline}) jangka panjang di Samudra Hindia diperoleh dari situs web Komisi Tuna Samudra Hindia (IOTC) (http://www.iotc.org) untuk periode Januari 2002 hingga Desember 2021 \cite{Lan2013}.
+	
+	\subsection[Validasi Data]{Validasi Data}
+	Dalam penelitian ini, data DMI dari NOAA/PSL dibandingkan dengan data DMI dari hasil observasi satelit permukaan laut oleh \textit{NASA MEaSUREs/PO.DAAC} \cite{kumar202020th}. Untuk data oseanografi seperti: arus laut, temperatur laut, salinitas, dan MLD dari model CMEMS dapat dibandingkan dengan data model HYCOM untuk paramter yang sama. Data pembanding yang juga dapat digunakan adalah data \textit{in situ} \textit{Ocean Moored buoy Network for Northern Indian} (OMNI) atau \textit{Research Moored Array for African-Asian-Australian Monsoon Analysis and Prediction} (RAMA) (https://incois.gov.in/portal/datainfo/buoys.jsp). Data yang tersedia untuk OMNI/RAMA mencakup temperatur laut, salinitas, arus laut, serta data permukaan meteorologi seperti angin, kelembaban, tekanan, temperatur udara, curah hujan dan radiasi. Data Chl-a dari model CMEMS dibandingkan dengan data sensor satelite \textit{Moderate Resolution Imaging Spectroradiometer} (MODIS) \cite{pagano1993moderate}. Untuk data fluks air tawar dan fluks panas bersih dibandingkan dengan data NCEP/NCAR. Data meteorologi lainnya seperti laju presipitasi, tekanan angin, laju konvektif presipitasi, temperatur udara, kelembaban spesifik, tekanan permukaan laut dari model NCEP/NCAR dapat dibandingkan dengan data OMNI/RAMA dan data model \textit{ECMWF Reanalysis v5} (ERA5) \cite{hersbach2020era5}.
 	
 %	Hasil yang sangat baik diperoleh dengan membandingkan data temperatur laut 3D (dalam Kelvin) CMEMS dengan data pengamatan \textit{in situ} pada kedalaman 0 hingga 5 m di Samudera Hindia. Hal ini tercermin dari nilai \textit{Root Mean Square} (RMS), untuk perbandingan \textit{in situ thematic centre} (INS TAC), dengan nilai 0.65, dan untuk data \textit{in situ} CORIOLIS, dengan nilai 0.44. Perbandingan data salinitas 3D (dalam satuan salinitas praktis (psu)) dengan data pengamatan \textit{in situ} juga menunjukkan hasil yang sangat baik. Nilai RMS pada kedalaman 0 hingga 5 m untuk data global dan Samudera Hindia masing-masing adalah 0.65 dan 0.204 (Lellouche et al., 2019). Sama halnya dengan perbandingan model CMEMS dan konsentrasi \textit{float} Chl-a (\textit{Biogeochemical-Argo} (BGC-Argo), data pengukuran). Hal ini ditunjukkan oleh koefisien korelasi dan \textit{Root Mean Square Error} (RMSE) masing-masing sebesar 0,81 dan 0,59 (Lamouroux et al., 2019).   
 	
@@ -72,15 +86,8 @@
 		\end{tabular}%
 	}
 	\end{table}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=12cm]{contents/Figures/Batimetri_edit_compress}
-		\caption{Peta batimetri Samudera Hindia, diperoleh dari SRTM30+ \protect\cite{becker2009global}. Warna dalam peta menunjukkan kedalaman 0-5000 m sedangkan pulau digambarkan tanpa warna.}
-		\label{fig:domain}
-	\end{figure}
 	\subsection[Pengumpulan Data]{Pengumpulan Data}
 	Data dalam Tabel \ref{tab:data} merupakan data yang tersedia secara gratis dan bersifat terbuka. Data ini dapat diunduh secara langsung pada website penyedia data ataupun menggunakan kode skrip. Kode skrip yang digunakan untuk mengunduh data dengan bahasa \textit{Shell script} (terminal Linux) dan Python disajikan dalam Lampiran 1.
-	
 \end{spacing}
 \vspace{-0.5pc}
 \section[Analisis Data]{Analisis Data}

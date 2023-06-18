@@ -1,118 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Akhil%
-, Lengaigne%
-, Krishnamohan%
-, Keerthi%
-\BCBL {}\ \BBA {} Vialard%
-}{%
-Akhil%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2023}}%
-}]{%
-Akhil2023}
-\APACinsertmetastar {%
-Akhil2023}%
-\begin{APACrefauthors}%
-Akhil, V\BPBI P.%
-, Lengaigne, M.%
-, Krishnamohan, K\BPBI S.%
-, Keerthi, M\BPBI G.%
-\BCBL {}\ \BBA {} Vialard, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2023}{apr}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Southeastern Arabian Sea Salinity variability:
-  mechanisms and influence on surface temperature}} {{Southeastern Arabian Sea
-  Salinity variability: mechanisms and influence on surface
-  temperature}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Climate Dynamics}{}{}{}.
-\newblock
-\begin{APACrefURL}
-  \url{https://link.springer.com/article/10.1007/s00382-023-06765-z
-  https://link.springer.com/10.1007/s00382-023-06765-z} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1007/s00382-023-06765-z} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Alam%
-, Riaz%
-\BCBL {}\ \BBA {} Iqbal%
-}{%
-Alam%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-Alam2021}
-\APACinsertmetastar {%
-Alam2021}%
-\begin{APACrefauthors}%
-Alam, M.%
-, Riaz, S\BPBI M.%
-\BCBL {}\ \BBA {} Iqbal, M\BPBI J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{dec}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{The impact of trends in South Asia Low pressure center
-  on North Indian Ocean air-sea heat fluxes}} {{The impact of trends in South
-  Asia Low pressure center on North Indian Ocean air-sea heat fluxes}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Atmospheric and Solar-Terrestrial
-  Physics}{226}{}{105786}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.sciencedirect.com/science/article/pii/S1364682621002364
-  https://linkinghub.elsevier.com/retrieve/pii/S1364682621002364}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.jastp.2021.105786} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Alsayed%
-, Alsaafani%
-, Al-Subhi%
-, Alraddadi%
-\BCBL {}\ \BBA {} Taqi%
-}{%
-Alsayed%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2023}}%
-}]{%
-Alsayed2023}
-\APACinsertmetastar {%
-Alsayed2023}%
-\begin{APACrefauthors}%
-Alsayed, A\BPBI Y.%
-, Alsaafani, M\BPBI A.%
-, Al-Subhi, A\BPBI M.%
-, Alraddadi, T\BPBI M.%
-\BCBL {}\ \BBA {} Taqi, A\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2023}{feb}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Seasonal Variability in Ocean Heat Content and Heat
-  Flux in the Arabian Gulf}} {{Seasonal Variability in Ocean Heat Content and
-  Heat Flux in the Arabian Gulf}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Marine Science and Engineering}{11}{3}{532}.
-\newblock
-\begin{APACrefURL} \url{https://www.mdpi.com/2077-1312/11/3/532
-  https://www.mdpi.com/2077-1312/11/3/532/pdf} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.3390/jmse11030532} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Angelini%
 }{%
 Angelini%
@@ -581,48 +469,6 @@ Geider, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Genda%
-, Ikehara%
-, Suzuki%
-, Hantoro%
-\BCBL {}\ \BBA {} Inoue%
-}{%
-Genda%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2022}}%
-}]{%
-Genda2022}
-\APACinsertmetastar {%
-Genda2022}%
-\begin{APACrefauthors}%
-Genda, A.%
-, Ikehara, M.%
-, Suzuki, A.%
-, Hantoro, W\BPBI S.%
-\BCBL {}\ \BBA {} Inoue, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2022}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Unique behavior of marine conditions in the Java Sea
-  reconstructed from a 70 yr coral $\delta$18O and Sr/Ca record from the Seribu
-  Islands, Indonesia}} {{Unique behavior of marine conditions in the Java Sea
-  reconstructed from a 70 yr coral $\delta$18O and Sr/Ca record from the Seribu
-  Islands, Indonesia}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{GEOCHEMICAL JOURNAL}{56}{3}{GJ22007}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.jstage.jst.go.jp/article/geochemj/56/3/56_GJ22007/_article/-char/ja/
-  https://www.jstage.jst.go.jp/article/geochemj/56/3/56_GJ22007/_pdf
-  https://www.jstage.jst.go.jp/article/geochemj/56/3/56_GJ22007/_article}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.2343/geochemj.GJ22007} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Goela%
 \ \protect \BOthers {.}}{%
 Goela%
@@ -797,6 +643,36 @@ Haridhi, H\BPBI A.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.rsma.2016.10.002} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hersbach%
+\ \protect \BOthers {.}}{%
+Hersbach%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+hersbach2020era5}
+\APACinsertmetastar {%
+hersbach2020era5}%
+\begin{APACrefauthors}%
+Hersbach, H.%
+, Bell, B.%
+, Berrisford, P.%
+, Hirahara, S.%
+, Hor{\'a}nyi, A.%
+, Mu{\~n}oz-Sabater, J.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The ERA5 global reanalysis} {The era5 global
+  reanalysis}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Quarterly Journal of the Royal Meteorological
+  Society}{146}{730}{1999--2049}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1031,6 +907,39 @@ Kalnay, E.%
 \newblock
 \begin{APACrefDOI} \doi{10.1175/1520-0477(1996)077<0437:TNYRP>2.0.CO;2}
   \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kumar%
+, Hamlington%
+, Cheon%
+, Han%
+\BCBL {}\ \BBA {} Thompson%
+}{%
+Kumar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+kumar202020th}
+\APACinsertmetastar {%
+kumar202020th}%
+\begin{APACrefauthors}%
+Kumar, P.%
+, Hamlington, B.%
+, Cheon, S\BHBI H.%
+, Han, W.%
+\BCBL {}\ \BBA {} Thompson, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {20th century multivariate Indian Ocean regional sea
+  level reconstruction} {20th century multivariate indian ocean regional sea
+  level reconstruction}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research:
+  Oceans}{125}{10}{e2020JC016270}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1274,6 +1183,34 @@ Padman, L.%
   manual}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Earth and Space research}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pagano%
+\ \BBA {} Durham%
+}{%
+Pagano%
+\ \BBA {} Durham%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+pagano1993moderate}
+\APACinsertmetastar {%
+pagano1993moderate}%
+\begin{APACrefauthors}%
+Pagano, T\BPBI S.%
+\BCBT {}\ \BBA {} Durham, R\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Moderate resolution imaging spectroradiometer (MODIS)}
+  {Moderate resolution imaging spectroradiometer (modis)}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Sensor Systems for the Early Earth Observing System
+  Platforms} {Sensor systems for the early earth observing system platforms}\
+  (\BVOL\ 1939, \BPGS\ 2--17).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
