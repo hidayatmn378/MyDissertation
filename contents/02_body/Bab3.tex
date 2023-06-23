@@ -4,10 +4,10 @@
 	\subsection[Domain Penelitian]{Domain Penelitian}
 	Penelitian ini dilakukan di Samudera Hindia. Berdasarkan tujuan penelitian, domain penelitian direncanakan sebagai berikut.
 	\begin{itemize}
-		\item Tujuan penelitian 1, 3, dan 4 sesuai dengan Gambar \ref{fig:domain}(a).
-		\item Tujuan penelitian 2 sesuai dengan Gambar \ref{fig:domain}(b).
-		\item Tujuan penelitian 5 sesuai dengan Gambar \ref{fig:domain}(d).
-		\item Tujuan penelitian 6 sesuai dengan Gambar \ref{fig:domain}(c).
+		\item Domain tujuan penelitian 1, 3, dan 4 sesuai dengan Gambar \ref{fig:domain}(a).
+		\item Domain tujuan penelitian 2 sesuai dengan Gambar \ref{fig:domain}(b).
+		\item Domain tujuan penelitian 5 sesuai dengan Gambar \ref{fig:domain}(d).
+		\item Domain tujuan penelitian 6 sesuai dengan Gambar \ref{fig:domain}(c).
 	\end{itemize}
 	\begin{figure}[H]
 		\centering
@@ -49,8 +49,12 @@
 	Ketinggian permukaan laut (\textit{sea level}) dan arus pasang surut bersumber dari \textit{Tidal Model Driver }(TMD). TMD adalah paket MATLAB untuk mengakses konstituen harmonik, dan untuk membuat prediksi pasang surut. TMD memiliki resolusi $1/4^\circ \times 1/4^\circ$ dengan delapan konstituen pasang surut \cite{padman2005tide}. Data produktivitas primer bersih (NPP) bulanan dengan resolusi 9km diperoleh dari situs web Produktivitas Laut Oregon State University (www.science.oregonstate.edu/ocean.produc tivity/) dan data tangkapan perikanan rawai (\textit{longline}) jangka panjang di Samudra Hindia diperoleh dari situs web Komisi Tuna Samudra Hindia (IOTC) (http://www.iotc.org) untuk periode Januari 2002 hingga Desember 2021 \cite{Lan2013}.
 	
 	\subsection[Validasi Data]{Validasi Data}
+	Validasi data model adalah suatu langkah penting untuk memastikan keakuratan dan keandalan model tersebut. Dalam praktiknya, dilakukan pemilihan lokasi stasiun yang representatif dimana stasiun tersebut merupakan lokasi pengukuran \textit{in situ} yang mewakili daerah dan waktu yang sama atau serupa dengan lokasi yang diprediksi oleh model. Selanjutnya akan dilakukan komparasi statistik antara data output model dan data \textit{in situ} pengukuran, seperti \textit{mean} (rata-rata), \textit{standard deviation} (simpangan baku), dan korelasi antara keduanya serta \textit{root mean square error} (RMSE) atau bias. Dilakukan juga visualisasi perbandingan atau plot untuk membandingkan tren waktu atau pola spasial dari data model dan data in situ. Hal ini dapat membantu dalam menentukan sejauh mana model dapat mereproduksi pola yang diamati secara langsung.
+	
 	Dalam penelitian ini, data DMI dari NOAA/PSL dibandingkan dengan data DMI dari hasil observasi satelit permukaan laut oleh \textit{NASA MEaSUREs/PO.DAAC} \cite{kumar202020th}. Untuk data oseanografi seperti: arus laut, temperatur laut, salinitas, dan MLD dari model CMEMS dapat dibandingkan dengan data model HYCOM untuk paramter yang sama. Data pembanding yang juga dapat digunakan adalah data \textit{in situ} \textit{Ocean Moored buoy Network for Northern Indian} (OMNI) atau \textit{Research Moored Array for African-Asian-Australian Monsoon Analysis and Prediction} (RAMA) (https://incois.gov.in/portal/datainfo/buoys.jsp). Data yang tersedia untuk OMNI/RAMA mencakup temperatur laut, salinitas, arus laut, serta data permukaan meteorologi seperti angin, kelembaban, tekanan, temperatur udara, curah hujan dan radiasi. Data Chl-a dari model CMEMS dibandingkan dengan data sensor satelite \textit{Moderate Resolution Imaging Spectroradiometer} (MODIS) \cite{pagano1993moderate}. Untuk data fluks air tawar dan fluks panas bersih dibandingkan dengan data NCEP/NCAR. Data meteorologi lainnya seperti laju presipitasi, tekanan angin, laju konvektif presipitasi, temperatur udara, kelembaban spesifik, tekanan permukaan laut dari model NCEP/NCAR dapat dibandingkan dengan data OMNI/RAMA dan data model \textit{ECMWF Reanalysis v5} (ERA5) \cite{hersbach2020era5}.
 	
+	\subsection[Pengumpulan Data]{Pengumpulan Data}
+	Data dalam Tabel \ref{tab:data} merupakan data yang tersedia secara gratis dan bersifat terbuka. Data ini dapat diunduh secara langsung pada website penyedia data ataupun menggunakan kode skrip. Kode skrip yang digunakan untuk mengunduh data dengan bahasa \textit{Shell script} (terminal Linux) dan Python disajikan dalam Lampiran 1.
 %	Hasil yang sangat baik diperoleh dengan membandingkan data temperatur laut 3D (dalam Kelvin) CMEMS dengan data pengamatan \textit{in situ} pada kedalaman 0 hingga 5 m di Samudera Hindia. Hal ini tercermin dari nilai \textit{Root Mean Square} (RMS), untuk perbandingan \textit{in situ thematic centre} (INS TAC), dengan nilai 0.65, dan untuk data \textit{in situ} CORIOLIS, dengan nilai 0.44. Perbandingan data salinitas 3D (dalam satuan salinitas praktis (psu)) dengan data pengamatan \textit{in situ} juga menunjukkan hasil yang sangat baik. Nilai RMS pada kedalaman 0 hingga 5 m untuk data global dan Samudera Hindia masing-masing adalah 0.65 dan 0.204 (Lellouche et al., 2019). Sama halnya dengan perbandingan model CMEMS dan konsentrasi \textit{float} Chl-a (\textit{Biogeochemical-Argo} (BGC-Argo), data pengukuran). Hal ini ditunjukkan oleh koefisien korelasi dan \textit{Root Mean Square Error} (RMSE) masing-masing sebesar 0,81 dan 0,59 (Lamouroux et al., 2019).   
 	
 	\begin{table}[H]
@@ -86,8 +90,7 @@
 		\end{tabular}%
 	}
 	\end{table}
-	\subsection[Pengumpulan Data]{Pengumpulan Data}
-	Data dalam Tabel \ref{tab:data} merupakan data yang tersedia secara gratis dan bersifat terbuka. Data ini dapat diunduh secara langsung pada website penyedia data ataupun menggunakan kode skrip. Kode skrip yang digunakan untuk mengunduh data dengan bahasa \textit{Shell script} (terminal Linux) dan Python disajikan dalam Lampiran 1.
+
 \end{spacing}
 \vspace{-0.5pc}
 \section[Analisis Data]{Analisis Data}
@@ -102,12 +105,12 @@
 	\begin{equation}\label{eq:fs}
 		y = \alpha + \sum_{k=1}^{N} \left[ \beta_k \sin(\frac{2\pi kt}{m})+\gamma_k \cos(\frac{2\pi kt}{m})\right]  + \epsilon,
 	\end{equation}
-	dengan $\alpha, \beta_k, \gamma_k,k,\text{ dan }m$ adalah konstanta pergeseran vertikal, koefisien komponen sinus, koefisien komponen kosinus, ordo atau frekuensi gelombang sinus dan kosinus, dan periode fungsi. Bentuk sederhana dari Pers. \ref{eq:fs} dapat dituliskan sebagai
+	dengan $\alpha, \beta_k, \gamma_k,k,\text{ dan }m$ adalah konstanta pergeseran vertikal, koefisien komponen sinus, koefisien komponen kosinus, ordo atau frekuensi gelombang sinus dan kosinus, dan periode fungsi. $y=y(t)$ mewakili fungsi periodik yang didekomposisi, dengan t adalah waktu yang merupakan variabel independen. Dalam hal ini, $y$ merupakan parameter oseanografi dan meteorologi sesuai dengan Tabel \ref{tab:data}.  Bentuk sederhana dari Pers. \ref{eq:fs} dapat dituliskan sebagai
 	persamaan siklus musiman \cite{crawley2012r}
 	\begin{equation}\label{eq:sm_}
 		y = \alpha + \beta \sin(2\pi t)+\gamma \cos(2\pi t) + \epsilon,
 	\end{equation}
-	dengan $\alpha, \beta$, dan $\gamma$  adalah konstanta pergesaran vertikal, amplitudo dari gelombang sinus, dan amplitudo dari gelombang kosinus. Dalam persamaan ini, $t$ adalah waktu dan $\epsilon$ adalah elemen residual yang mewakili komponen \textit{white-noise} tidak beraturan dalam proses pengambilan data. Parameter-parameter yang tidak diketahui, yaitu $\alpha, \beta, $ dan $\gamma$, diperkirakan menggunakan metode kuadrat terkecil (\textit{ordinary least squares}) \cite{goela2016time}.
+	dengan $\alpha, \beta$, dan $\gamma$  adalah konstanta pergesaran vertikal, amplitudo dari gelombang sinus, dan amplitudo dari gelombang kosinus. Dalam persamaan ini, $y=y(t)$ mewakili fungsi periodik yang didekomposisi, dengan t adalah waktu yang merupakan variabel independen. $\epsilon$ adalah elemen residual yang mewakili komponen \textit{white-noise} tidak beraturan dalam proses pengambilan data. Parameter-parameter yang tidak diketahui, yaitu $\alpha, \beta, $ dan $\gamma$, diperkirakan menggunakan metode kuadrat terkecil (\textit{ordinary least squares}) \cite{goela2016time}.
 	
 	Gambar \ref{fig:sm} merupakan ilustrasi persamaan \ref{eq:sm_} untuk nilai $\alpha,\beta$ dan $\gamma$ yang berbeda. Nilai $\alpha$ yang berbeda mempengaruhi posisi kurva terhadap sumbu-y. Sedangkan nilai $\beta$ dan $\gamma$ yang berbeda mempengaruhi posisi kurva terhadap sumbu-x.
 	\begin{figure}[H]
@@ -158,7 +161,7 @@
 		\end{equation}
 		dengan $n$ ukuran sampel dan $R$ korelasi yang ditentukan dalam sampel.
 		\subsection[Analisis Regresi]{Analisis Regresi}
-		Analisis regresi memungkinkan pemodelan hubungan antara variabel dependen dan satu atau lebih variabel independen. Dengan analisis regresi, dapat diketahui ukuran pengaruh satu atau lebih variabel terhadap variabel lain serta dapat memprediksi sebuah variabel berdasarkan satu atau lebih variabel lainnya. Hal ini karena analisis regresi memberikan informasi tentang bagaimana nilai variabel dependen berubah jika salah satu variabel independen diubah. Dalam hal ini, variabel dependen ($y$) dapat berupa IOD, Chl-a, atau data perikanan, sedangkan variabel independen ($x$) dapat berupa arus laut, temperatur laut, salinitas, MLD, fluks air tawar, fluks panas bersih, ketinggian permukaan laut, arus pasang surut, laju presipitasi, dan tekanan angin.  Analisis regresi dibedakan sebagai berikut  \cite{ANGELINI2019722}.
+		Analisis regresi berfungsi untuk mengetahui ukuran pengaruh satu atau lebih variabel independen terhadap variabel dependen. Dalam hal ini, variabel dependen ($y$) dapat berupa IOD, Chl-a, atau data perikanan, sedangkan variabel independen ($x$) dapat berupa arus laut, temperatur laut, salinitas, MLD, fluks air tawar, fluks panas bersih, ketinggian permukaan laut, arus pasang surut, laju presipitasi, dan tekanan angin.  Analisis regresi dibedakan sebagai berikut  \cite{ANGELINI2019722}.
 		\begin{itemize}
 			\item Regresi Linear Sederhana
 			\begin{equation}

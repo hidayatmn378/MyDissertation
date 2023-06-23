@@ -45,7 +45,7 @@
 \contentsline {subsection}{\numberline {3.1.4}Pengumpulan Data}{19}{subsection.3.1.4}%
 \contentsline {section}{\numberline {3.2}Analisis Data}{20}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Model Musiman}{20}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Analisis Korelasi}{21}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Analisis Korelasi}{22}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Analisis Regresi}{23}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Prosedur Penelitian}{25}{section.3.3}%
 \contentsline {chapter}{\numberline {IV}BIAYA DAN JADWAL PENELITIAN}{27}{chapter.4}%
